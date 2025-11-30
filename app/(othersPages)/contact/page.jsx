@@ -1,26 +1,24 @@
-import Footer3 from "@/components/footers/Footer3";
-import Header4 from "@/components/headers/Header4";
-import Topbar from "@/components/headers/Topbar";
-import Contact from "@/components/othersPages/Contact";
-import BreadCumb from "@/components/portfolio/BreadCumb";
+import React from "react";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
+import ContactContent from "@/components/o7/contact/ContactContent";
 
 export const metadata = {
-  title:
-    "Contact || Doob Business and Consulting React Nextjs Bootstrap5 Template",
-  description: "Doob Business and Consulting React Nextjs Bootstrap5 Template",
+  title: "O7 Digital – Contact (placeholders)",
+  description:
+    "Structure de la page contact O7 Digital avec formulaire et informations placeholders.",
 };
-export default function page() {
+
+export default function Page() {
   return (
     <>
-      <Topbar />
-      <Header4 />
-      <BreadCumb />
+      <Header2 parentClass="rainbow-header header-default header-left-align header-transparent header-sticky" />
       <div>
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <Contact />
-      <Footer3 />
+      <ContactContent />
+      <Footer2 />
     </>
   );
 }

@@ -1,55 +1,32 @@
-import Footer3 from "@/components/footers/Footer3";
-import Header4 from "@/components/headers/Header4";
-import Topbar from "@/components/headers/Topbar";
-import About from "@/components/homes/index-consulting/About";
-import Facts from "@/components/homes/index-consulting/Facts";
-import Service2 from "@/components/homes/index-web-agency/Service";
-import Brands from "@/components/othersPages/about/Brands";
-import Hero from "@/components/othersPages/about/Hero";
-import Service from "@/components/othersPages/about/Service";
-import Team from "@/components/othersPages/about/Team";
-import Timeline from "@/components/othersPages/about/Timeline";
 import React from "react";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
+import CtaSection from "@/components/o7/common/CtaSection";
+import AboutDetails from "@/components/o7/about/AboutDetails";
+import AboutHero from "@/components/o7/about/AboutHero";
+import Expertise from "@/components/o7/about/Expertise";
+import Methodology from "@/components/o7/about/Methodology";
 
 export const metadata = {
-  title:
-    "About || Doob Business and Consulting React Nextjs Bootstrap5 Template",
-  description: "Doob Business and Consulting React Nextjs Bootstrap5 Template",
+  title: "O7 Digital – About (placeholders)",
+  description:
+    "Structure de la page About O7 Digital avec sections placeholders basées sur le template Digital Agency.",
 };
-export default function page() {
+
+export default function Page() {
   return (
     <>
-      <Topbar />
-      <Header4 parentClass="rainbow-header header-default header-transparent header-sticky" />
+      <Header2 parentClass="rainbow-header header-default header-left-align header-transparent header-sticky" />
       <div>
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-
-      <Hero />
-      <Service2 />
-      <Brands />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Service />
-      <Timeline />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <About />
-      <Facts />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Team />
-      <Footer3 />
+      <AboutHero />
+      <AboutDetails />
+      <Methodology />
+      <Expertise />
+      <CtaSection anchorId="cta-about" />
+      <Footer2 />
     </>
   );
 }

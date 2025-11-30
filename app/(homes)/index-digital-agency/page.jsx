@@ -1,19 +1,15 @@
-import Blogs from "@/components/common/Blogs";
-import Testimonials from "@/components/common/Testimonials2";
+import React from "react";
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
-
 import Hero from "@/components/homes/index-digital-agency/Hero";
-import Portfolio from "@/components/homes/index-digital-agency/Portfolio";
-import Progress from "@/components/homes/index-digital-agency/Progress";
-import Service from "@/components/homes/index-digital-agency/Service";
-
-import React from "react";
+import CtaSection from "@/components/o7/common/CtaSection";
+import HomeIntro from "@/components/o7/home/HomeIntro";
+import HomeServices from "@/components/o7/home/HomeServices";
 
 export const metadata = {
-  title: "Eon Nova Studios - Agencia Digital Creativa",
+  title: "O7 Digital – Accueil (placeholders)",
   description:
-    "Eon Nova Studios combina creatividad, diseño y tecnología para transformar marcas y negocios en experiencias digitales únicas.",
+    "Structure de la page d'accueil O7 Digital basée sur le template Digital Agency, avec contenus temporaires.",
 };
 
 export default function Home() {
@@ -27,37 +23,10 @@ export default function Home() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
       <Hero />
-      <Service />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Portfolio />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Progress />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Testimonials />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Blogs />
+      <HomeIntro />
+      <HomeServices />
+      <CtaSection anchorId="cta" />
       <Footer2 />
     </>
   );

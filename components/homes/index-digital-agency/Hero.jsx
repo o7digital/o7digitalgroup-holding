@@ -1,31 +1,8 @@
 "use client";
 
 import { NextArrow, PrevArrow } from "@/components/common/SliderArrows";
+import { o7HeroSlides } from "@/data/o7";
 import Slider from "react-slick";
-
-const sliderData = [
-  {
-    id: 1,
-    title: "Eon Nova Studios",
-    description:
-      "Creatividad, diseño y tecnología para impulsar tu marca con experiencias digitales únicas.",
-    bgImageClass: "bg_image--6",
-  },
-  {
-    id: 2,
-    title: "Agencia Digital Creativa",
-    description:
-      "Diseñamos soluciones web, identidad visual y estrategias digitales para hacer crecer tu negocio.",
-    bgImageClass: "bg_image--14",
-  },
-  {
-    id: 3,
-    title: "Innovación & Estrategia",
-    description:
-      "Transformamos ideas en proyectos digitales efectivos, conectando marcas con sus clientes.",
-    bgImageClass: "bg_image--15",
-  },
-];
 
 export default function Hero() {
   const options = {
@@ -44,7 +21,7 @@ export default function Hero() {
       {...options}
       className="rainbow-testimonial-area slider-style-4 slider-activation slider-dot rainbow-slick-dot rainbow-slick-arrow"
     >
-      {sliderData.map((slider) => (
+      {o7HeroSlides.map((slider) => (
         <div
           key={slider.id}
           className={`single-rainbow-slider height-950 slider-bg-image bg-overlay ${slider.bgImageClass} d-flex align-items-center`}
@@ -58,9 +35,9 @@ export default function Hero() {
                   <div className="button-group mt--30">
                     <a
                       className="btn-default"
-                      href="#contacto"
+                      href="/contact"
                     >
-                      Contáctanos
+                      CTA placeholder
                     </a>
                   </div>
                 </div>
