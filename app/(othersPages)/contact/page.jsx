@@ -4,9 +4,9 @@ import Header2 from "@/components/headers/Header2";
 import ContactContent from "@/components/o7/contact/ContactContent";
 
 export const metadata = {
-  title: "O7 Digital – Contact (placeholders)",
+  title: "O7 Digital – Contact",
   description:
-    "Structure de la page contact O7 Digital avec formulaire et informations placeholders.",
+    "Contactez O7 Digital pour vos projets digitaux : stratégie, développement web, IA, infogérance et infrastructures.",
 };
 
 export default function Page() {

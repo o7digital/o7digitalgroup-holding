@@ -78,7 +78,7 @@ export const o7CtaBlock = {
   description:
     "O7 Digital vous aide à concevoir, déployer et optimiser des solutions fiables et performantes.",
   primaryLabel: "Contactez-nous",
-  secondaryLabel: "Contactez-nous",
+  secondaryLabel: "Prendre rendez-vous",
 };
 
 export const o7AboutHero = {
@@ -332,10 +332,10 @@ export const o7ConsultingSupport = [
 ];
 
 export const o7ContactInfo = {
-  title: "Titre de contact en attente",
+  title: "Contactez O7 Digital",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi placerat lorem ipsum dolor sit amet.",
-  email: "placeholder@o7.digital",
-  phone: "+00 0 00 00 00 00",
-  location: "Adresse placeholder, 00000 Ville",
+    "Nous sommes à votre disposition pour répondre à vos besoins technologiques et vous accompagner dans vos projets digitaux. Que vous souhaitiez développer une plateforme, optimiser votre infrastructure, moderniser vos systèmes, ou intégrer l’IA dans vos opérations, nous vous répondons rapidement et efficacement. Remplissez le formulaire ou contactez-nous directement.",
+  email: "contact@o7digitalconsulting.com",
+  phone: "+xx xx xx xx xx",
+  location: "France / Mexique / Canada",
 };

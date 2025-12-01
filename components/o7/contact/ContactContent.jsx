@@ -32,9 +32,11 @@ export default function ContactContent() {
                 <i className="feather-mail" />
               </div>
               <div className="inner">
-                <h4 className="title">Email placeholder</h4>
+                <h4 className="title">Email</h4>
                 <p>
-                  <a href="#">{o7ContactInfo.email}</a>
+                  <a href={`mailto:${o7ContactInfo.email}`}>
+                    {o7ContactInfo.email}
+                  </a>
                 </p>
               </div>
             </div>
@@ -45,7 +47,7 @@ export default function ContactContent() {
                 <i className="feather-phone-call" />
               </div>
               <div className="inner">
-                <h4 className="title">Phone placeholder</h4>
+                <h4 className="title">Téléphone</h4>
                 <p>
                   <a href="#">{o7ContactInfo.phone}</a>
                 </p>
@@ -55,11 +57,13 @@ export default function ContactContent() {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="rainbow-address">
               <div className="icon">
-                <i className="feather-map-pin" />
+                <i className="feather-calendar" />
               </div>
               <div className="inner">
-                <h4 className="title">Adresse placeholder</h4>
-                <p className="mb--0">{o7ContactInfo.location}</p>
+                <h4 className="title">Prendre rendez-vous</h4>
+                <p className="mb--0">
+                  <a href="#contact-form">Planifier un échange</a>
+                </p>
               </div>
             </div>
           </div>
@@ -69,6 +73,7 @@ export default function ContactContent() {
           <div className="col-lg-8 offset-lg-2">
             <form
               className="contact-form-1 rainbow-dynamic-form"
+              id="contact-form"
               onSubmit={handleSubmit}
             >
               <div className="form-group">
@@ -76,7 +81,7 @@ export default function ContactContent() {
                   type="text"
                   name="contact-name"
                   id="contact-name"
-                  placeholder="Nom placeholder"
+                  placeholder="Nom complet"
                   required
                 />
               </div>
@@ -85,7 +90,7 @@ export default function ContactContent() {
                   type="email"
                   id="contact-email"
                   name="contact-email"
-                  placeholder="Email placeholder"
+                  placeholder="Email professionnel"
                   required
                 />
               </div>
@@ -94,7 +99,7 @@ export default function ContactContent() {
                   type="text"
                   name="contact-phone"
                   id="contact-phone"
-                  placeholder="Téléphone placeholder"
+                  placeholder="Téléphone"
                   required
                 />
               </div>
@@ -102,7 +107,7 @@ export default function ContactContent() {
                 <textarea
                   name="contact-message"
                   id="contact-message"
-                  placeholder="Message placeholder"
+                  placeholder="Votre message"
                   required
                   defaultValue=""
                 />
@@ -114,13 +119,13 @@ export default function ContactContent() {
                   id="submit"
                   className="btn-default btn-large rainbow-btn"
                 >
-                  <span>Envoyer (placeholder)</span>
+                  <span>Envoyer</span>
                 </button>
               </div>
               {submitted && (
                 <div className="form-group">
                   <p className="success-message mb--0">
-                    Message placeholder envoyé (non connecté).
+                    Message envoyé (démonstration, non connecté).
                   </p>
                 </div>
               )}
