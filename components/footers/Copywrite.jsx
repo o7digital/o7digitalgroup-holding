@@ -9,10 +9,7 @@ export default function Copywrite() {
             <div className="copyright-left">
               <ul className="ft-menu link-hover">
                 <li>
-                  <Link href={`/privacy-policy`}>Privacy Policy</Link>
-                </li>
-                <li>
-                  <a href="#">Terms And Condition</a>
+                  <Link href={`/privacy-policy`}>Mentions Légales</Link>
                 </li>
               </ul>
             </div>
