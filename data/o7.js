@@ -35,39 +35,39 @@ export const o7HomeIntro = {
 
 export const o7HomeServices = [
   {
-    title: "Service placeholder 01",
+    title: "Stratégie digitale & CTO externalisé",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Audit, architecture et pilotage technologique. Nous alignons votre stratégie digitale avec vos objectifs business pour garantir une évolution cohérente et performante.",
     iconClass: "feather-cpu",
   },
   {
-    title: "Service placeholder 02",
+    title: "Développement Web moderne",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Création de sites rapides, sécurisés et optimisés SEO avec React, Next.js et Astro. Solutions pour entreprises, hôtellerie, immobilier et e-commerce.",
     iconClass: "feather-zap",
   },
   {
-    title: "Service placeholder 03",
+    title: "CMS headless & Backends",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties.",
     iconClass: "feather-trending-up",
   },
   {
-    title: "Service placeholder 04",
+    title: "IA & Automatisation",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Agents IA, automatisation des processus, extraction et traitement des données, intégration IA dans vos outils internes et votre site web.",
     iconClass: "feather-layers",
   },
   {
-    title: "Service placeholder 05",
+    title: "SEO & Performance digitale",
     description:
-      "Phasellus accumsan urna eu sem fermentum, at facilisis lorem blandit lorem ipsum dolor sit amet.",
+      "SEO technique, optimisation structurelle, mots clés, GA4, Search Console et suivi de performance. Visibilité durable et résultats mesurables.",
     iconClass: "feather-shield",
   },
   {
-    title: "Service placeholder 06",
+    title: "Infogérance & Support",
     description:
-      "Integer vel lorem leo. Curabitur vitae sapien ut libero venenatis faucibus nec quis nibh.",
+      "Support utilisateurs, maintenance préventive, supervision, cybersécurité, sauvegardes et gestion Microsoft 365 / Google Workspace.",
     iconClass: "feather-command",
   },
 ];
