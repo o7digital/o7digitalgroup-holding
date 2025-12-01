@@ -5,11 +5,14 @@ import { footerSections, socialLinks } from "@/data/footerLinks";
 export default function Footer2() {
   return (
     <footer className="rainbow-footer footer-style-default no-border">
-      <div className="footer-top">
+      <div
+        className="footer-top"
+        style={{ paddingTop: "32px", paddingBottom: "8px" }}
+      >
         <div className="container">
           <div className="row">
             {footerSections.map((section, index) => (
-              <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={index}>
+              <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
                 <div className="rainbow-footer-widget">
                   <h4 className="title">{section.title}</h4>
                   <div className="inner">
@@ -24,7 +27,7 @@ export default function Footer2() {
                 </div>
               </div>
             ))}
-            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <div className="rainbow-footer-widget">
                 <h4 className="title">Suivez-nous.</h4>
                 <div className="inner">
@@ -43,7 +46,10 @@ export default function Footer2() {
           </div>
         </div>
       </div>
-      <div className="copyright-area copyright-style-one no-border">
+      <div
+        className="copyright-area copyright-style-one no-border"
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 col-sm-12 col-12">

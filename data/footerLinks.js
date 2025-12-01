@@ -32,10 +32,4 @@ export const footerSections = [
       { href: "/partners", label: "Partners" },
     ],
   },
-  {
-    title: "Company",
-    links: [
-      { href: "/privacy-policy", label: "Politique de Confidencialité" },
-    ],
-  },
 ];
