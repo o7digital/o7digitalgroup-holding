@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { footerSections, socialLinks } from "@/data/footerLinks";
+import { footerSections } from "@/data/footerLinks";
 export default function Footer3() {
   return (
     <>
@@ -65,7 +65,7 @@ export default function Footer3() {
           <div className="container">
             <div className="row">
               {footerSections.map((section, index) => (
-                <div className="col-lg-2 col-md-6 col-sm-6 col-12" key={index}>
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={index}>
                   <div className="rainbow-footer-widget">
                     <h4 className="title">{section.title}</h4>
                     <div className="inner">
@@ -80,25 +80,6 @@ export default function Footer3() {
                   </div>
                 </div>
               ))}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div className="rainbow-footer-widget">
-                  <h4 className="title">Stay With Us.</h4>
-                  <div className="inner">
-                    <h6 className="subtitle">
-                      2000+ Our clients are subscribe Around the World
-                    </h6>
-                    <ul className="social-icon social-default justify-content-start">
-                      {socialLinks.map((link, index) => (
-                        <li key={index}>
-                          <a href={link.href}>
-                            <i className={link.iconClass} />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
