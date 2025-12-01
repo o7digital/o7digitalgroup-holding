@@ -115,30 +115,32 @@ export const o7Expertise = [
   {
     title: "20+ ans d’expérience en systèmes d’information et développement",
     description:
-      "20+ ans d’expérience en systèmes d’information et développement",
+      "Deux décennies de pratique en ingénierie, développement, consulting et optimisation de systèmes.",
   },
   {
-    title: "Expertise internationale (France, Mexique, Canada)",
+    title: "Gestion de projet et Maîtrise d’ouvrage",
     description:
-      "Expertise internationale (France, Mexique, Canada)",
+      "Pilotage complet de projets digitaux, coordination des équipes, cadrage fonctionnel, MOA/MOE, suivi qualité et livrables.",
   },
   {
     title: "Maîtrise des stacks modernes (React, Next.js, Astro, Node.js)",
     description:
-      "Maîtrise des stacks modernes (React, Next.js, Astro, Node.js)",
+      "Expertise sur les technologies web modernes pour des applications performantes, propres et scalables.",
   },
   {
     title: "Spécialisation headless : DatoCMS, Directus, Strapi, Supabase",
     description:
-      "Spécialisation headless : DatoCMS, Directus, Strapi, Supabase",
+      "Mise en place de CMS headless, API sécurisées, architectures cloud et plateformes évolutives.",
   },
   {
     title: "Intégration IA générative et automatisation",
-    description: "Intégration IA générative et automatisation",
+    description:
+      "Conception de workflows IA, automatisation intelligente, extraction et traitement avancé des données.",
   },
   {
     title: "Gouvernance et conseil auprès des directions IT et DG",
-    description: "Gouvernance et conseil auprès des directions IT et DG",
+    description:
+      "Appui stratégique, renfort DSI, priorisation technologique, conformité et pilotage des prestataires.",
   },
 ];
 
