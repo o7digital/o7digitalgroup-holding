@@ -41,12 +41,12 @@ export default function HeaderPreview() {
               <Link href="/">
                 <img
                   className="logo-light"
-                  src="/assets/images/logo/logo.png"
+                  src="/assets/images/o7digital-logo.png"
                   alt="Corporate Logo"
                 />
                 <img
                   className="logo-dark"
-                  src="/assets/images/logo/logo-dark.png"
+                  src="/assets/images/o7digital-logo.png"
                   alt="Corporate Logo"
                 />
               </Link>

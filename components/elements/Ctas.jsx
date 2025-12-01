@@ -385,7 +385,7 @@ export default function Ctas() {
                         <Link href={`/`}>
                           <Image
                             alt="Corporate Logo"
-                            src="/assets/images/logo/logo.png"
+                            src="/assets/images/o7digital-logo.png"
                             width={288}
                             height={100}
                           />

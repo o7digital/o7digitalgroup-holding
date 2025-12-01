@@ -17,14 +17,14 @@ export default function Header1({ btnClass = "btn-default btn-small round" }) {
                   <Image
                     className="logo-light"
                     alt="Corporate Logo"
-                    src="/assets/images/logo/logo.png"
+                    src="/assets/images/o7digital-logo.png"
                     width={288}
                     height={100}
                   />
                   <Image
                     className="logo-dark"
                     alt="Corporate Logo"
-                    src="/assets/images/logo/logo-dark.png"
+                    src="/assets/images/o7digital-logo.png"
                     width={288}
                     height={100}
                   />

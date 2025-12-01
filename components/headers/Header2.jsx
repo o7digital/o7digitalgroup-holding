@@ -26,14 +26,14 @@ export default function Header2({
                   <Image
                     className="logo-light"
                     alt="O7 Digital Consulting"
-                    src="/assets/images/logo/logo.png"
+                    src="/assets/images/o7digital-logo.png"
                     width={288}
                     height={100}
                   />
                   <Image
                     className="logo-dark"
                     alt="O7 Digital Consulting"
-                    src="/assets/images/logo/logo-dark.png"
+                    src="/assets/images/o7digital-logo.png"
                     width={288}
                     height={100}
                   />
