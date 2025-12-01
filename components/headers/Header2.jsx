@@ -22,7 +22,7 @@ export default function Header2({
           <div className="col-lg-9 col-md-6 col-4 position-static">
             <div className="header-left d-flex">
               <div className="logo">
-                <Link href={`/`}>
+                <Link href={`/index-digital-agency`}>
                   <Image
                     className="logo-light"
                     alt="O7 Digital Consulting"
