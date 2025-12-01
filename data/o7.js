@@ -74,73 +74,71 @@ export const o7HomeServices = [
 
 export const o7CtaBlock = {
   eyebrow: "Prise de contact",
-  title: "Travaillons ensemble",
+  title: "Parlons de votre projet",
   description:
-    "Vous souhaitez développer un nouveau site, optimiser votre infrastructure digitale, moderniser votre système ou intégrer l'IA dans vos opérations ? O7 Digital vous accompagne avec expertise, rigueur et efficacité.",
+    "Besoin d’un accompagnement technologique ou d’une expertise digitale ? O7 Digital vous aide à mettre en place des solutions fiables et performantes.",
   primaryLabel: "Contactez-nous",
-  secondaryLabel: "Lien placeholder",
+  secondaryLabel: "Contactez-nous",
 };
 
 export const o7AboutHero = {
   eyebrow: "À propos",
-  title: "Titre & sous-titre en attente",
+  title: "O7 Digital : votre partenaire technologique",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere, ligula eget dictum placerat, nunc lorem feugiat dui, ut suscipit orci lacus id arcu.",
+    "Ingénierie, stratégie et solutions digitales à haute performance.",
 };
 
 export const o7AboutDetails = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l’optimisation de la performance technique et opérationnelle. Nous accompagnons les entreprises en France, au Mexique et au Canada dans la conception, la construction et l’évolution de leurs plateformes digitales.",
+  "Notre expertise couvre l’ensemble de la chaîne de valeur : stratégie digitale et architecture moderne, développement web haute performance, intégration de CMS headless et backends, intelligence artificielle et automatisation, SEO technique avancé, infogérance et support.",
 ];
 
 export const o7Methodology = [
   {
-    title: "Méthodologie placeholder",
+    title: "Mission",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Notre mission est d’aider les organisations à déployer des solutions fiables, rapides et évolutives, capables de soutenir leur croissance et de renforcer leur compétitivité.",
   },
   {
-    title: "Mission placeholder",
+    title: "Mission (suite)",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Notre mission est d’aider les organisations à déployer des solutions fiables, rapides et évolutives, capables de soutenir leur croissance et de renforcer leur compétitivité.",
   },
   {
-    title: "Vision placeholder",
+    title: "Vision",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Nous croyons en une technologie simple, efficace, mesurable et entièrement adaptée aux besoins business. Chaque projet doit être propre, scalable, sécurisé et orienté résultats.",
   },
 ];
 
 export const o7Expertise = [
   {
-    title: "Expertise placeholder 01",
+    title: "20+ ans d’expérience en systèmes d’information et développement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "20+ ans d’expérience en systèmes d’information et développement",
   },
   {
-    title: "Expertise placeholder 02",
+    title: "Expertise internationale (France, Mexique, Canada)",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Expertise internationale (France, Mexique, Canada)",
   },
   {
-    title: "Expertise placeholder 03",
+    title: "Maîtrise des stacks modernes (React, Next.js, Astro, Node.js)",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Maîtrise des stacks modernes (React, Next.js, Astro, Node.js)",
   },
   {
-    title: "Expertise placeholder 04",
+    title: "Spécialisation headless : DatoCMS, Directus, Strapi, Supabase",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Spécialisation headless : DatoCMS, Directus, Strapi, Supabase",
   },
   {
-    title: "Expertise placeholder 05",
-    description:
-      "Integer vel lorem leo. Curabitur vitae sapien ut libero venenatis faucibus nec quis nibh.",
+    title: "Intégration IA générative et automatisation",
+    description: "Intégration IA générative et automatisation",
   },
   {
-    title: "Expertise placeholder 06",
-    description:
-      "Phasellus accumsan urna eu sem fermentum, at facilisis lorem blandit lorem ipsum dolor sit amet.",
+    title: "Gouvernance et conseil auprès des directions IT et DG",
+    description: "Gouvernance et conseil auprès des directions IT et DG",
   },
 ];
 

@@ -9,9 +9,9 @@ export default function Methodology() {
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              eyebrow="Méthodologie / Mission / Vision"
-              title="Piliers en placeholders"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nisl et neque accumsan faucibus."
+              eyebrow="Mission"
+              title="Mission"
+              description="Notre mission : déployer des solutions fiables, rapides et évolutives pour soutenir la croissance de nos clients."
             />
           </div>
         </div>

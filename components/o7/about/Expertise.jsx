@@ -10,8 +10,8 @@ export default function Expertise() {
           <div className="col-lg-12">
             <SectionHeader
               eyebrow="Expertise"
-              title="Champs d'expertise en placeholders"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti in lorem ipsum."
+              title="Expertise"
+              description=""
             />
           </div>
         </div>

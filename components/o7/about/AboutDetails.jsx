@@ -10,9 +10,9 @@ export default function AboutDetails() {
           <div className="col-lg-8 offset-lg-2">
             <SectionHeader
               align="center"
-              eyebrow="Présentation détaillée"
-              title="Bloc de présentation en placeholders"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique lorem ut dui dignissim, vitae porta nisi hendrerit."
+              eyebrow="Présentation"
+              title="Présentation"
+              description=""
             >
               <div className="mt--10">
                 {o7AboutDetails.map((paragraph, index) => (
