@@ -9,9 +9,9 @@ export default function Methodology() {
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              eyebrow="Mission"
-              title="Mission"
-              description="Notre mission : déployer des solutions fiables, rapides et évolutives pour soutenir la croissance de nos clients."
+              eyebrow="Mission, Vision et Valeurs"
+              title="Mission, Vision et Valeurs"
+              description="Notre engagement : fournir des solutions fiables, performantes et alignées sur les objectifs de nos clients."
             />
           </div>
         </div>

@@ -97,17 +97,17 @@ export const o7Methodology = [
   {
     title: "Mission",
     description:
-      "Notre mission est d’aider les organisations à déployer des solutions fiables, rapides et évolutives, capables de soutenir leur croissance et de renforcer leur compétitivité.",
-  },
-  {
-    title: "Mission (suite)",
-    description:
-      "Notre mission est d’aider les organisations à déployer des solutions fiables, rapides et évolutives, capables de soutenir leur croissance et de renforcer leur compétitivité.",
+      "Notre mission est d’accompagner les organisations dans la conception, le développement et l’optimisation de solutions digitales fiables, rapides et évolutives. Nous aidons nos clients à renforcer leur performance, leur efficacité opérationnelle et leur compétitivité grâce à une technologie parfaitement alignée sur leurs besoins.",
   },
   {
     title: "Vision",
     description:
-      "Nous croyons en une technologie simple, efficace, mesurable et entièrement adaptée aux besoins business. Chaque projet doit être propre, scalable, sécurisé et orienté résultats.",
+      "Nous croyons en une technologie simple, mesurable, sécurisée et durable. Chaque plateforme doit être construite avec une architecture propre, moderne et évolutive, capable d’accompagner la croissance et d’offrir des résultats concrets, mesurables et pérennes.",
+  },
+  {
+    title: "Valeurs",
+    description:
+      "Excellence technique, transparence, fiabilité et engagement. Nous privilégions la simplicité, la performance, la qualité du code et une relation client fondée sur la confiance, la réactivité et le professionnalisme.",
   },
 ];
 
