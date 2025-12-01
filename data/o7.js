@@ -74,10 +74,10 @@ export const o7HomeServices = [
 
 export const o7CtaBlock = {
   eyebrow: "Prise de contact",
-  title: "Titre de CTA en attente",
+  title: "Travaillons ensemble",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus sed lorem bibendum maximus.",
-  primaryLabel: "CTA placeholder",
+    "Vous souhaitez développer un nouveau site, optimiser votre infrastructure digitale, moderniser votre système ou intégrer l'IA dans vos opérations ? O7 Digital vous accompagne avec expertise, rigueur et efficacité.",
+  primaryLabel: "Contactez-nous",
   secondaryLabel: "Lien placeholder",
 };
 
