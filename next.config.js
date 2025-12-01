@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
   async redirects() {
     return [
       {
         source: '/',
-        destination: '/index-international-consulting',
-        permanent: false, // passe à true (308) si tu veux un redirect permanent pour SEO
+        destination: '/index-digital-agency',
+        permanent: false,
       },
     ];
   },
