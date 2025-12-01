@@ -4,7 +4,8 @@ import { o7AboutHero } from "@/data/o7";
 export default function AboutHero() {
   return (
     <div
-      className="slider-area slider-style-1 variation-default height-650 bg_image bg_image--12"
+      className="slider-area slider-style-1 variation-default height-650 bg_image"
+      style={{ backgroundImage: 'url(/assets/hammer-group.jpg)' }}
       data-black-overlay={7}
     >
       <div className="container">

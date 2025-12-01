@@ -73,10 +73,10 @@ export const o7HomeServices = [
 ];
 
 export const o7CtaBlock = {
-  eyebrow: "Prise de contact",
-  title: "Parlons de votre projet",
+  eyebrow: "Accompagnement",
+  title: "Besoin d’un accompagnement technologique ?",
   description:
-    "Besoin d’un accompagnement technologique ou d’une expertise digitale ? O7 Digital vous aide à mettre en place des solutions fiables et performantes.",
+    "O7 Digital vous aide à concevoir, déployer et optimiser des solutions fiables et performantes.",
   primaryLabel: "Contactez-nous",
   secondaryLabel: "Contactez-nous",
 };
@@ -145,71 +145,191 @@ export const o7Expertise = [
 ];
 
 export const o7ServicesIntro = {
-  eyebrow: "Nos expertises",
-  title: "Introduction services en attente",
+  eyebrow: "Services",
+  title: "Nos Services",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "O7 Digital accompagne les entreprises dans leurs projets technologiques, digitaux et opérationnels grâce à une combinaison d’ingénierie moderne, de conseils stratégiques, de développement web, d’infogérance et de solutions d’infrastructure. Nous intervenons en France, au Mexique et au Canada.",
 };
 
 export const o7ServicesMain = [
   {
-    title: "Service principal 01",
+    title: "Stratégie digitale & CTO externalisé",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    iconClass: "feather-box",
+      "Pilotage technologique, audit, architecture et gouvernance pour aligner la technologie sur vos objectifs business.",
+    iconClass: "feather-cpu",
   },
   {
-    title: "Service principal 02",
+    title: "Développement Web moderne",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      "Sites rapides et sécurisés avec React, Next.js et Astro. Solutions corporate, hôtellerie, immobilier et e-commerce.",
+    iconClass: "feather-zap",
+  },
+  {
+    title: "CMS headless & Backends",
+    description:
+      "Intégration de DatoCMS, Directus, Strapi et Supabase. API sécurisées, gestion multilingue et architectures scalables.",
+    iconClass: "feather-database",
+  },
+  {
+    title: "IA & Automatisation",
+    description:
+      "Agents IA, automatisation intelligente, extraction de données et optimisation complète de vos processus internes.",
     iconClass: "feather-activity",
   },
   {
-    title: "Service principal 03",
+    title: "SEO & Performance digitale",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    iconClass: "feather-wifi",
+      "SEO technique, optimisation structurelle, contenus, GA4, Search Console et suivi des performances.",
+    iconClass: "feather-trending-up",
   },
   {
-    title: "Service principal 04",
+    title: "Infogérance & Support",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    iconClass: "feather-server",
-  },
-  {
-    title: "Service principal 05",
-    description:
-      "Integer vel lorem leo. Curabitur vitae sapien ut libero venenatis faucibus nec quis nibh.",
-    iconClass: "feather-figma",
-  },
-  {
-    title: "Service principal 06",
-    description:
-      "Phasellus accumsan urna eu sem fermentum, at facilisis lorem blandit lorem ipsum dolor sit amet.",
+      "Support utilisateurs, maintenance, supervision, sauvegardes, sécurité, Microsoft 365 et Google Workspace.",
     iconClass: "feather-headphones",
   },
 ];
 
-export const o7InfogeranceSupport = Array.from({ length: 12 }, (_, index) => ({
-  title: `Infogérance & support ${String(index + 1).padStart(2, "0")}`,
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  iconClass: "feather-monitor",
-}));
+export const o7InfogeranceSupport = [
+  {
+    title: "Gestion complète du parc informatique",
+    description:
+      "Maintenance, supervision, optimisation et administration des postes, serveurs, licences et périphériques.",
+    iconClass: "feather-monitor",
+  },
+  {
+    title: "Support technique utilisateurs",
+    description:
+      "Assistance de proximité, résolution d’incidents, installations, diagnostics et accompagnement quotidien.",
+    iconClass: "feather-headphones",
+  },
+  {
+    title: "Maintenance préventive",
+    description:
+      "Surveillance continue, correctifs, mises à jour, actions préventives et optimisation des environnements.",
+    iconClass: "feather-clock",
+  },
+  {
+    title: "Administration serveurs",
+    description:
+      "Installation, configuration, virtualisation, stockage, haute disponibilité et monitoring avancé.",
+    iconClass: "feather-server",
+  },
+  {
+    title: "Administration réseaux",
+    description:
+      "Switches, routeurs, VLAN, WiFi professionnel, QoS, VPN et gestion de performances réseau.",
+    iconClass: "feather-wifi",
+  },
+  {
+    title: "Cybersécurité",
+    description:
+      "Firewalls, contrôle d’accès, durcissement systèmes, protection anti-malware, audits, sauvegardes sécurisées.",
+    iconClass: "feather-shield",
+  },
+  {
+    title: "Sauvegardes & restauration",
+    description:
+      "Solutions locales et cloud, supervision, tests réguliers et plan de reprise après sinistre.",
+    iconClass: "feather-rotate-ccw",
+  },
+  {
+    title: "Monitoring & alertes",
+    description:
+      "Surveillance automatisée, alertes immédiates, détection proactive d’incidents et rapports.",
+    iconClass: "feather-bell",
+  },
+  {
+    title: "Téléphonie VoIP professionnelle",
+    description:
+      "Installation, configuration, extensions, IVR, files d’attente, enregistrement d’appels et intégration CRM.",
+    iconClass: "feather-phone-call",
+  },
+  {
+    title: "Conception & installation d’infrastructures",
+    description:
+      "Analyse des besoins, architecture, déploiement physique, migration, documentation complète.",
+    iconClass: "feather-tool",
+  },
+  {
+    title: "Câblage structuré (informatique & fibre)",
+    description:
+      "Installation et certification de câblage réseau, baie de brassage, fibre optique et optimisation des armoires.",
+    iconClass: "feather-sliders",
+  },
+  {
+    title: "Solutions énergétiques & protection électrique",
+    description:
+      "UPS, onduleurs, stabilisateurs, protection contre surtensions, continuité électrique et sécurité énergétique.",
+    iconClass: "feather-zap",
+  },
+];
 
-export const o7DirectionSupport = Array.from({ length: 5 }, (_, index) => ({
-  title: `Appui DSI ${String(index + 1).padStart(2, "0")}`,
-  description:
-    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  iconClass: "feather-briefcase",
-}));
+export const o7DirectionSupport = [
+  {
+    title: "Appui DSI / Renfort opérationnel",
+    description:
+      "Pilotage IT, supervision des projets, coordination des prestataires, gestion des priorités.",
+    iconClass: "feather-briefcase",
+  },
+  {
+    title: "Gestion de projet & Maîtrise d’ouvrage",
+    description:
+      "Cadrage, analyse fonctionnelle, communication, documentation, suivi qualité et gestion budgétaire.",
+    iconClass: "feather-clipboard",
+  },
+  {
+    title: "Décisions technologiques & roadmap",
+    description:
+      "Benchmark, recommandations, alignement stratégique et planification long terme.",
+    iconClass: "feather-map",
+  },
+  {
+    title: "Analyse des risques & conformité",
+    description:
+      "Évaluation des risques IT, continuité, sécurité, conformité et politique de gouvernance.",
+    iconClass: "feather-alert-octagon",
+  },
+  {
+    title: "Pilotage des fournisseurs",
+    description:
+      "Négociation, supervision, contrôle qualité et coordination technique.",
+    iconClass: "feather-link-2",
+  },
+];
 
-export const o7ConsultingSupport = Array.from({ length: 5 }, (_, index) => ({
-  title: `Conseil & accompagnement ${String(index + 1).padStart(2, "0")}`,
-  description:
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  iconClass: "feather-compass",
-}));
+export const o7ConsultingSupport = [
+  {
+    title: "Audit digital complet",
+    description:
+      "Analyse infrastructure, sécurité, performance, organisation et présence digitale.",
+    iconClass: "feather-search",
+  },
+  {
+    title: "Optimisation des processus",
+    description:
+      "Rationalisation, automatisation, digitalisation des flux internes et réduction des coûts.",
+    iconClass: "feather-sliders",
+  },
+  {
+    title: "Sélection technologique",
+    description:
+      "Choix des outils, produits et prestataires adaptés à vos objectifs business.",
+    iconClass: "feather-target",
+  },
+  {
+    title: "Planification budgétaire IT",
+    description:
+      "Projection des coûts, priorisation, budget annuel et investissement stratégique.",
+    iconClass: "feather-pie-chart",
+  },
+  {
+    title: "Gouvernance & organisation IT",
+    description:
+      "Politiques internes, documentation, bonnes pratiques et structuration opérationnelle.",
+    iconClass: "feather-grid",
+  },
+];
 
 export const o7ContactInfo = {
   title: "Titre de contact en attente",

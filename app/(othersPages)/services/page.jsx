@@ -12,9 +12,9 @@ import {
 } from "@/data/o7";
 
 export const metadata = {
-  title: "O7 Digital – Services (placeholders)",
+  title: "O7 Digital – Services",
   description:
-    "Structure de la page services O7 Digital avec sections placeholders pour migration future.",
+    "Services O7 Digital : stratégie digitale, développement web, IA, SEO, infogérance, infrastructures, gouvernance IT et conseil.",
 };
 
 export default function Page() {
@@ -28,26 +28,26 @@ export default function Page() {
       <ServicesIntro />
       <ServiceSection
         eyebrow="Services principaux"
-        title="6 services principaux (placeholders)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi in faucibus sapien."
+        title="6 services principaux"
+        description="Stratégie, développement, IA, SEO et infogérance pour soutenir vos projets digitaux."
         items={o7ServicesMain}
       />
       <ServiceSection
         eyebrow="Infogérance & Support"
-        title="12 cartes placeholders"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title="Infogérance & services d’exploitation"
+        description="Support, administration, infrastructures, réseaux, sécurité, VoIP et continuité énergétique."
         items={o7InfogeranceSupport}
       />
       <ServiceSection
         eyebrow="Appui à Direction Informatique"
-        title="5 cartes placeholders"
-        description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        title="Appui DSI, MOA, gouvernance"
+        description="Renfort opérationnel, décisions technologiques, gestion de projets et maîtrise des risques."
         items={o7DirectionSupport}
       />
       <ServiceSection
         eyebrow="Conseil & Accompagnement"
-        title="5 cartes placeholders"
-        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        title="Conseil & accompagnement"
+        description="Audits, optimisation des processus, sélection technologique, budget et gouvernance IT."
         items={o7ConsultingSupport}
       />
       <CtaSection anchorId="cta-services" />
