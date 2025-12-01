@@ -24,13 +24,12 @@ export const o7HeroSlides = [
 
 export const o7HomeIntro = {
   eyebrow: "Présentation O7 Digital",
-  title: "Titre de présentation en attente",
+  title: "O7 Digital : ingénierie, stratégie et performance digitale",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere lorem quis libero molestie, sed cursus lacus luctus.",
+    "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l'optimisation de la performance. Nous accompagnons les entreprises en France, au Mexique et au Canada dans la conception, la mise en œuvre et l'évolution de leurs solutions digitales, en combinant stratégie, ingénierie et innovation.",
   bullets: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Notre expertise couvre plusieurs domaines clés : stratégie digitale, développement web haute performance, CMS headless, intelligence artificielle, automatisation, SEO technique et optimisation continue.",
+    "Nous aidons les organisations à créer des plateformes rapides, fiables, sécurisées et orientées résultats. O7 Digital : la technologie au service de votre croissance.",
   ],
 };
 

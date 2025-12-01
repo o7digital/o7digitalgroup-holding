@@ -26,21 +26,17 @@ export default function HomeIntro() {
           <div className="col-lg-6 mt_md--30 mt_sm--30">
             <div className="service service__style--1 bg-color-blackest radius text-left rbt-border">
               <div className="content">
-                <h4 className="title w-600">Bloc descriptif placeholder</h4>
+                <h4 className="title w-600">Notre approche</h4>
                 <p className="description b1 mb--0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
+                  Nous développons des solutions modernes, rapides et évolutives, basées sur des technologies fiables et adaptées à vos objectifs. Chaque projet s'appuie sur une architecture propre, sécurisée et orientée performance.
                 </p>
               </div>
             </div>
             <div className="service service__style--1 bg-color-blackest radius text-left rbt-border mt--20">
               <div className="content">
-                <h4 className="title w-600">Informations clés placeholder</h4>
+                <h4 className="title w-600">Domaines d'expertise</h4>
                 <p className="description b1 mb--0">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit.
+                  Stratégie digitale, développement web (React, Next.js, Astro), CMS headless, IA et automatisation, SEO technique, infogérance et support. Un accompagnement complet, du diagnostic à la mise en production.
                 </p>
               </div>
             </div>
