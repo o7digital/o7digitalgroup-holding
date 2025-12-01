@@ -15,9 +15,6 @@ export default function Copywrite2() {
                 <li>
                   <a href="#">Terms And Condition</a>
                 </li>
-                <li>
-                  <Link href={`/contact`}>Contact Us</Link>
-                </li>
               </ul>
             </div>
           </div>
@@ -37,8 +34,7 @@ export default function Copywrite2() {
           <div className="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--20 mt_sm--20">
             <div className="copyright-right text-center text-lg-right">
               <p className="copyright-text">
-                Copyright All rights reserved © {new Date().getFullYear()} Doob
-                React Template.
+                © o7 Digital
               </p>
             </div>
           </div>

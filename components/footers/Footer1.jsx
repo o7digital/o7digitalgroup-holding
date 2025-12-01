@@ -45,9 +45,6 @@ export default function Footer1() {
                   <li>
                     <a href="#">Terms And Condition</a>
                   </li>
-                  <li>
-                    <Link href={`/contact`}>Contact Us</Link>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -72,14 +69,7 @@ export default function Footer1() {
             <div className="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--20 mt_sm--20">
               <div className="copyright-right text-center text-lg-end">
                 <p className="copyright-text">
-                  © Copyright All rights reserved{" "}
-                  <a
-                    target="_blank"
-                    className="rainbow-themes-link"
-                    href="https://themeforest.net/user/rainbow-themes/portfolio"
-                  >
-                    Rainbow-Themes
-                  </a>
+                  © o7 Digital
                 </p>
               </div>
             </div>
