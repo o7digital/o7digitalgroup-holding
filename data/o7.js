@@ -70,6 +70,45 @@ export const o7HomeServices = [
       "Support utilisateurs, maintenance préventive, supervision, cybersécurité, sauvegardes et gestion Microsoft 365 / Google Workspace.",
     iconClass: "feather-command",
   },
+  {
+    title: "Design Graphique & Digital",
+    description:
+      "Notre division Design Graphique & Digital accompagne les entreprises dans la création d’identités visuelles fortes et cohérentes. Nous concevons des univers graphiques professionnels pour sites web, réseaux sociaux, campagnes marketing, présentations corporate et branding complet.",
+    iconClass: "feather-pen-tool",
+    align: "text-left",
+    points: [
+      "Identité visuelle & branding",
+      "Direction artistique",
+      "UI/UX Design web & mobile",
+      "Templates réseaux sociaux",
+      "Pack visuels professionnels",
+      "Design marketing",
+      "Guidelines graphiques",
+    ],
+    image: {
+      src: "/images/placeholder.jpg",
+      alt: "Design Graphique",
+    },
+  },
+  {
+    title: "Animations & Motion Design",
+    description:
+      "Nous produisons des animations professionnelles qui renforcent l’impact visuel de votre marque. Motion graphics, vidéos explicatives, animations de logo et contenus dynamiques pour le digital.",
+    iconClass: "feather-play-circle",
+    align: "text-left",
+    points: [
+      "Motion design réseaux sociaux",
+      "Animations de logo",
+      "Vidéos explicatives (Explainer videos)",
+      "Contenus animés pour sites web",
+      "Micro-interactions & transitions",
+      "Reels professionnels",
+    ],
+    image: {
+      src: "/images/placeholder.jpg",
+      alt: "Motion Design",
+    },
+  },
 ];
 
 export const o7CtaBlock = {

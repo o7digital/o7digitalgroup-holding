@@ -24,7 +24,11 @@ export default function HomeServices() {
               data-sal-duration={600}
               data-sal-delay={index * 50}
             >
-              <div className="service service__style--1 icon-circle-style text-center">
+              <div
+                className={`service service__style--1 icon-circle-style ${
+                  service.align || "text-center"
+                }`}
+              >
                 <div className="icon">
                   <i className={service.iconClass} />
                 </div>
@@ -35,7 +39,23 @@ export default function HomeServices() {
                   <p className="description b1 color-gray mb--0">
                     {service.description}
                   </p>
+                  {service.points && (
+                    <ul className="list-style--1 text-start mt--15 mb--0">
+                      {service.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
+                {service.image && (
+                  <div className="image mt--20">
+                    <img
+                      src={service.image.src}
+                      alt={service.image.alt}
+                      className="w-100 radius"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           ))}
