@@ -39,36 +39,66 @@ export const o7HomeServices = [
     description:
       "Audit, architecture et pilotage technologique. Nous alignons votre stratégie digitale avec vos objectifs business pour garantir une évolution cohérente et performante.",
     iconClass: "feather-cpu",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-05.jpg",
+      alt: "Atelier de stratégie digitale",
+    },
   },
   {
     title: "Développement Web moderne",
     description:
       "Création de sites rapides, sécurisés et optimisés SEO avec React, Next.js et Astro. Solutions pour entreprises, hôtellerie, immobilier et e-commerce.",
     iconClass: "feather-zap",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-01.jpg",
+      alt: "Développement web moderne",
+    },
   },
   {
     title: "CMS headless & Backends",
     description:
       "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties.",
     iconClass: "feather-trending-up",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-02.jpg",
+      alt: "Architecture headless et API",
+    },
   },
   {
     title: "IA & Automatisation",
     description:
       "Agents IA, automatisation des processus, extraction et traitement des données, intégration IA dans vos outils internes et votre site web.",
     iconClass: "feather-layers",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-03.jpg",
+      alt: "Workflows IA et automatisation",
+    },
   },
   {
     title: "SEO & Performance digitale",
     description:
       "SEO technique, optimisation structurelle, mots clés, GA4, Search Console et suivi de performance. Visibilité durable et résultats mesurables.",
     iconClass: "feather-shield",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-04.jpg",
+      alt: "Tableau de bord de performance SEO",
+    },
   },
   {
     title: "Infogérance & Support",
     description:
       "Support utilisateurs, maintenance préventive, supervision, cybersécurité, sauvegardes et gestion Microsoft 365 / Google Workspace.",
     iconClass: "feather-command",
+    align: "text-left",
+    image: {
+      src: "/assets/images/portfolio/portfolio-06.jpg",
+      alt: "Support et infogérance",
+    },
   },
   {
     title: "Design Graphique & Digital",
@@ -107,6 +137,23 @@ export const o7HomeServices = [
     image: {
       src: "/design/design-digital.png",
       alt: "Animations et motion design",
+    },
+  },
+  {
+    title: "Design 3D & environnements",
+    description:
+      "Conception 3D pour vos produits, espaces et expériences : modélisation, rendus photoréalistes, motion 3D et environnements immersifs.",
+    iconClass: "feather-cube",
+    align: "text-left",
+    points: [
+      "Modélisation & texturing",
+      "Rendus photoréalistes",
+      "Motion 3D & titres animés",
+      "Environnements virtuels",
+    ],
+    image: {
+      src: "/assets/images/about/about-4.png",
+      alt: "Design 3D et environnements immersifs",
     },
   },
 ];

@@ -10,8 +10,8 @@ export default function HomeServices() {
           <div className="col-lg-12">
             <SectionHeader
               eyebrow="Services phares"
-              title="6 services principaux en placeholders"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et nisi ac nibh porttitor volutpat."
+              title="9 services principaux"
+              description="Stratégie, développement, IA, SEO, infogérance, design graphique, motion design et 3D pour couvrir vos besoins digitaux."
             />
           </div>
         </div>
