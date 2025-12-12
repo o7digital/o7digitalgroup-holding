@@ -6,6 +6,10 @@ import { o7ContactInfo } from "@/data/o7";
 
 export default function ContactContent() {
   const [submitted, setSubmitted] = useState(false);
+  const phoneValue = o7ContactInfo.phone?.trim();
+  const phoneLink = phoneValue
+    ? `tel:${phoneValue.replace(/\s+/g, "")}`
+    : null;
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -48,9 +52,13 @@ export default function ContactContent() {
               </div>
               <div className="inner">
                 <h4 className="title">Téléphone</h4>
-                <p>
-                  <a href="#">{o7ContactInfo.phone}</a>
-                </p>
+                {phoneLink ? (
+                  <p>
+                    <a href={phoneLink}>{phoneValue}</a>
+                  </p>
+                ) : (
+                  <p className="mb--0">Disponible sur demande</p>
+                )}
               </div>
             </div>
           </div>

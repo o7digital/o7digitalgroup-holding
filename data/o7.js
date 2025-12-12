@@ -26,7 +26,7 @@ export const o7HomeIntro = {
   eyebrow: "Présentation O7 Digital",
   title: "O7 Digital : ingénierie, stratégie et performance digitale",
   description:
-    "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l'optimisation de la performance. Nous accompagnons les entreprises en France, au Mexique et au Canada dans la conception, la mise en œuvre et l'évolution de leurs solutions digitales, en combinant stratégie, ingénierie et innovation.",
+    "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l'optimisation de la performance. Nous accompagnons les entreprises en France, en Amérique du Nord et en Amérique Latine dans la conception, la mise en œuvre et l'évolution de leurs solutions digitales, en combinant stratégie, ingénierie et innovation.",
   bullets: [
     "Notre expertise couvre plusieurs domaines clés : stratégie digitale, développement web haute performance, CMS headless, intelligence artificielle, automatisation, SEO technique et optimisation continue.",
     "Nous aidons les organisations à créer des plateformes rapides, fiables, sécurisées et orientées résultats. O7 Digital : la technologie au service de votre croissance.",
@@ -128,7 +128,7 @@ export const o7AboutHero = {
 };
 
 export const o7AboutDetails = [
-  "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l’optimisation de la performance technique et opérationnelle. Nous accompagnons les entreprises en France, au Mexique et au Canada dans la conception, la construction et l’évolution de leurs plateformes digitales.",
+  "O7 Digital est une agence spécialisée dans la transformation digitale, le développement web moderne et l’optimisation de la performance technique et opérationnelle. Nous accompagnons les entreprises en France, en Amérique du Nord et en Amérique Latine dans la conception, la construction et l’évolution de leurs plateformes digitales.",
   "Notre expertise couvre l’ensemble de la chaîne de valeur : stratégie digitale et architecture moderne, développement web haute performance, intégration de CMS headless et backends, intelligence artificielle et automatisation, SEO technique avancé, infogérance et support.",
 ];
 
@@ -187,7 +187,7 @@ export const o7ServicesIntro = {
   eyebrow: "Services",
   title: "Nos Services",
   description:
-    "O7 Digital accompagne les entreprises dans leurs projets technologiques, digitaux et opérationnels grâce à une combinaison d’ingénierie moderne, de conseils stratégiques, de développement web, d’infogérance et de solutions d’infrastructure. Nous intervenons en France, au Mexique et au Canada.",
+    "O7 Digital accompagne les entreprises dans leurs projets technologiques, digitaux et opérationnels grâce à une combinaison d’ingénierie moderne, de conseils stratégiques, de développement web, d’infogérance et de solutions d’infrastructure. Nous intervenons en France, en Amérique du Nord et en Amérique Latine.",
 };
 
 export const o7ServicesMain = [
@@ -375,6 +375,6 @@ export const o7ContactInfo = {
   description:
     "Nous sommes à votre disposition pour répondre à vos besoins technologiques et vous accompagner dans vos projets digitaux. Que vous souhaitiez développer une plateforme, optimiser votre infrastructure, moderniser vos systèmes, ou intégrer l’IA dans vos opérations, nous vous répondons rapidement et efficacement. Remplissez le formulaire ou contactez-nous directement.",
   email: "contact@o7digitalconsulting.com",
-  phone: "+xx xx xx xx xx",
-  location: "France / Mexique / Canada",
+  phone: "",
+  location: "France / Amérique du Nord / Amérique Latine",
 };
