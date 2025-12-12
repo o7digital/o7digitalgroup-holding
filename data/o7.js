@@ -86,8 +86,8 @@ export const o7HomeServices = [
       "Guidelines graphiques",
     ],
     image: {
-      src: "/images/placeholder.jpg",
-      alt: "Design Graphique",
+      src: "/design/design-graph.png",
+      alt: "Création graphique et design digital",
     },
   },
   {
@@ -105,8 +105,8 @@ export const o7HomeServices = [
       "Reels professionnels",
     ],
     image: {
-      src: "/images/placeholder.jpg",
-      alt: "Motion Design",
+      src: "/design/design-digital.png",
+      alt: "Animations et motion design",
     },
   },
 ];
