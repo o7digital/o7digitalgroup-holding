@@ -374,7 +374,7 @@ export const o7ContactInfo = {
   title: "Contactez O7 Digital",
   description:
     "Nous sommes à votre disposition pour répondre à vos besoins technologiques et vous accompagner dans vos projets digitaux. Que vous souhaitiez développer une plateforme, optimiser votre infrastructure, moderniser vos systèmes, ou intégrer l’IA dans vos opérations, nous vous répondons rapidement et efficacement. Remplissez le formulaire ou contactez-nous directement.",
-  email: "contact@o7digitalconsulting.com",
+  email: "info@o7digital.com",
   phone: "",
   location: "France / Amérique du Nord / Amérique Latine",
 };
