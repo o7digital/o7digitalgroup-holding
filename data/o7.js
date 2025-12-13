@@ -37,7 +37,7 @@ export const o7HomeServices = [
   {
     title: "Stratégie digitale & CTO externalisé",
     description:
-      "Audit, architecture et pilotage technologique. Nous alignons votre stratégie digitale avec vos objectifs business pour garantir une évolution cohérente et performante.",
+      "Audit, architecture et pilotage technologique. Nous alignons votre stratégie digitale avec vos objectifs business pour garantir une évolution cohérente et performante. Architecture cible, roadmaps, gouvernance des partenaires et suivi des KPI pour sécuriser vos décisions.",
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
@@ -49,9 +49,10 @@ export const o7HomeServices = [
   {
     title: "Développement Web moderne",
     description:
-      "Création de sites rapides, sécurisés et optimisés SEO avec React, Next.js et Astro. Solutions pour entreprises, hôtellerie, immobilier et e-commerce.",
+      "Création de sites rapides, sécurisés et optimisés SEO avec React, Next.js et Astro. Solutions pour entreprises, hôtellerie, immobilier et e-commerce. Performance Core Web Vitals, accessibilité, tests automatisés et intégration analytics dès la conception.",
     iconClass: "feather-zap",
     align: "text-left",
+    spanTwo: true,
     image: {
       src: "/strategie/dev-web.png",
       alt: "Développement web moderne",
@@ -62,7 +63,7 @@ export const o7HomeServices = [
   {
     title: "CMS headless & Backends",
     description:
-      "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties.",
+      "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties. Modélisation de contenu, permissions fines, observabilité et plans de montée en charge.",
     iconClass: "feather-trending-up",
     align: "text-left",
   },

@@ -25,7 +25,9 @@ export default function HomeServices() {
               data-sal-delay={index * 50}
             >
               <div
-                className={`service service__style--1 icon-circle-style ${
+                className={`service service__style--1 icon-circle-style home-service-card ${
+                  service.spanTwo ? "service-span-two" : ""
+                } ${
                   service.align || "text-center"
                 }`}
               >
@@ -58,7 +60,7 @@ export default function HomeServices() {
                       style={
                         service.image.width || service.image.height
                           ? {
-                              width: service.image.width || "100%",
+                              ...(service.image.width ? { width: service.image.width } : {}),
                               marginInline: "auto",
                               display: "block",
                               ...(service.image.height
