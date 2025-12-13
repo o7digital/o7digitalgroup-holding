@@ -54,7 +54,7 @@ export const o7HomeServices = [
     image: {
       src: "/assets/images/portfolio/portfolio-01.jpg",
       alt: "Développement web moderne",
-      width: "82%",
+      width: "90%",
     },
   },
   {
@@ -63,11 +63,6 @@ export const o7HomeServices = [
       "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties.",
     iconClass: "feather-trending-up",
     align: "text-left",
-    image: {
-      src: "/assets/images/portfolio/portfolio-01.jpg",
-      alt: "Architecture headless et API",
-      width: "82%",
-    },
   },
   {
     title: "IA & Automatisation",
