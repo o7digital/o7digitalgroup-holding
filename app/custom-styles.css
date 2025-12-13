@@ -21,3 +21,19 @@
         max-width: 100%;
     }
 }
+
+/* Alignement des cartes de la page services */
+.service-wrapper .col-lg-4,
+.service-wrapper .col-md-6 {
+    display: flex;
+}
+
+.service-wrapper .service {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-wrapper .service .content {
+    flex-grow: 1;
+}

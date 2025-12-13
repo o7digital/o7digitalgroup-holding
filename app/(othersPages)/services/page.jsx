@@ -28,8 +28,8 @@ export default function Page() {
       <ServicesIntro />
       <ServiceSection
         eyebrow="Services principaux"
-        title="6 services principaux"
-        description="Stratégie, développement, IA, SEO et infogérance pour soutenir vos projets digitaux."
+        title="9 services principaux"
+        description="Stratégie, développement, IA, SEO, infogérance, design graphique, motion design et 3D pour couvrir vos besoins digitaux."
         items={o7ServicesMain}
       />
       <ServiceSection
@@ -40,7 +40,7 @@ export default function Page() {
       />
       <ServiceSection
         eyebrow="Appui à Direction Informatique"
-        title="Appui DSI, MOA, gouvernance"
+        title="Appui DSI, MOA, Gouvernance"
         description="Renfort opérationnel, décisions technologiques, gestion de projets et maîtrise des risques."
         items={o7DirectionSupport}
       />

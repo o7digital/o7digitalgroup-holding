@@ -277,6 +277,24 @@ export const o7ServicesMain = [
       "Support utilisateurs, maintenance, supervision, sauvegardes, sécurité, Microsoft 365 et Google Workspace.",
     iconClass: "feather-headphones",
   },
+  {
+    title: "Design Graphique & Digital",
+    description:
+      "Identité visuelle, direction artistique, UI/UX design et création graphique professionnelle pour tous supports.",
+    iconClass: "feather-pen-tool",
+  },
+  {
+    title: "Animations & Motion Design",
+    description:
+      "Motion graphics, vidéos explicatives, animations de logo et contenus dynamiques pour renforcer votre impact visuel.",
+    iconClass: "feather-play-circle",
+  },
+  {
+    title: "Design 3D & environnements",
+    description:
+      "Modélisation 3D, rendus photoréalistes, motion 3D et environnements immersifs pour vos produits et espaces.",
+    iconClass: "feather-cube",
+  },
 ];
 
 export const o7InfogeranceSupport = [
