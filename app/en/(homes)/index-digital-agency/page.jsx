@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
 import Hero from "@/components/homes/index-international-consulting/Hero";
@@ -14,7 +15,7 @@ import {
 export const metadata = {
   title: "O7 Digital Consulting | Engineering, strategy and web development",
   description:
-    "Digital consulting agency specialised in CTO as a Service, modern web development, headless CMS, AI, SEO, design and performance.",
+    "Digital consulting agency UK & USA specializing in CTO as a Service, custom website development, DevOps consulting, cloud infrastructure, AI integration and technical SEO consulting.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/en/index-digital-agency',
     languages: {
@@ -40,6 +41,74 @@ export default function HomeEn() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
+      <Script id="ld-organization-en" type="application/ld+json" strategy="afterInteractive">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.o7digital-consulting.com/en/#organization",
+            "name": "O7 Digital Consulting",
+            "url": "https://www.o7digital-consulting.com/en",
+            "logo": "https://www.o7digital-consulting.com/logo.png",
+            "description": "Digital consulting agency UK & USA specializing in CTO as a Service, custom website development, DevOps consulting, cloud infrastructure, AI integration and technical SEO consulting.",
+            "sameAs": [
+              "https://www.linkedin.com/company/o7-digital-consulting"
+            ],
+            "areaServed": [
+              { 
+                "@type": "Country", 
+                "name": "United Kingdom"
+              },
+              { 
+                "@type": "Country", 
+                "name": "United States"
+              }
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Olivier Steineur"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Digital Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "CTO as a Service",
+                    "description": "Fractional CTO services for UK and USA companies"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Website Development",
+                    "description": "Bespoke web development services UK and USA"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "DevOps Consulting Services",
+                    "description": "Cloud infrastructure and DevOps consulting"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Technical SEO Consulting",
+                    "description": "Advanced SEO strategy and implementation"
+                  }
+                }
+              ]
+            }
+          }
+        `}
+      </Script>
       <Hero />
       <HomeIntro
         data={o7HomeIntroEn}

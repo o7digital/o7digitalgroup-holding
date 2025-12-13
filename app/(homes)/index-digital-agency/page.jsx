@@ -11,7 +11,7 @@ export const metadata = {
   title:
     "O7 Digital Consulting | Agence de consulting digital, CTO & développement web",
   description:
-    "O7 Digital Consulting est une agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.",
+    "Agence de conseil digital à Paris et Montréal spécialisée en CTO as a Service, développement web sur mesure, conseil DevOps, cloud, intégration IA et stratégie SEO avancée.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/index-digital-agency',
     languages: {
@@ -45,18 +45,65 @@ export default function Home() {
             "name": "O7 Digital Consulting",
             "url": "https://www.o7digital-consulting.com",
             "logo": "https://www.o7digital-consulting.com/logo.png",
-            "description": "Agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.",
+            "description": "Agence de conseil digital à Paris et Montréal spécialisée en CTO as a Service, développement web sur mesure, conseil DevOps, cloud, intégration IA et stratégie SEO avancée.",
             "sameAs": [
               "https://www.linkedin.com/company/o7-digital-consulting"
             ],
             "areaServed": [
+              { 
+                "@type": "City", 
+                "name": "Paris",
+                "addressCountry": "FR"
+              },
+              { 
+                "@type": "City", 
+                "name": "Montréal",
+                "addressCountry": "CA"
+              },
               { "@type": "Country", "name": "France" },
-              { "@type": "Country", "name": "Canada" },
-              { "@type": "Country", "name": "Mexico" }
+              { "@type": "Country", "name": "Canada" }
             ],
             "founder": {
               "@type": "Person",
               "name": "Olivier Steineur"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Services digitaux",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "CTO as a Service",
+                    "description": "Services de direction technique externalisée"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Développement web sur mesure",
+                    "description": "Création de sites web et applications à Paris et Montréal"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Conseil DevOps et Cloud",
+                    "description": "Conseil en infrastructure cloud et DevOps"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Stratégie SEO avancée",
+                    "description": "Optimisation SEO technique et stratégique"
+                  }
+                }
+              ]
             }
           }
         `}

@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
 import Hero from "@/components/homes/index-international-consulting/Hero";
@@ -14,7 +15,7 @@ import {
 export const metadata = {
   title: "O7 Digital Consulting | Ingeniería, estrategia y desarrollo web",
   description:
-    "Agencia de consultoría digital especializada en CTO as a Service, desarrollo web moderno, CMS headless, IA, SEO, diseño y performance.",
+    "Agencia de consultoría digital en Madrid y México especializada en CTO as a Service, desarrollo de sitios web a medida, consultoría DevOps, cloud, integración IA y estrategia SEO profesional.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/es/index-digital-agency',
     languages: {
@@ -40,6 +41,78 @@ export default function HomeEs() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
+      <Script id="ld-organization-es" type="application/ld+json" strategy="afterInteractive">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.o7digital-consulting.com/es/#organization",
+            "name": "O7 Digital Consulting",
+            "url": "https://www.o7digital-consulting.com/es",
+            "logo": "https://www.o7digital-consulting.com/logo.png",
+            "description": "Agencia de consultoría digital en Madrid y México especializada en CTO as a Service, desarrollo de sitios web a medida, consultoría DevOps, cloud, integración IA y estrategia SEO profesional.",
+            "sameAs": [
+              "https://www.linkedin.com/company/o7-digital-consulting"
+            ],
+            "areaServed": [
+              { 
+                "@type": "City", 
+                "name": "Madrid",
+                "addressCountry": "ES"
+              },
+              { 
+                "@type": "City", 
+                "name": "Ciudad de México",
+                "addressCountry": "MX"
+              },
+              { "@type": "Country", "name": "España" },
+              { "@type": "Country", "name": "México" }
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Olivier Steineur"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Servicios digitales",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "CTO as a Service",
+                    "description": "Servicios de dirección técnica externalizada"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Desarrollo de sitios web a medida",
+                    "description": "Desarrollo web personalizado en Madrid y México"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Consultoría DevOps y Cloud",
+                    "description": "Consultoría en infraestructura cloud y DevOps"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Estrategia SEO profesional",
+                    "description": "Optimización SEO técnica y estratégica"
+                  }
+                }
+              ]
+            }
+          }
+        `}
+      </Script>
       <Hero />
       <HomeIntro
         data={o7HomeIntroEs}
