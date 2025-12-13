@@ -65,9 +65,34 @@ export default function ContactContent() {
           <div className="col-lg-12 mb--40">
             <SectionHeader
               eyebrow="Contact"
-              title={o7ContactInfo.title}
-              description={o7ContactInfo.description}
+              title=""
+              description=""
             />
+            <h1 className="title w-600 mb--10 text-center">
+              Parlons de votre projet digital
+            </h1>
+            <p className="description b1 text-center mb--10">
+              Chez O7 Digital Consulting, chaque collaboration commence par un échange clair et stratégique. Que vous ayez un projet précis ou une réflexion en cours, nous prenons le temps de comprendre vos enjeux business, vos objectifs et votre contexte technologique.
+            </p>
+            <p className="description b1 text-center mb--40">
+              Nous accompagnons des dirigeants, des équipes et des organisations qui recherchent un partenaire impliqué, capable de structurer, piloter et faire évoluer leur écosystème digital dans la durée.
+            </p>
+            <div className="row">
+              <div className="col-lg-8 offset-lg-2">
+                <div className="service service__style--1 bg-color-blackest radius text-left rbt-border">
+                  <div className="content">
+                    <h4 className="title w-600 mb--10">Quand nous contacter ?</h4>
+                    <p className="description b1 mb--0">
+                      • Lancement ou refonte d’un site ou d’une plateforme digitale<br />
+                      • Besoin d’un accompagnement CTO ou direction digitale<br />
+                      • Problématiques de performance, SEO ou scalabilité<br />
+                      • Projet nécessitant design, développement et vision stratégique<br />
+                      • Volonté d’aligner le digital avec les objectifs business
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="row row--15">
@@ -119,6 +144,11 @@ export default function ContactContent() {
         </div>
 
         <div className="row mt--40 row--15">
+          <div className="col-lg-8 offset-lg-2 mb--20">
+            <p className="description b1 text-center mb--0">
+              Après un premier échange, nous vous proposons une approche claire et structurée : cadrage des besoins, analyse du contexte, recommandations et plan d’action. Chaque collaboration est pensée sur mesure, avec transparence et engagement.
+            </p>
+          </div>
           <div className="col-lg-8 offset-lg-2">
             <form
               className="contact-form-1 rainbow-dynamic-form"

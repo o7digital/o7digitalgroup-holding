@@ -4,9 +4,9 @@ import Header2 from "@/components/headers/Header2";
 import ContactContent from "@/components/o7/contact/ContactContent";
 
 export const metadata = {
-  title: "O7 Digital – Contact",
+  title: "Contact O7 Digital Consulting | Parlez de votre projet digital",
   description:
-    "Contactez O7 Digital pour vos projets digitaux : stratégie, développement web, IA, infogérance et infrastructures.",
+    "Contactez O7 Digital Consulting pour échanger sur votre projet digital, votre stratégie technologique ou votre transformation digitale. Réponse rapide et accompagnement personnalisé.",
 };
 
 export default function Page() {
