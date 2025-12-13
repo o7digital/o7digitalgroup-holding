@@ -316,11 +316,17 @@
 
 
 .home-service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
     .content {
         min-height: 240px;
+        flex-grow: 1;
     }
     .image {
-        margin-top: 24px;
+        margin-top: auto;
+        padding-top: 24px;
     }
 }
 

@@ -67,6 +67,7 @@ export default function HomeServices() {
                                 ? {
                                     height: service.image.height,
                                     objectFit: "cover",
+                                    width: "100%",
                                   }
                                 : {}),
                             }

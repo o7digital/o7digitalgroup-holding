@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "../public/assets/scss/main.scss";
 import "react-modal-video/scss/modal-video.scss";
 import "photoswipe/dist/photoswipe.css";
+import "./custom-styles.css";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 import sal from "sal.js";
