@@ -31,7 +31,7 @@ export default function Page() {
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
       <ContactContent copy={o7ContactCopyEs} />
-      <Footer2 />
+      <Footer2 lang="es" />
     </>
   );
 }

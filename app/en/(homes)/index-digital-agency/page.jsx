@@ -124,7 +124,7 @@ export default function HomeEn() {
         description="Strategy, development, AI, SEO, managed services, graphic design, motion design and 3D to cover your digital needs."
       />
       <CtaSection anchorId="cta-en" cta={o7CtaEn} />
-      <Footer2 />
+      <Footer2 lang="en" />
     </>
   );
 }

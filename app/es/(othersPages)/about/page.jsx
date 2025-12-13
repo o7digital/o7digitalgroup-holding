@@ -59,7 +59,7 @@ export default function Page() {
         paragraphs={o7ExpertiseCopyEs}
       />
       <CtaSection anchorId="cta-about-es" cta={o7CtaEs} />
-      <Footer2 />
+      <Footer2 lang="es" />
     </>
   );
 }
