@@ -118,6 +118,7 @@ export const o7HomeServices = [
     image: {
       src: "/design/design-graph.png",
       alt: "Création graphique et design digital",
+      height: "330px",
     },
   },
   {
@@ -137,6 +138,7 @@ export const o7HomeServices = [
     image: {
       src: "/design/design-digital.png",
       alt: "Animations et motion design",
+      height: "330px",
     },
   },
   {
@@ -154,6 +156,7 @@ export const o7HomeServices = [
     image: {
       src: "/strategie/design-3d.png",
       alt: "Design 3D et environnements immersifs",
+      height: "330px",
     },
   },
 ];
