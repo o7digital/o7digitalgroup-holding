@@ -74,7 +74,7 @@ export const o7HomeServices = [
     iconClass: "feather-layers",
     align: "text-left",
     image: {
-      src: "/assets/images/portfolio/portfolio-03.jpg",
+      src: "/strategie/ia-automat.png",
       alt: "Workflows IA et automatisation",
     },
   },
@@ -85,7 +85,7 @@ export const o7HomeServices = [
     iconClass: "feather-shield",
     align: "text-left",
     image: {
-      src: "/assets/images/portfolio/portfolio-04.jpg",
+      src: "/strategie/seo-perfo.png",
       alt: "Tableau de bord de performance SEO",
     },
   },
@@ -96,7 +96,7 @@ export const o7HomeServices = [
     iconClass: "feather-command",
     align: "text-left",
     image: {
-      src: "/assets/images/portfolio/portfolio-06.jpg",
+      src: "/strategie/info-support.png",
       alt: "Support et infogérance",
     },
   },
