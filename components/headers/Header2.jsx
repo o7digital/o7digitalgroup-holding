@@ -15,6 +15,14 @@ export default function Header2({
   const localePrefix =
     pathname?.startsWith("/en") ? "/en" : pathname?.startsWith("/es") ? "/es" : "";
 
+  const buildLocaleHref = (locale) => {
+    const current = pathname || "";
+    const stripped = current.replace(/^\/(en|es)(?=\/)/, "");
+    if (locale === "fr") return stripped || "/";
+    const base = stripped.startsWith("/") ? stripped : `/${stripped}`;
+    return `/${locale}${base === "/" ? "" : base}`;
+  };
+
   // Force un header non transparent même si une page passe "header-transparent"
   const computedParentClass = (parentClass || "")
     .replace("header-transparent", "header-not-transparent")
@@ -54,6 +62,28 @@ export default function Header2({
           <div className="col-lg-3 col-md-6 col-8">
             <div className="header-right">
               {/* pas de bouton BUY NOW */}
+              <div className="language-switcher d-none d-lg-inline-block me-3">
+                <Link
+                  href={buildLocaleHref("fr")}
+                  className={localePrefix === "" ? "active" : ""}
+                >
+                  FR
+                </Link>
+                <span className="mx-1">|</span>
+                <Link
+                  href={buildLocaleHref("en")}
+                  className={localePrefix === "/en" ? "active" : ""}
+                >
+                  EN
+                </Link>
+                <span className="mx-1">|</span>
+                <Link
+                  href={buildLocaleHref("es")}
+                  className={localePrefix === "/es" ? "active" : ""}
+                >
+                  ES
+                </Link>
+              </div>
               <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                 <div className="hamberger">
                   <button onClick={openMenu} className="hamberger-button">
