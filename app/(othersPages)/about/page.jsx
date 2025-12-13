@@ -8,9 +8,10 @@ import Expertise from "@/components/o7/about/Expertise";
 import Methodology from "@/components/o7/about/Methodology";
 
 export const metadata = {
-  title: "O7 Digital – About (placeholders)",
+  title:
+    "À propos de O7 Digital Consulting | Direction digitale & consulting stratégique",
   description:
-    "Structure de la page About O7 Digital avec sections placeholders basées sur le template Digital Agency.",
+    "Découvrez O7 Digital Consulting, agence de consulting digital impliquée au cœur du business de ses clients, agissant comme direction informatique et digitale externalisée.",
 };
 
 export default function Page() {
