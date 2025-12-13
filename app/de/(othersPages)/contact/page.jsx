@@ -2,14 +2,14 @@ import React from "react";
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
 import ContactContent from "@/components/o7/contact/ContactContent";
-import { o7ContactCopy as o7ContactCopyEn } from "@/data/o7.en";
+import { o7ContactCopy as o7ContactCopyDe } from "@/data/o7.de";
 
 export const metadata = {
-  title: "Contact O7 Digital Consulting | Tell us about your digital project",
+  title: "Kontakt O7 Digital Consulting | Sprechen wir über Ihr digitales Projekt",
   description:
-    "Contact O7 Digital Consulting to discuss your digital project, technology strategy or digital transformation. Fast response and tailored support.",
+    "Kontaktieren Sie O7 Digital Consulting, um über Ihr digitales Projekt, Ihre Technologie-Strategie oder Ihre digitale Transformation zu sprechen. Schnelle Antwort und maßgeschneiderte Begleitung.",
   alternates: {
-    canonical: 'https://www.o7digital-consulting.com/en/contact',
+    canonical: 'https://www.o7digital-consulting.com/de/contact',
     languages: {
       'fr': 'https://www.o7digital-consulting.com/contact',
       'en': 'https://www.o7digital-consulting.com/en/contact',
@@ -18,8 +18,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    locale: 'en_US',
-    alternateLocale: ['fr_FR', 'es_ES', 'de_DE'],
+    locale: 'de_DE',
+    alternateLocale: ['fr_FR', 'en_US', 'es_ES'],
   },
 };
 
@@ -31,8 +31,8 @@ export default function Page() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <ContactContent copy={o7ContactCopyEn} eyebrow="Contact" />
-      <Footer2 lang="en" />
+      <ContactContent copy={o7ContactCopyDe} eyebrow="Kontakt" />
+      <Footer2 lang="de" />
     </>
   );
 }

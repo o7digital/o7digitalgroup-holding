@@ -48,11 +48,28 @@ const expertiseContent = {
     ],
     followUs: "Síguenos",
     legalNotice: "Aviso Legal"
+  },
+  de: {
+    title: "Digitale Beratung in Deutschland, Österreich & Schweiz",
+    keywords: [
+      "digitale Beratungsagentur in Berlin",
+      "Webentwicklung Agentur Deutschland",
+      "maßgeschneiderte Website Entwicklung",
+      "Full-Stack Entwicklungsservices",
+      "CTO as a Service DACH",
+      "DevOps- und Cloud-Consulting",
+      "KI-Integration für Unternehmen",
+      "Technisches SEO & Performance"
+    ],
+    followUs: "Folgen Sie uns",
+    legalNotice: "Impressum"
   }
 };
 
 export default function Footer2({ lang = "fr" }) {
   const content = expertiseContent[lang] || expertiseContent.fr;
+  const prefix =
+    lang === "en" ? "/en" : lang === "es" ? "/es" : lang === "de" ? "/de" : "";
 
   return (
     <footer className="rainbow-footer footer-style-default no-border">
@@ -123,7 +140,7 @@ export default function Footer2({ lang = "fr" }) {
               <div className="copyright-left">
                 <ul className="ft-menu link-hover">
                   <li>
-                    <Link href={`/privacy-policy`}>{content.legalNotice}</Link>
+                    <Link href={`${prefix || ""}/privacy-policy`}>{content.legalNotice}</Link>
                   </li>
                 </ul>
               </div>

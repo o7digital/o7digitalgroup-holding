@@ -24,11 +24,12 @@ export const metadata = {
       'fr': 'https://www.o7digital-consulting.com/about',
       'en': 'https://www.o7digital-consulting.com/en/about',
       'es': 'https://www.o7digital-consulting.com/es/about',
+      'de': 'https://www.o7digital-consulting.com/de/about',
     },
   },
   openGraph: {
     locale: 'en_US',
-    alternateLocale: ['fr_FR', 'es_ES'],
+    alternateLocale: ['fr_FR', 'es_ES', 'de_DE'],
   },
 };
 
@@ -58,7 +59,7 @@ export default function Page() {
         title="Embedded in our clients' business"
         paragraphs={o7ExpertiseCopyEn}
       />
-      <CtaSection anchorId="cta-about-en" cta={o7CtaEn} />
+      <CtaSection anchorId="cta-about-en" cta={o7CtaEn} contactHref="/en/contact" />
       <Footer2 lang="en" />
     </>
   );

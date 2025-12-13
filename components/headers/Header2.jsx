@@ -13,11 +13,11 @@ export default function Header2({
 }) {
   const pathname = usePathname();
   const localePrefix =
-    pathname?.startsWith("/en") ? "/en" : pathname?.startsWith("/es") ? "/es" : "";
+    pathname?.match(/^\/(en|es|de)(?=\/|$)/)?.[0] || "";
 
   const buildLocaleHref = (locale) => {
     const current = pathname || "";
-    const stripped = current.replace(/^\/(en|es)(?=\/)/, "");
+    const stripped = current.replace(/^\/(en|es|de)(?=\/|$)/, "");
     if (locale === "fr") return stripped || "/";
     const base = stripped.startsWith("/") ? stripped : `/${stripped}`;
     return `/${locale}${base === "/" ? "" : base}`;
@@ -82,6 +82,13 @@ export default function Header2({
                   className={localePrefix === "/es" ? "active" : ""}
                 >
                   ES
+                </Link>
+                <span className="mx-1">|</span>
+                <Link
+                  href={buildLocaleHref("de")}
+                  className={localePrefix === "/de" ? "active" : ""}
+                >
+                  DE
                 </Link>
               </div>
               <div className="mobile-menu-bar ml--5 d-block d-lg-none">

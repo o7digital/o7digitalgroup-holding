@@ -6,6 +6,15 @@ export const metadata = {
   title: "Mentions Légales & Politique de Confidentialité – O7 Digital",
   description:
     "Mentions légales, informations éditeur, hébergement et politique de confidentialité d’O7 Digital Consulting.",
+  alternates: {
+    canonical: 'https://www.o7digital-consulting.com/privacy-policy',
+    languages: {
+      'fr': 'https://www.o7digital-consulting.com/privacy-policy',
+      'en': 'https://www.o7digital-consulting.com/en/privacy-policy',
+      'es': 'https://www.o7digital-consulting.com/es/privacy-policy',
+      'de': 'https://www.o7digital-consulting.com/de/privacy-policy',
+    },
+  },
 };
 
 function SectionTitle({ children }) {

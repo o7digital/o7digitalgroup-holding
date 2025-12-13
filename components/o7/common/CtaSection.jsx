@@ -1,7 +1,11 @@
 import React from "react";
 import { o7CtaBlock } from "@/data/o7";
 
-export default function CtaSection({ anchorId, cta = o7CtaBlock }) {
+export default function CtaSection({
+  anchorId,
+  cta = o7CtaBlock,
+  contactHref = "/contact",
+}) {
   return (
     <div
       id={anchorId}
@@ -26,7 +30,7 @@ export default function CtaSection({ anchorId, cta = o7CtaBlock }) {
           </div>
           <div className="col-lg-4 col-12">
             <div className="call-to-btn text-start text-lg-end mt_md--20 mt_sm--20 button-group">
-              <a className="btn-default" href="/contact">
+              <a className="btn-default" href={contactHref}>
                 {cta.primaryLabel}
               </a>
               {cta.secondaryLabel ? (

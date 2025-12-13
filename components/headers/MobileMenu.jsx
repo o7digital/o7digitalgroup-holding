@@ -2,6 +2,7 @@
 import { menuItems } from "@/data/menu";
 import { menuItemsEn } from "@/data/menu-en";
 import { menuItemsEs } from "@/data/menu-es";
+import { menuItemsDe } from "@/data/menu-de";
 import { closeMenu } from "@/utlis/toggleMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +13,15 @@ export default function MobileMenu() {
   const pathname = usePathname();
   const locale = pathname.split("/")[1];
   const resolvedItems =
-    locale === "en" ? menuItemsEn : locale === "es" ? menuItemsEs : menuItems;
+    locale === "en"
+      ? menuItemsEn
+      : locale === "es"
+      ? menuItemsEs
+      : locale === "de"
+      ? menuItemsDe
+      : menuItems;
   const prefix =
-    locale === "en" ? "/en" : locale === "es" ? "/es" : "";
+    locale === "en" ? "/en" : locale === "es" ? "/es" : locale === "de" ? "/de" : "";
   const popupRef = useRef(null); // For .popup-mobile-menu
   const innerRef = useRef(null); // For .inner
 

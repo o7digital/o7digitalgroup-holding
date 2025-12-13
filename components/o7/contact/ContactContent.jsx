@@ -20,9 +20,30 @@ const defaultCopy = {
   ],
   preForm:
     "Après un premier échange, nous vous proposons une approche claire et structurée : cadrage des besoins, analyse du contexte, recommandations et plan d’action. Chaque collaboration est pensée sur mesure, avec transparence et engagement.",
+  labels: {
+    emailTitle: "Email",
+    phoneTitle: "Téléphone",
+    phoneFallback: "Disponible sur demande",
+    bookingTitle: "Prendre rendez-vous",
+    bookingCta: "Planifier un échange",
+    namePlaceholder: "Nom complet",
+    emailPlaceholder: "Email professionnel",
+    phonePlaceholder: "Téléphone",
+    messagePlaceholder: "Votre message",
+    submit: "Envoyer",
+    sending: "Envoi...",
+    success: "Merci, votre message a bien été envoyé.",
+    error: "Une erreur est survenue, merci de réessayer.",
+  },
 };
 
-export default function ContactContent({ contactData = o7ContactInfo, copy = defaultCopy }) {
+const defaultLabels = defaultCopy.labels;
+
+export default function ContactContent({
+  contactData = o7ContactInfo,
+  copy = defaultCopy,
+  eyebrow = "Contact",
+}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +56,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
   const phoneLink = phoneValue
     ? `tel:${phoneValue.replace(/\s+/g, "")}`
     : null;
+  const labels = { ...defaultLabels, ...(copy.labels || {}) };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -69,6 +91,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
         const data = await response.json().catch(() => null);
         throw new Error(
           data?.message ||
+            labels.error ||
             "Le formulaire n'a pas pu être envoyé pour le moment."
         );
       }
@@ -77,7 +100,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       setStatus("error");
-      setErrorMessage(error.message);
+      setErrorMessage(error.message || labels.error);
     }
   };
 
@@ -86,7 +109,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
       <div className="container">
         <div className="row">
           <div className="col-lg-12 mb--40">
-            <SectionHeader eyebrow="Contact" title="" description="" />
+            <SectionHeader eyebrow={eyebrow} title="" description="" />
             <h1 className="title w-600 mb--10 text-center">
               {copy.title}
             </h1>
@@ -126,7 +149,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                 <i className="feather-mail" />
               </div>
               <div className="inner">
-                <h4 className="title">Email</h4>
+                <h4 className="title">{labels.emailTitle}</h4>
                 <p>
                   <a href={`mailto:${o7ContactInfo.email}`}>
                     {o7ContactInfo.email}
@@ -141,13 +164,13 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                 <i className="feather-phone-call" />
               </div>
               <div className="inner">
-                <h4 className="title">Téléphone</h4>
+                <h4 className="title">{labels.phoneTitle}</h4>
                 {phoneLink ? (
                   <p>
                     <a href={phoneLink}>{phoneValue}</a>
                   </p>
                 ) : (
-                  <p className="mb--0">Disponible sur demande</p>
+                  <p className="mb--0">{labels.phoneFallback}</p>
                 )}
               </div>
             </div>
@@ -158,9 +181,9 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                 <i className="feather-calendar" />
               </div>
               <div className="inner">
-                <h4 className="title">Prendre rendez-vous</h4>
+                <h4 className="title">{labels.bookingTitle}</h4>
                 <p className="mb--0">
-                  <a href="#contact-form">Planifier un échange</a>
+                  <a href="#contact-form">{labels.bookingCta}</a>
                 </p>
               </div>
             </div>
@@ -182,7 +205,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                   type="text"
                   name="name"
                   id="contact-name"
-                  placeholder="Nom complet"
+                  placeholder={labels.namePlaceholder}
                   required
                   value={formData.name}
                   onChange={handleChange}
@@ -194,7 +217,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                   type="email"
                   id="contact-email"
                   name="email"
-                  placeholder="Email professionnel"
+                  placeholder={labels.emailPlaceholder}
                   required
                   value={formData.email}
                   onChange={handleChange}
@@ -206,7 +229,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                   type="text"
                   name="phone"
                   id="contact-phone"
-                  placeholder="Téléphone"
+                  placeholder={labels.phonePlaceholder}
                   required
                   value={formData.phone}
                   onChange={handleChange}
@@ -217,7 +240,7 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                 <textarea
                   name="message"
                   id="contact-message"
-                  placeholder="Votre message"
+                  placeholder={labels.messagePlaceholder}
                   required
                   value={formData.message}
                   onChange={handleChange}
@@ -232,20 +255,20 @@ export default function ContactContent({ contactData = o7ContactInfo, copy = def
                   className="btn-default btn-large rainbow-btn"
                   disabled={status === "loading"}
                 >
-                  <span>{status === "loading" ? "Envoi..." : "Envoyer"}</span>
+                  <span>{status === "loading" ? labels.sending : labels.submit}</span>
                 </button>
               </div>
               {status === "success" && (
                 <div className="form-group">
                   <p className="success-message mb--0">
-                    Merci, votre message a bien été envoyé.
+                    {labels.success}
                   </p>
                 </div>
               )}
               {status === "error" && (
                 <div className="form-group">
                   <p className="error-message mb--0">
-                    {errorMessage || "Une erreur est survenue, merci de réessayer."}
+                    {errorMessage || labels.error}
                   </p>
                 </div>
               )}

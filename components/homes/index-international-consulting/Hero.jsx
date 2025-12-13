@@ -12,7 +12,17 @@ const SLIDES = [
 
 const INTERVAL_MS = 5000; // 5s entre slides
 
-export default function Hero() {
+export default function Hero({
+  title = (
+    <>
+      Nous vous accompagnons <br />
+      dans votre croissance et votre développement
+    </>
+  ),
+  description = "Go-to-market, marketing digital, et services IT & Cloud (infogérance, cybersécurité, consulting):",
+  ctaLabel = "Parler à un expert →",
+  ctaHref = "/contact",
+}) {
   const [index, setIndex] = useState(0);
   const timerRef = useRef(null);
 
@@ -80,18 +90,12 @@ export default function Hero() {
       <div className="container" style={{ position: "relative", zIndex: 2 }}>
         <div className="row">
           <div className="col-lg-12">
-            <div className="inner text-center hero-content-white">
-              <h1 className="title display-one">
-                Nous vous accompagnons <br />
-                dans votre croissance et votre développement
-              </h1>
-              <p className="description">
-                Go-to-market, marketing digital, et services IT &amp; Cloud
-                (infogérance, cybersécurité, consulting):
-              </p>
+              <div className="inner text-center hero-content-white">
+              <h1 className="title display-one">{title}</h1>
+              <p className="description">{description}</p>
               <div className="button-group">
-                <Link className="btn-default btn-medium btn-icon btn-border btn-hero" href={`/contact`}>
-                  Parler à un expert →
+                <Link className="btn-default btn-medium btn-icon btn-border btn-hero" href={ctaHref}>
+                  {ctaLabel}
                 </Link>
               </div>
             </div>

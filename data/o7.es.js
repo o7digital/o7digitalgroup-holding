@@ -198,5 +198,19 @@ export const o7ContactCopy = {
   ],
   preForm:
     "Tras un primer intercambio, proponemos un enfoque claro y estructurado: definición de necesidades, análisis del contexto, recomendaciones y plan de acción. Cada colaboración es a medida, con transparencia y compromiso.",
+  labels: {
+    emailTitle: "Email",
+    phoneTitle: "Teléfono",
+    phoneFallback: "Disponible bajo demanda",
+    bookingTitle: "Concertar una reunión",
+    bookingCta: "Agendar una llamada",
+    namePlaceholder: "Nombre completo",
+    emailPlaceholder: "Email profesional",
+    phonePlaceholder: "Teléfono",
+    messagePlaceholder: "Tu mensaje",
+    submit: "Enviar",
+    sending: "Enviando...",
+    success: "Gracias, tu mensaje ha sido enviado.",
+    error: "Ha ocurrido un error, inténtalo de nuevo.",
+  },
 };
-

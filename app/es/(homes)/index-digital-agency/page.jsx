@@ -22,11 +22,12 @@ export const metadata = {
       'fr': 'https://www.o7digital-consulting.com/index-digital-agency',
       'en': 'https://www.o7digital-consulting.com/en/index-digital-agency',
       'es': 'https://www.o7digital-consulting.com/es/index-digital-agency',
+      'de': 'https://www.o7digital-consulting.com/de/index-digital-agency',
     },
   },
   openGraph: {
     locale: 'es_ES',
-    alternateLocale: ['fr_FR', 'en_US'],
+    alternateLocale: ['fr_FR', 'en_US', 'de_DE'],
   },
 };
 
@@ -113,7 +114,17 @@ export default function HomeEs() {
           }
         `}
       </Script>
-      <Hero />
+      <Hero
+        title={
+          <>
+            Te acompañamos en tu crecimiento <br />
+            y en tu desarrollo
+          </>
+        }
+        description="Go-to-market, marketing digital y servicios IT & Cloud (infogestión, ciberseguridad, consultoría)."
+        ctaLabel="Hablar con un experto →"
+        ctaHref="/es/contact"
+      />
       <HomeIntro
         data={o7HomeIntroEs}
         approachTitle="Nuestro enfoque"
@@ -127,7 +138,7 @@ export default function HomeEs() {
         title="9 servicios principales"
         description="Estrategia, desarrollo, IA, SEO, infogestión, diseño gráfico, motion design y 3D para cubrir tus necesidades digitales."
       />
-      <CtaSection anchorId="cta-es" cta={o7CtaEs} />
+      <CtaSection anchorId="cta-es" cta={o7CtaEs} contactHref="/es/contact" />
       <Footer2 lang="es" />
     </>
   );

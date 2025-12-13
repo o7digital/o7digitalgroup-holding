@@ -198,5 +198,19 @@ export const o7ContactCopy = {
   ],
   preForm:
     "After a first call, we provide a clear, structured approach: needs framing, context analysis, recommendations and action plan. Every engagement is tailored, transparent and committed.",
+  labels: {
+    emailTitle: "Email",
+    phoneTitle: "Phone",
+    phoneFallback: "Available on request",
+    bookingTitle: "Book a meeting",
+    bookingCta: "Schedule a call",
+    namePlaceholder: "Full name",
+    emailPlaceholder: "Work email",
+    phonePlaceholder: "Phone number",
+    messagePlaceholder: "Your message",
+    submit: "Send",
+    sending: "Sending...",
+    success: "Thank you, your message has been sent.",
+    error: "An error occurred, please try again.",
+  },
 };
-

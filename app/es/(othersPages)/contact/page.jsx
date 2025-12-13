@@ -14,11 +14,12 @@ export const metadata = {
       'fr': 'https://www.o7digital-consulting.com/contact',
       'en': 'https://www.o7digital-consulting.com/en/contact',
       'es': 'https://www.o7digital-consulting.com/es/contact',
+      'de': 'https://www.o7digital-consulting.com/de/contact',
     },
   },
   openGraph: {
     locale: 'es_ES',
-    alternateLocale: ['fr_FR', 'en_US'],
+    alternateLocale: ['fr_FR', 'en_US', 'de_DE'],
   },
 };
 
@@ -30,7 +31,7 @@ export default function Page() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <ContactContent copy={o7ContactCopyEs} />
+      <ContactContent copy={o7ContactCopyEs} eyebrow="Contacto" />
       <Footer2 lang="es" />
     </>
   );

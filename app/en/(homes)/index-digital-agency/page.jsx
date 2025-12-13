@@ -22,11 +22,12 @@ export const metadata = {
       'fr': 'https://www.o7digital-consulting.com/index-digital-agency',
       'en': 'https://www.o7digital-consulting.com/en/index-digital-agency',
       'es': 'https://www.o7digital-consulting.com/es/index-digital-agency',
+      'de': 'https://www.o7digital-consulting.com/de/index-digital-agency',
     },
   },
   openGraph: {
     locale: 'en_US',
-    alternateLocale: ['fr_FR', 'es_ES'],
+    alternateLocale: ['fr_FR', 'es_ES', 'de_DE'],
   },
 };
 
@@ -109,7 +110,17 @@ export default function HomeEn() {
           }
         `}
       </Script>
-      <Hero />
+      <Hero
+        title={
+          <>
+            We support your growth <br />
+            and development
+          </>
+        }
+        description="Go-to-market, digital marketing, and IT & Cloud services (managed services, cybersecurity, consulting)."
+        ctaLabel="Talk to an expert →"
+        ctaHref="/en/contact"
+      />
       <HomeIntro
         data={o7HomeIntroEn}
         approachTitle="Our approach"
@@ -123,7 +134,7 @@ export default function HomeEn() {
         title="9 core services"
         description="Strategy, development, AI, SEO, managed services, graphic design, motion design and 3D to cover your digital needs."
       />
-      <CtaSection anchorId="cta-en" cta={o7CtaEn} />
+      <CtaSection anchorId="cta-en" cta={o7CtaEn} contactHref="/en/contact" />
       <Footer2 lang="en" />
     </>
   );
