@@ -28,6 +28,8 @@ export default function ContactContent() {
     setStatus("loading");
     setErrorMessage("");
 
+    const endpoint = "https://formspree.io/f/xkgdyvze";
+
     try {
       const payload = {
         name: formData.name.trim(),
@@ -36,9 +38,12 @@ export default function ContactContent() {
         message: formData.message.trim(),
       };
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(payload),
       });
 
