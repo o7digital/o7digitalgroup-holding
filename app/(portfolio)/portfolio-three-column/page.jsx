@@ -4,6 +4,7 @@ import Topbar from "@/components/headers/Topbar";
 
 import Portfolio2 from "@/components/portfolio/Portfolio2";
 import React from "react";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title:
@@ -11,6 +12,7 @@ export const metadata = {
   description: "Doob Business and Consulting React Nextjs Bootstrap5 Template",
 };
 export default function page() {
+  notFound();
   return (
     <>
       <Topbar />
