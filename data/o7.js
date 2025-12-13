@@ -54,6 +54,7 @@ export const o7HomeServices = [
     image: {
       src: "/assets/images/portfolio/portfolio-01.jpg",
       alt: "Développement web moderne",
+      width: "82%",
     },
   },
   {
@@ -63,8 +64,9 @@ export const o7HomeServices = [
     iconClass: "feather-trending-up",
     align: "text-left",
     image: {
-      src: "/assets/images/portfolio/portfolio-02.jpg",
+      src: "/assets/images/portfolio/portfolio-01.jpg",
       alt: "Architecture headless et API",
+      width: "82%",
     },
   },
   {

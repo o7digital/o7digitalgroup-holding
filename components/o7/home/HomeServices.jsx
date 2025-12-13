@@ -52,7 +52,18 @@ export default function HomeServices() {
                     <img
                       src={service.image.src}
                       alt={service.image.alt}
-                      className="w-100 radius"
+                      className={`radius ${
+                        service.image.className || (!service.image.width ? "w-100" : "")
+                      }`}
+                      style={
+                        service.image.width
+                          ? {
+                              maxWidth: service.image.width,
+                              marginInline: "auto",
+                              display: "block",
+                            }
+                          : undefined
+                      }
                     />
                   </div>
                 )}
