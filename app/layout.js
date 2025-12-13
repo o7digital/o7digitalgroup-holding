@@ -4,6 +4,7 @@ import "../public/assets/scss/main.scss";
 import "react-modal-video/scss/modal-video.scss";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 import sal from "sal.js";
 import BackToTop from "@/components/common/BackToTop";
 import MobileMenu from "@/components/headers/MobileMenu";
@@ -67,6 +68,21 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N5GR2L6P8T"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-N5GR2L6P8T');
+          `}
+        </Script>
+      </head>
       <body className="active-dark-mode">
         <main className="page-wrapper">{children}</main>
         <MobileMenu />
