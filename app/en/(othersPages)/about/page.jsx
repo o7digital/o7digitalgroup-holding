@@ -18,6 +18,18 @@ export const metadata = {
   title: "About O7 Digital Consulting | Digital leadership & engineering",
   description:
     "O7 Digital Consulting: strategy, engineering and performance. Discover our approach, mission, vision and values.",
+  alternates: {
+    canonical: 'https://www.o7digital-consulting.com/en/about',
+    languages: {
+      'fr': 'https://www.o7digital-consulting.com/about',
+      'en': 'https://www.o7digital-consulting.com/en/about',
+      'es': 'https://www.o7digital-consulting.com/es/about',
+    },
+  },
+  openGraph: {
+    locale: 'en_US',
+    alternateLocale: ['fr_FR', 'es_ES'],
+  },
 };
 
 export default function Page() {

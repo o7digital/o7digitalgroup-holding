@@ -8,6 +8,18 @@ export const metadata = {
   title: "Contacto O7 Digital Consulting | Hablemos de tu proyecto digital",
   description:
     "Contacta a O7 Digital Consulting para hablar de tu proyecto digital, estrategia tecnológica o transformación digital. Respuesta rápida y acompañamiento personalizado.",
+  alternates: {
+    canonical: 'https://www.o7digital-consulting.com/es/contact',
+    languages: {
+      'fr': 'https://www.o7digital-consulting.com/contact',
+      'en': 'https://www.o7digital-consulting.com/en/contact',
+      'es': 'https://www.o7digital-consulting.com/es/contact',
+    },
+  },
+  openGraph: {
+    locale: 'es_ES',
+    alternateLocale: ['fr_FR', 'en_US'],
+  },
 };
 
 export default function Page() {

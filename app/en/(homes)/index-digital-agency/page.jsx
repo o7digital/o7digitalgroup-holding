@@ -15,6 +15,18 @@ export const metadata = {
   title: "O7 Digital Consulting | Engineering, strategy and web development",
   description:
     "Digital consulting agency specialised in CTO as a Service, modern web development, headless CMS, AI, SEO, design and performance.",
+  alternates: {
+    canonical: 'https://www.o7digital-consulting.com/en/index-digital-agency',
+    languages: {
+      'fr': 'https://www.o7digital-consulting.com/index-digital-agency',
+      'en': 'https://www.o7digital-consulting.com/en/index-digital-agency',
+      'es': 'https://www.o7digital-consulting.com/es/index-digital-agency',
+    },
+  },
+  openGraph: {
+    locale: 'en_US',
+    alternateLocale: ['fr_FR', 'es_ES'],
+  },
 };
 
 export default function HomeEn() {

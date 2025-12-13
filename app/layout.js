@@ -1,74 +1,71 @@
-"use client";
-import { useEffect } from "react";
 import "../public/assets/scss/main.scss";
 import "react-modal-video/scss/modal-video.scss";
 import "photoswipe/dist/photoswipe.css";
 import "./custom-styles.css";
-import { usePathname } from "next/navigation";
 import Script from "next/script";
-import sal from "sal.js";
-import BackToTop from "@/components/common/BackToTop";
-import MobileMenu from "@/components/headers/MobileMenu";
-import { closeMenu } from "@/utlis/toggleMenu";
+import ClientLayout from "./ClientLayout";
+
+export const metadata = {
+  metadataBase: new URL('https://www.o7digital-consulting.com'),
+  title: {
+    default: 'O7 Digital Consulting | Agence de consulting digital, CTO & développement web',
+    template: '%s | O7 Digital Consulting'
+  },
+  description: 'O7 Digital Consulting est une agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.',
+  keywords: ['consulting digital', 'CTO as a Service', 'développement web', 'agence digitale', 'SEO', 'design graphique', 'motion design', 'stratégie digitale', 'performance web'],
+  authors: [{ name: 'O7 Digital Consulting' }],
+  creator: 'O7 Digital Consulting',
+  publisher: 'O7 Digital Consulting',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'fr': '/',
+      'en': '/en',
+      'es': '/es',
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    alternateLocale: ['en_US', 'es_ES'],
+    url: 'https://www.o7digital-consulting.com',
+    siteName: 'O7 Digital Consulting',
+    title: 'O7 Digital Consulting | Agence de consulting digital, CTO & développement web',
+    description: 'O7 Digital Consulting est une agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'O7 Digital Consulting',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'O7 Digital Consulting | Agence de consulting digital',
+    description: 'Agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne et SEO.',
+    images: ['/images/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'verification_token', // À remplacer par votre token Google Search Console
+  },
+};
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Import the script only on the client side
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
-      });
-      // setTimeout(() => {
-      //   import("../utlis/mmenu").then(() => {
-      //     // Module is imported, you can access any exported functionality if
-      //     new window.Mmenu(document.querySelector("#menu"));
-      //   });
-      // }, 200);
-    }
-  }, []);
-
-  const pathname = usePathname();
-  useEffect(() => {
-    sal({
-      threshold: 0.01,
-      once: true,
-    });
-  }, [pathname]);
-  useEffect(() => {
-    // Close any open modal
-    closeMenu();
-  }, [pathname]);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 250) {
-        document.querySelector(".header-sticky")?.classList.add("sticky");
-      } else {
-        document.querySelector(".header-sticky")?.classList.remove("sticky");
-      }
-    };
-
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup function to remove the scroll event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const isDarkmode = localStorage.getItem("isDarkmode");
-
-    // Compare to the string "true"
-    if (isDarkmode === "true") {
-      document.body.setAttribute("class", "active-dark-mode");
-    } else if (isDarkmode === "false") {
-      document.body.setAttribute("class", "active-light-mode");
-    }
-  }, []);
-
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N5GR2L6P8T"
@@ -85,9 +82,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="active-dark-mode">
-        <main className="page-wrapper">{children}</main>
-        <MobileMenu />
-        <BackToTop />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

@@ -1,0 +1,16 @@
+# robots.txt for O7 Digital Consulting
+# https://www.o7digital-consulting.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.o7digital-consulting.com/sitemap.xml
+
+# Disallow admin or private areas if any
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /api/
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1
