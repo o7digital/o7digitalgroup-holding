@@ -5,7 +5,7 @@ export default function AboutHero() {
   return (
     <div
       className="slider-area slider-style-1 variation-default height-650 bg_image"
-      style={{ backgroundImage: 'url(/assets/hammer-group.jpg)' }}
+      style={{ backgroundImage: 'url(/assets/hammer-group.webp)' }}
       data-black-overlay={4}
     >
       <div className="container">

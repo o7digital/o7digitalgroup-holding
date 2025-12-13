@@ -41,7 +41,7 @@ export const o7HomeServices = [
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
-      src: "/strategie/strategie-cto.png",
+      src: "/strategie/strategie-cto.webp",
       alt: "Atelier de stratégie digitale",
       height: "330px",
     },
@@ -54,7 +54,7 @@ export const o7HomeServices = [
     align: "text-left",
     spanTwo: true,
     image: {
-      src: "/strategie/dev-web.png",
+      src: "/strategie/dev-web.webp",
       alt: "Développement web moderne",
       className: "service-image-span-two",
       height: "330px",
@@ -74,7 +74,7 @@ export const o7HomeServices = [
     iconClass: "feather-layers",
     align: "text-left",
     image: {
-      src: "/strategie/ia-automat.png",
+      src: "/strategie/ia-automat.webp",
       alt: "Workflows IA et automatisation",
     },
   },
@@ -85,7 +85,7 @@ export const o7HomeServices = [
     iconClass: "feather-shield",
     align: "text-left",
     image: {
-      src: "/strategie/seo-perfo.png",
+      src: "/strategie/seo-perfo.webp",
       alt: "Tableau de bord de performance SEO",
     },
   },
@@ -96,7 +96,7 @@ export const o7HomeServices = [
     iconClass: "feather-command",
     align: "text-left",
     image: {
-      src: "/strategie/info-support.png",
+      src: "/strategie/info-support.webp",
       alt: "Support et infogérance",
     },
   },
@@ -116,7 +116,7 @@ export const o7HomeServices = [
       "Guidelines graphiques",
     ],
     image: {
-      src: "/design/design-graph.png",
+      src: "/design/design-graph.webp",
       alt: "Création graphique et design digital",
       height: "330px",
     },
@@ -136,7 +136,7 @@ export const o7HomeServices = [
       "Reels professionnels",
     ],
     image: {
-      src: "/design/design-digital.png",
+      src: "/design/design-digital.webp",
       alt: "Animations et motion design",
       height: "330px",
     },
@@ -154,7 +154,7 @@ export const o7HomeServices = [
       "Environnements virtuels",
     ],
     image: {
-      src: "/strategie/design-3d.png",
+      src: "/strategie/design-3d.webp",
       alt: "Design 3D et environnements immersifs",
       height: "330px",
     },
