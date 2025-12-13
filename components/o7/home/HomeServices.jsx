@@ -56,11 +56,17 @@ export default function HomeServices() {
                         service.image.className || (!service.image.width ? "w-100" : "")
                       }`}
                       style={
-                        service.image.width
+                        service.image.width || service.image.height
                           ? {
-                              maxWidth: service.image.width,
+                              width: service.image.width || "100%",
                               marginInline: "auto",
                               display: "block",
+                              ...(service.image.height
+                                ? {
+                                    height: service.image.height,
+                                    objectFit: "cover",
+                                  }
+                                : {}),
                             }
                           : undefined
                       }
