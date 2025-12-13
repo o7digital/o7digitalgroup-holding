@@ -35,9 +35,9 @@ export const o7HomeIntro = {
 
 export const o7HomeServices = [
   {
-    title: "Stratégie digitale & CTO externalisé",
+    title: "Stratégie digitale & CTO as a Service",
     description:
-      "Audit, architecture et pilotage technologique. Nous alignons votre stratégie digitale avec vos objectifs business pour garantir une évolution cohérente et performante. Architecture cible, roadmaps, gouvernance des partenaires et suivi des KPI pour sécuriser vos décisions.",
+      "Nous accompagnons les dirigeants et équipes dans leurs décisions technologiques clés en intervenant comme CTO as a Service. Audit technique, définition d’architecture, choix de stack, pilotage des prestataires et roadmap produit font partie de notre accompagnement. L’objectif est de sécuriser la scalabilité, la performance et la cohérence technique des projets digitaux, sans recruter immédiatement un CTO interne.",
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
@@ -47,9 +47,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Développement Web moderne",
+    title: "Développement web moderne & applications performantes",
     description:
-      "Création de sites rapides, sécurisés et optimisés SEO avec React, Next.js et Astro. Solutions pour entreprises, hôtellerie, immobilier et e-commerce. Performance Core Web Vitals, accessibilité, tests automatisés et intégration analytics dès la conception.",
+      "Nous concevons des sites web et applications modernes, rapides et sécurisés, orientés conversion et performance. Nos développements reposent sur des technologies récentes (React, Next.js, Astro selon les projets) et des bonnes pratiques strictes en matière d’UX, d’accessibilité et de temps de chargement. Chaque plateforme est pensée pour évoluer durablement et soutenir la croissance.",
     iconClass: "feather-zap",
     align: "text-left",
     spanTwo: true,
@@ -61,16 +61,16 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "CMS headless & Backends",
+    title: "CMS headless & backends sur mesure",
     description:
-      "Intégration de DatoCMS, Directus, Strapi et Supabase. API modernes, gestion de contenu multilingue, sécurité et scalabilité garanties. Modélisation de contenu, permissions fines, observabilité et plans de montée en charge.",
+      "Nous mettons en place des CMS headless et backends sur mesure pour industrialiser la gestion de contenu et les flux métiers. Modélisation des données, APIs, rôles utilisateurs, workflows de publication et intégrations externes (CRM, formulaires, analytics) sont conçus pour offrir flexibilité, performance et simplicité d’administration.",
     iconClass: "feather-trending-up",
     align: "text-left",
   },
   {
-    title: "IA & Automatisation",
+    title: "Intelligence artificielle & automatisation des processus",
     description:
-      "Agents IA, automatisation des processus, extraction et traitement des données, intégration IA dans vos outils internes et votre site web.",
+      "Nous intégrons des solutions d’intelligence artificielle et d’automatisation afin d’optimiser les processus internes et digitaux. Qualification de leads, automatisation de tâches répétitives, extraction et analyse de données ou assistants intelligents : chaque cas d’usage est cadré pour garantir sécurité, fiabilité et retour sur investissement mesurable.",
     iconClass: "feather-layers",
     align: "text-left",
     image: {
@@ -79,9 +79,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "SEO & Performance digitale",
+    title: "SEO technique & performance digitale",
     description:
-      "SEO technique, optimisation structurelle, mots clés, GA4, Search Console et suivi de performance. Visibilité durable et résultats mesurables.",
+      "Nous déployons une approche SEO technique orientée résultats, combinant structure du site, performance, optimisation des balises, données structurées et suivi analytique. L’objectif est d’améliorer durablement la visibilité sur Google, d’attirer un trafic qualifié et d’optimiser la conversion, tout en respectant les meilleures pratiques du référencement naturel.",
     iconClass: "feather-shield",
     align: "text-left",
     image: {
@@ -90,9 +90,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Infogérance & Support",
+    title: "Infogérance IT & support opérationnel",
     description:
-      "Support utilisateurs, maintenance préventive, supervision, cybersécurité, sauvegardes et gestion Microsoft 365 / Google Workspace.",
+      "Nous assurons l’infogérance et le support opérationnel des environnements digitaux : maintenance, supervision, sauvegardes, sécurité et assistance utilisateurs. Nous accompagnons également les organisations sur Google Workspace et Microsoft 365 afin de garantir stabilité, continuité de service et productivité des équipes.",
     iconClass: "feather-command",
     align: "text-left",
     image: {
@@ -101,9 +101,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Design Graphique & Digital",
+    title: "Design graphique & identité digitale",
     description:
-      "Notre division Design Graphique & Digital accompagne les entreprises dans la création d’identités visuelles fortes et cohérentes. Nous concevons des univers graphiques professionnels pour sites web, réseaux sociaux, campagnes marketing, présentations corporate et branding complet.",
+      "Nous créons des identités visuelles cohérentes et premium, pensées pour le digital. Branding, direction artistique, UI/UX design, templates réseaux sociaux et supports marketing sont conçus pour renforcer la crédibilité de la marque, améliorer la lisibilité des messages et soutenir la performance commerciale.",
     iconClass: "feather-pen-tool",
     align: "text-left",
     points: [
@@ -122,9 +122,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Animations & Motion Design",
+    title: "Animations & motion design pour le digital",
     description:
-      "Nous produisons des animations professionnelles qui renforcent l’impact visuel de votre marque. Motion graphics, vidéos explicatives, animations de logo et contenus dynamiques pour le digital.",
+      "Nous réalisons des animations et contenus en motion design pour capter l’attention et valoriser les messages clés. Animations de logo, vidéos explicatives, contenus pour réseaux sociaux et micro-interactions web permettent de moderniser la communication et d’augmenter l’engagement des audiences.",
     iconClass: "feather-play-circle",
     align: "text-left",
     points: [
@@ -142,9 +142,9 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Design 3D & environnements",
+    title: "Design 3D & expériences visuelles immersives",
     description:
-      "Conception 3D pour vos produits, espaces et expériences : modélisation, rendus photoréalistes, motion 3D et environnements immersifs.",
+      "Nous produisons des contenus 3D et expériences visuelles immersives pour les marques premium, l’immobilier, l’hôtellerie ou les produits. Modélisation, rendus photoréalistes et contenus optimisés pour le web améliorent la projection, la valeur perçue et la différenciation visuelle.",
     iconClass: "feather-cube",
     align: "text-left",
     points: [
