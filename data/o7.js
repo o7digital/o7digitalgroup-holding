@@ -242,57 +242,57 @@ export const o7ServicesIntro = {
 
 export const o7ServicesMain = [
   {
-    title: "Stratégie digitale & CTO externalisé",
+    title: "Stratégie digitale & CTO as a Service",
     description:
-      "Pilotage technologique, audit, architecture et gouvernance pour aligner la technologie sur vos objectifs business.",
+      "Nous accompagnons les dirigeants et équipes dans leurs décisions technologiques clés en intervenant comme CTO as a Service. Audit technique, définition d’architecture, choix de stack, pilotage des prestataires et roadmap produit font partie de notre accompagnement. L’objectif est de sécuriser la scalabilité, la performance et la cohérence technique des projets digitaux, sans recruter immédiatement un CTO interne.",
     iconClass: "feather-cpu",
   },
   {
-    title: "Développement Web moderne",
+    title: "Développement web moderne & applications performantes",
     description:
-      "Sites rapides et sécurisés avec React, Next.js et Astro. Solutions corporate, hôtellerie, immobilier et e-commerce.",
+      "Nous concevons des sites web et applications modernes, rapides et sécurisés, orientés conversion et performance. Nos développements reposent sur des technologies récentes (React, Next.js, Astro selon les projets) et des bonnes pratiques strictes en matière d’UX, d’accessibilité et de temps de chargement. Chaque plateforme est pensée pour évoluer durablement et soutenir la croissance.",
     iconClass: "feather-zap",
   },
   {
-    title: "CMS headless & Backends",
+    title: "CMS headless & backends sur mesure",
     description:
-      "Intégration de DatoCMS, Directus, Strapi et Supabase. API sécurisées, gestion multilingue et architectures scalables.",
+      "Nous mettons en place des CMS headless et backends sur mesure pour industrialiser la gestion de contenu et les flux métiers. Modélisation des données, APIs, rôles utilisateurs, workflows de publication et intégrations externes (CRM, formulaires, analytics) sont conçus pour offrir flexibilité, performance et simplicité d’administration.",
     iconClass: "feather-database",
   },
   {
-    title: "IA & Automatisation",
+    title: "Intelligence artificielle & automatisation des processus",
     description:
-      "Agents IA, automatisation intelligente, extraction de données et optimisation complète de vos processus internes.",
+      "Nous intégrons des solutions d’intelligence artificielle et d’automatisation afin d’optimiser les processus internes et digitaux. Qualification de leads, automatisation de tâches répétitives, extraction et analyse de données ou assistants intelligents : chaque cas d’usage est cadré pour garantir sécurité, fiabilité et retour sur investissement mesurable.",
     iconClass: "feather-activity",
   },
   {
-    title: "SEO & Performance digitale",
+    title: "SEO technique & performance digitale",
     description:
-      "SEO technique, optimisation structurelle, contenus, GA4, Search Console et suivi des performances.",
+      "Nous déployons une approche SEO technique orientée résultats, combinant structure du site, performance, optimisation des balises, données structurées et suivi analytique. L’objectif est d’améliorer durablement la visibilité sur Google, d’attirer un trafic qualifié et d’optimiser la conversion, tout en respectant les meilleures pratiques du référencement naturel.",
     iconClass: "feather-trending-up",
   },
   {
-    title: "Infogérance & Support",
+    title: "Infogérance IT & support opérationnel",
     description:
-      "Support utilisateurs, maintenance, supervision, sauvegardes, sécurité, Microsoft 365 et Google Workspace.",
+      "Nous assurons l’infogérance et le support opérationnel des environnements digitaux : maintenance, supervision, sauvegardes, sécurité et assistance utilisateurs. Nous accompagnons également les organisations sur Google Workspace et Microsoft 365 afin de garantir stabilité, continuité de service et productivité des équipes.",
     iconClass: "feather-headphones",
   },
   {
-    title: "Design Graphique & Digital",
+    title: "Design graphique & identité digitale",
     description:
-      "Identité visuelle, direction artistique, UI/UX design et création graphique professionnelle pour tous supports.",
+      "Nous créons des identités visuelles cohérentes et premium, pensées pour le digital. Branding, direction artistique, UI/UX design, templates réseaux sociaux et supports marketing sont conçus pour renforcer la crédibilité de la marque, améliorer la lisibilité des messages et soutenir la performance commerciale.",
     iconClass: "feather-pen-tool",
   },
   {
-    title: "Animations & Motion Design",
+    title: "Animations & motion design pour le digital",
     description:
-      "Motion graphics, vidéos explicatives, animations de logo et contenus dynamiques pour renforcer votre impact visuel.",
+      "Nous réalisons des animations et contenus en motion design pour capter l’attention et valoriser les messages clés. Animations de logo, vidéos explicatives, contenus pour réseaux sociaux et micro-interactions web permettent de moderniser la communication et d’augmenter l’engagement des audiences.",
     iconClass: "feather-play-circle",
   },
   {
-    title: "Design 3D & environnements",
+    title: "Design 3D & expériences visuelles immersives",
     description:
-      "Modélisation 3D, rendus photoréalistes, motion 3D et environnements immersifs pour vos produits et espaces.",
+      "Nous produisons des contenus 3D et expériences visuelles immersives pour les marques premium, l’immobilier, l’hôtellerie ou les produits. Modélisation, rendus photoréalistes et contenus optimisés pour le web améliorent la projection, la valeur perçue et la différenciation visuelle.",
     iconClass: "feather-cube",
   },
 ];

@@ -12,9 +12,10 @@ import {
 } from "@/data/o7";
 
 export const metadata = {
-  title: "O7 Digital – Services",
+  title:
+    "Services de consulting digital | CTO, développement web, SEO & design – O7 Digital",
   description:
-    "Services O7 Digital : stratégie digitale, développement web, IA, SEO, infogérance, infrastructures, gouvernance IT et conseil.",
+    "Découvrez les services de O7 Digital Consulting : CTO as a Service, développement web moderne, CMS headless, IA, SEO, design graphique, motion design et performance digitale.",
 };
 
 export default function Page() {
