@@ -63,9 +63,9 @@ export default function Page() {
 
                 <SubTitle>1.1. Editor del sitio</SubTitle>
                 <Paragraph>
-                  <strong>O7 Digital Consulting</strong>
+                  <strong>O7 Digital Consulting SASU</strong>
                   <br />
-                  Empresa individual registrada en el RCS de París
+                  Empresa registrada en el RCS de París
                   <br />
                   <strong>SIREN: 899 748 560</strong>
                   <br />

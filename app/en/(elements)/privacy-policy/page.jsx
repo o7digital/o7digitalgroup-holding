@@ -63,9 +63,9 @@ export default function Page() {
 
                 <SubTitle>1.1. Website Publisher</SubTitle>
                 <Paragraph>
-                  <strong>O7 Digital Consulting</strong>
+                  <strong>O7 Digital Consulting SASU</strong>
                   <br />
-                  Sole proprietorship registered with the Paris Trade Register (RCS de Paris)
+                  Company registered with the Paris Trade Register (RCS de Paris)
                   <br />
                   <strong>SIREN: 899 748 560</strong>
                   <br />
