@@ -55,7 +55,7 @@ export const o7HomeServices = [
     image: {
       src: "/strategie/dev-web.png",
       alt: "Développement web moderne",
-      width: "135%",
+      className: "service-image-span-two",
       height: "330px",
     },
   },
