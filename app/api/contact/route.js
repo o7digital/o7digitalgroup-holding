@@ -26,9 +26,9 @@ export async function POST(request) {
       return NextResponse.json(
         {
           message:
-            "Le service email n'est pas configuré (variables SMTP manquantes).",
+            "Le service email est momentanément indisponible. Merci de nous écrire à info@o7digital.com.",
         },
-        { status: 500 }
+        { status: 503 }
       );
     }
 

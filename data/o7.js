@@ -167,7 +167,7 @@ export const o7CtaBlock = {
   description:
     "O7 Digital vous aide à concevoir, déployer et optimiser des solutions fiables et performantes.",
   primaryLabel: "Contactez-nous",
-  secondaryLabel: "Prendre rendez-vous",
+  secondaryLabel: "",
 };
 
 export const o7AboutHero = {

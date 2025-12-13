@@ -29,9 +29,11 @@ export default function CtaSection({ anchorId }) {
               <a className="btn-default" href="/contact">
                 {o7CtaBlock.primaryLabel}
               </a>
-              <a className="btn-default btn-border" href="#">
-                {o7CtaBlock.secondaryLabel}
-              </a>
+              {o7CtaBlock.secondaryLabel ? (
+                <a className="btn-default btn-border" href="#">
+                  {o7CtaBlock.secondaryLabel}
+                </a>
+              ) : null}
             </div>
           </div>
         </div>
