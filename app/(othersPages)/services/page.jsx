@@ -5,20 +5,39 @@ import CtaSection from "@/components/o7/common/CtaSection";
 import ServicesIntro from "@/components/o7/services/ServicesIntro";
 import ServiceSection from "@/components/o7/services/ServiceSection";
 import {
-  o7ConsultingSupport,
-  o7DirectionSupport,
-  o7InfogeranceSupport,
   o7ServicesMain,
 } from "@/data/o7";
 
 export const metadata = {
   title:
-    "Services de consulting digital | CTO, développement web, SEO & design – O7 Digital",
+    "Services de consulting digital & direction informatique – O7 Digital Consulting",
   description:
-    "Découvrez les services de O7 Digital Consulting : CTO as a Service, développement web moderne, CMS headless, IA, SEO, design graphique, motion design et performance digitale.",
+    "Découvrez les services de O7 Digital Consulting : direction digitale, CTO as a Service, développement web moderne, SEO, design graphique, motion design et performance business.",
 };
 
 export default function Page() {
+  const servicesIndex = Object.fromEntries(
+    o7ServicesMain.map((service) => [service.title, service])
+  );
+
+  const strategieDirection = [
+    servicesIndex["Stratégie digitale & CTO as a Service"],
+    servicesIndex["SEO technique & performance digitale"],
+    servicesIndex["Infogérance IT & support opérationnel"],
+  ].filter(Boolean);
+
+  const developpementPlateformes = [
+    servicesIndex["Développement web moderne & applications performantes"],
+    servicesIndex["CMS headless & backends sur mesure"],
+    servicesIndex["Intelligence artificielle & automatisation des processus"],
+  ].filter(Boolean);
+
+  const designContenusExperience = [
+    servicesIndex["Design graphique & identité digitale"],
+    servicesIndex["Animations & motion design pour le digital"],
+    servicesIndex["Design 3D & expériences visuelles immersives"],
+  ].filter(Boolean);
+
   return (
     <>
       <Header2 parentClass="rainbow-header header-default header-left-align header-transparent header-sticky" />
@@ -29,27 +48,21 @@ export default function Page() {
       <ServicesIntro />
       <ServiceSection
         eyebrow="Services principaux"
-        title="9 services principaux"
-        description="Stratégie, développement, IA, SEO, infogérance, design graphique, motion design et 3D pour couvrir vos besoins digitaux."
-        items={o7ServicesMain}
+        title="Stratégie & direction digitale"
+        description=""
+        items={strategieDirection}
       />
       <ServiceSection
-        eyebrow="Infogérance & Support"
-        title="Infogérance & services d’exploitation"
-        description="Support, administration, infrastructures, réseaux, sécurité, VoIP et continuité énergétique."
-        items={o7InfogeranceSupport}
+        eyebrow="Services principaux"
+        title="Développement & plateformes"
+        description=""
+        items={developpementPlateformes}
       />
       <ServiceSection
-        eyebrow="Appui à Direction Informatique"
-        title="Appui DSI, MOA, Gouvernance"
-        description="Renfort opérationnel, décisions technologiques, gestion de projets et maîtrise des risques."
-        items={o7DirectionSupport}
-      />
-      <ServiceSection
-        eyebrow="Conseil & Accompagnement"
-        title="Conseil & accompagnement"
-        description="Audits, optimisation des processus, sélection technologique, budget et gouvernance IT."
-        items={o7ConsultingSupport}
+        eyebrow="Services principaux"
+        title="Design, contenus & expérience"
+        description=""
+        items={designContenusExperience}
       />
       <CtaSection anchorId="cta-services" />
       <Footer2 />

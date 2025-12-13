@@ -237,7 +237,7 @@ export const o7ServicesIntro = {
   eyebrow: "Services",
   title: "Nos Services",
   description:
-    "O7 Digital accompagne les entreprises dans leurs projets technologiques, digitaux et opérationnels grâce à une combinaison d’ingénierie moderne, de conseils stratégiques, de développement web, d’infogérance et de solutions d’infrastructure. Nous intervenons en France, en Amérique du Nord et en Amérique Latine.",
+    "O7 Digital Consulting s’implique au cœur du business en agissant comme direction digitale externalisée : alignement technologie/stratégie, pilotage CTO as a Service, structuration des outils et optimisation des processus pour soutenir la croissance réelle des entreprises.",
 };
 
 export const o7ServicesMain = [
