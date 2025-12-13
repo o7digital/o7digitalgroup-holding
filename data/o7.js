@@ -152,7 +152,7 @@ export const o7HomeServices = [
       "Environnements virtuels",
     ],
     image: {
-      src: "/assets/images/about/about-4.png",
+      src: "/strategie/design-3d.png",
       alt: "Design 3D et environnements immersifs",
     },
   },
