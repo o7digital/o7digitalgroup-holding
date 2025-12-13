@@ -4,7 +4,25 @@ import React, { useState } from "react";
 import SectionHeader from "../common/SectionHeader";
 import { o7ContactInfo } from "@/data/o7";
 
-export default function ContactContent() {
+const defaultCopy = {
+  title: "Parlons de votre projet digital",
+  intro: [
+    "Chez O7 Digital Consulting, chaque collaboration commence par un échange clair et stratégique. Que vous ayez un projet précis ou une réflexion en cours, nous prenons le temps de comprendre vos enjeux business, vos objectifs et votre contexte technologique.",
+    "Nous accompagnons des dirigeants, des équipes et des organisations qui recherchent un partenaire impliqué, capable de structurer, piloter et faire évoluer leur écosystème digital dans la durée.",
+  ],
+  whenTitle: "Quand nous contacter ?",
+  whenItems: [
+    "Lancement ou refonte d’un site ou d’une plateforme digitale",
+    "Besoin d’un accompagnement CTO ou direction digitale",
+    "Problématiques de performance, SEO ou scalabilité",
+    "Projet nécessitant design, développement et vision stratégique",
+    "Volonté d’aligner le digital avec les objectifs business",
+  ],
+  preForm:
+    "Après un premier échange, nous vous proposons une approche claire et structurée : cadrage des besoins, analyse du contexte, recommandations et plan d’action. Chaque collaboration est pensée sur mesure, avec transparence et engagement.",
+};
+
+export default function ContactContent({ contactData = o7ContactInfo, copy = defaultCopy }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -68,31 +86,32 @@ export default function ContactContent() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 mb--40">
-            <SectionHeader
-              eyebrow="Contact"
-              title=""
-              description=""
-            />
+            <SectionHeader eyebrow="Contact" title="" description="" />
             <h1 className="title w-600 mb--10 text-center">
-              Parlons de votre projet digital
+              {copy.title}
             </h1>
-            <p className="description b1 text-center mb--10">
-              Chez O7 Digital Consulting, chaque collaboration commence par un échange clair et stratégique. Que vous ayez un projet précis ou une réflexion en cours, nous prenons le temps de comprendre vos enjeux business, vos objectifs et votre contexte technologique.
-            </p>
-            <p className="description b1 text-center mb--40">
-              Nous accompagnons des dirigeants, des équipes et des organisations qui recherchent un partenaire impliqué, capable de structurer, piloter et faire évoluer leur écosystème digital dans la durée.
-            </p>
+            {copy.intro.map((paragraph, idx) => (
+              <p
+                key={paragraph}
+                className={`description b1 text-center ${
+                  idx === copy.intro.length - 1 ? "mb--40" : "mb--10"
+                }`}
+              >
+                {paragraph}
+              </p>
+            ))}
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
                 <div className="service service__style--1 bg-color-blackest radius text-left rbt-border">
                   <div className="content">
-                    <h4 className="title w-600 mb--10">Quand nous contacter ?</h4>
+                    <h4 className="title w-600 mb--10">{copy.whenTitle}</h4>
                     <p className="description b1 mb--0">
-                      • Lancement ou refonte d’un site ou d’une plateforme digitale<br />
-                      • Besoin d’un accompagnement CTO ou direction digitale<br />
-                      • Problématiques de performance, SEO ou scalabilité<br />
-                      • Projet nécessitant design, développement et vision stratégique<br />
-                      • Volonté d’aligner le digital avec les objectifs business
+                      {copy.whenItems.map((item, idx) => (
+                        <React.Fragment key={item}>
+                          • {item}
+                          {idx < copy.whenItems.length - 1 && <br />}
+                        </React.Fragment>
+                      ))}
                     </p>
                   </div>
                 </div>
@@ -150,9 +169,7 @@ export default function ContactContent() {
 
         <div className="row mt--40 row--15">
           <div className="col-lg-8 offset-lg-2 mb--20">
-            <p className="description b1 text-center mb--0">
-              Après un premier échange, nous vous proposons une approche claire et structurée : cadrage des besoins, analyse du contexte, recommandations et plan d’action. Chaque collaboration est pensée sur mesure, avec transparence et engagement.
-            </p>
+            <p className="description b1 text-center mb--0">{copy.preForm}</p>
           </div>
           <div className="col-lg-8 offset-lg-2">
             <form

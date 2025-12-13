@@ -1,5 +1,7 @@
 "use client";
 import { menuItems } from "@/data/menu";
+import { menuItemsEn } from "@/data/menu-en";
+import { menuItemsEs } from "@/data/menu-es";
 import { closeMenu } from "@/utlis/toggleMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +10,11 @@ import React, { useEffect, useRef } from "react";
 
 export default function MobileMenu() {
   const pathname = usePathname();
+  const locale = pathname.split("/")[1];
+  const resolvedItems =
+    locale === "en" ? menuItemsEn : locale === "es" ? menuItemsEs : menuItems;
+  const prefix =
+    locale === "en" ? "/en" : locale === "es" ? "/es" : "";
   const popupRef = useRef(null); // For .popup-mobile-menu
   const innerRef = useRef(null); // For .inner
 
@@ -92,7 +99,7 @@ export default function MobileMenu() {
       <div ref={innerRef} className="inner">
         <div className="header-top">
           <div className="logo">
-            <Link href={`/`}>
+            <Link href={`${prefix || "/"}`}>
               <Image
                 className="logo-light"
                 alt="Corporate Logo"
@@ -116,7 +123,7 @@ export default function MobileMenu() {
           </div>
         </div>
         <ul className="mainmenu">
-          {menuItems.map((item, index) => (
+          {resolvedItems.map((item, index) => (
             <li
               key={index}
               className={`${

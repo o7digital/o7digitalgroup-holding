@@ -5,11 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import ModeSwitcher from "../common/ModeSwitcher";
 import { openMenu } from "@/utlis/toggleMenu";
+import { usePathname } from "next/navigation";
 
 export default function Header2({
   parentClass = "rainbow-header header-default header-left-align header-not-transparent header-sticky",
   btnClass = "btn-default btn-small round",
 }) {
+  const pathname = usePathname();
+  const localePrefix =
+    pathname?.startsWith("/en") ? "/en" : pathname?.startsWith("/es") ? "/es" : "";
+
   // Force un header non transparent même si une page passe "header-transparent"
   const computedParentClass = (parentClass || "")
     .replace("header-transparent", "header-not-transparent")
@@ -22,7 +27,7 @@ export default function Header2({
           <div className="col-lg-9 col-md-6 col-4 position-static">
             <div className="header-left d-flex">
               <div className="logo">
-                <Link href={`/index-digital-agency`}>
+                <Link href={`${localePrefix}/index-digital-agency`}>
                   <Image
                     className="logo-light"
                     alt="O7 Digital Consulting"

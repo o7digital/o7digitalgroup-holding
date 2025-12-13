@@ -2,21 +2,26 @@ import React from "react";
 import SectionHeader from "../common/SectionHeader";
 import { o7Methodology } from "@/data/o7";
 
-export default function Methodology() {
+export default function Methodology({
+  eyebrow = "Mission, Vision et Valeurs",
+  title = "Mission, Vision et Valeurs",
+  description = "Notre engagement : fournir des solutions fiables, performantes et alignées sur les objectifs de nos clients.",
+  items = o7Methodology,
+}) {
   return (
     <div className="rainbow-service-area rainbow-section-gap">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              eyebrow="Mission, Vision et Valeurs"
-              title="Mission, Vision et Valeurs"
-              description="Notre engagement : fournir des solutions fiables, performantes et alignées sur les objectifs de nos clients."
+              eyebrow={eyebrow}
+              title={title}
+              description={description}
             />
           </div>
         </div>
         <div className="row row--15 service-wrapper">
-          {o7Methodology.map((item, index) => (
+          {items.map((item, index) => (
             <div
               key={item.title}
               className="col-lg-4 col-md-6 col-sm-6 col-12"

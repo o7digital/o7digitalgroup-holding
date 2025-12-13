@@ -1,11 +1,22 @@
 "use client";
 import { menuItems } from "@/data/menu";
+import { menuItemsEn } from "@/data/menu-en";
+import { menuItemsEs } from "@/data/menu-es";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-export default function Nav() {
+export default function Nav({ items }) {
   const pathname = usePathname();
+  const locale = pathname.split("/")[1];
+
+  const resolvedItems =
+    items ||
+    (locale === "en"
+      ? menuItemsEn
+      : locale === "es"
+      ? menuItemsEs
+      : menuItems);
 
   const isActiveParent = (menu) => {
     var isActive = false;
@@ -30,7 +41,7 @@ export default function Nav() {
 
   return (
     <>
-      {menuItems.map((item, index) => (
+      {resolvedItems.map((item, index) => (
         <li
           key={index}
           className={`${

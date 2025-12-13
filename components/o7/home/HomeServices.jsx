@@ -2,21 +2,26 @@ import React from "react";
 import SectionHeader from "../common/SectionHeader";
 import { o7HomeServices } from "@/data/o7";
 
-export default function HomeServices() {
+export default function HomeServices({
+  services = o7HomeServices,
+  eyebrow = "Services phares",
+  title = "9 services principaux",
+  description = "Stratégie, développement, IA, SEO, infogérance, design graphique, motion design et 3D pour couvrir vos besoins digitaux.",
+}) {
   return (
     <div className="rainbow-service-area rainbow-section-gap">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <SectionHeader
-              eyebrow="Services phares"
-              title="9 services principaux"
-              description="Stratégie, développement, IA, SEO, infogérance, design graphique, motion design et 3D pour couvrir vos besoins digitaux."
+              eyebrow={eyebrow}
+              title={title}
+              description={description}
             />
           </div>
         </div>
         <div className="row row--15 service-wrapper">
-          {o7HomeServices.map((service, index) => (
+          {services.map((service, index) => (
             <div
               key={service.title}
               className="col-lg-4 col-md-6 col-sm-6 col-12"

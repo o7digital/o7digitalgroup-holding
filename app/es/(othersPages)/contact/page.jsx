@@ -1,0 +1,25 @@
+import React from "react";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
+import ContactContent from "@/components/o7/contact/ContactContent";
+import { o7ContactCopy as o7ContactCopyEs } from "@/data/o7.es";
+
+export const metadata = {
+  title: "Contacto O7 Digital Consulting | Hablemos de tu proyecto digital",
+  description:
+    "Contacta a O7 Digital Consulting para hablar de tu proyecto digital, estrategia tecnológica o transformación digital. Respuesta rápida y acompañamiento personalizado.",
+};
+
+export default function Page() {
+  return (
+    <>
+      <Header2 parentClass="rainbow-header header-default header-left-align header-transparent header-sticky" />
+      <div>
+        <div className="rainbow-gradient-circle" />
+        <div className="rainbow-gradient-circle theme-pink" />
+      </div>
+      <ContactContent copy={o7ContactCopyEs} />
+      <Footer2 />
+    </>
+  );
+}
