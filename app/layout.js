@@ -69,6 +69,13 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <head>
         <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="9dbb2cde-b0c4-4148-82f7-15519c23b141"
+          data-blockingmode="auto"
+          strategy="beforeInteractive"
+        />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N5GR2L6P8T"
           strategy="afterInteractive"
         />
