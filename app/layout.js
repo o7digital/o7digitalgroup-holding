@@ -9,11 +9,11 @@ import ClientLayout from "./ClientLayout";
 export const metadata = {
   metadataBase: new URL('https://www.o7digital-consulting.com'),
   title: {
-    default: 'O7 Digital Consulting | Agence de consulting digital, CTO & développement web',
+    default: 'O7 Digital Consulting | CTO as a Service & SEO Technique International',
     template: '%s | O7 Digital Consulting'
   },
-  description: 'O7 Digital Consulting est une agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.',
-  keywords: ['consulting digital', 'CTO as a Service', 'développement web', 'agence digitale', 'SEO', 'design graphique', 'motion design', 'stratégie digitale', 'performance web'],
+  description: 'CTO as a Service France et international. Direction digitale externalisée, SEO technique avancé, architecture web haute performance pour entreprises en France, USA, Canada et Mexique.',
+  keywords: ['CTO as a Service France', 'CTO as a Service international', 'direction digitale externalisée', 'conseil IT stratégique', 'transformation digitale entreprises internationales', 'SEO technique international', 'agence SEO technique France', 'consulting digital B2B international', 'architecture web haute performance', 'audit SEO technique avancé', 'accompagnement transformation digitale B2B', 'direction informatique externalisée', 'consulting IT pour groupes internationaux', 'stratégie digitale internationale', 'développement web React Next.js', 'CMS headless pour entreprises', 'optimisation de performance web', 'conseil en architecture technique'],
   authors: [{ name: 'O7 Digital Consulting' }],
   creator: 'O7 Digital Consulting',
   publisher: 'O7 Digital Consulting',

@@ -5,16 +5,24 @@ import { footerSections, socialLinks } from "@/data/footerLinks";
 
 const expertiseContent = {
   fr: {
-    title: "Expertise digitale Paris & Montréal",
+    title: "Expertise digitale France, USA, Canada & Mexique",
     keywords: [
-      "agence de conseil digital à Paris",
-      "agence de développement web à Montréal",
-      "création de site web sur mesure",
-      "services de développement full-stack",
-      "CTO as a Service",
-      "conseil DevOps et cloud",
-      "intégration intelligence artificielle",
-      "stratégie SEO avancée"
+      "consulting digital B2B international",
+      "développement web professionnel",
+      "solutions digitales sur mesure",
+      "transformation numérique entreprise",
+      "conseil digital stratégique",
+      "architecture digitale moderne",
+      "SEO professionnel avancé",
+      "performance web optimisée",
+      "solutions web entreprise",
+      "expertise digitale internationale",
+      "services IT pour entreprises",
+      "optimisation SEO technique",
+      "Google Workspace consulting",
+      "Microsoft 365 consulting",
+      "design graphique digital",
+      "motion design professionnel"
     ],
     followUs: "Suivez-nous",
     legalNotice: "Mentions Légales"
