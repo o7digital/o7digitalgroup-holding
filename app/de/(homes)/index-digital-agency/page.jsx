@@ -13,9 +13,9 @@ import {
 } from "@/data/o7.de";
 
 export const metadata = {
-  title: "O7 Digital Consulting | Ingenieurleistungen, Strategie und Webentwicklung",
+  title: "CTO as a Service Deutschland & DACH | Externalisierte CTO Dienstleistungen",
   description:
-    "Digitale Beratungsagentur in Deutschland, Österreich und der Schweiz – spezialisiert auf CTO as a Service, individuelle Webentwicklung, DevOps- und Cloud-Consulting, KI-Integration und technisches SEO.",
+    "Externalisierte CTO Dienstleistungen und digitale Transformation für Unternehmen in Deutschland, Österreich, Schweiz, USA und Kanada. Technisches SEO international, Hochleistungs-Webarchitektur, B2B Digital Consulting und strategische IT-Beratung.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/de/index-digital-agency',
     languages: {

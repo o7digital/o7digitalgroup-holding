@@ -1,37 +1,37 @@
 export const o7HomeIntro = {
-  eyebrow: "About O7 Digital",
-  title: "O7 Digital: engineering, strategy and digital performance",
+  eyebrow: "Outsourced digital leadership",
+  title: "CTO as a Service & digital transformation for international companies",
   description:
-    "O7 Digital is a consulting agency specialised in digital transformation, modern web development and performance optimisation. We support companies in France, North America and Latin America by combining strategy, engineering and innovation.",
+    "O7 Digital supports digital transformation for companies in UK, USA, Canada and Mexico. Outsourced CTO services, high-performance web architecture, technical SEO international and complex digital project management for demanding B2B organizations.",
   bullets: [
-    "Our expertise covers key domains: digital strategy, high-performance web development, headless CMS, AI and automation, technical SEO and continuous optimisation.",
-    "We help organisations build fast, reliable, secure, results-oriented platforms. O7 Digital: technology serving your growth.",
+    "Strategic IT consulting expertise: CTO as a Service international, technical architecture consulting, React Next.js development, headless CMS for enterprises and business process automation.",
+    "We help organizations build fast, reliable and secure platforms. O7 Digital: technology serving your international growth.",
   ],
 };
 
 export const o7HomeServices = [
   {
-    title: "Digital strategy & CTO as a Service",
+    title: "CTO as a Service UK & USA",
     description:
-      "We advise leadership teams on key technology decisions as CTO as a Service. Technical audit, architecture, stack choices, vendor management and product roadmap are part of our support. The goal is to secure scalability, performance and technical coherence without hiring an internal CTO immediately.",
+      "Outsourced digital leadership for companies in UK, USA, Canada and Mexico. We provide CTO as a Service to secure your technology decisions: advanced technical SEO audit, technical architecture consulting, complex digital project management, stack selection and product roadmap. B2B digital transformation without hiring an internal CTO.",
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
       src: "/strategie/strategie-cto.webp",
-      alt: "Digital strategy workshop",
+      alt: "Outsourced CTO services and digital leadership",
       height: "330px",
     },
   },
   {
-    title: "Modern web development & performant apps",
+    title: "React Next.js development & high-performance web architecture",
     description:
-      "We build modern, fast and secure websites and applications, focused on conversion and performance. We rely on recent technologies (React, Next.js, Astro) and strict best practices for UX, accessibility and load speed. Each platform is designed to evolve and support growth.",
+      "High-performance web architecture for demanding enterprises. Custom web development with React, Next.js and Astro. Web performance optimization, headless CMS for enterprises and AI integration services. Each platform is designed to scale and support your international growth.",
     iconClass: "feather-zap",
     align: "text-left",
     spanTwo: true,
     image: {
       src: "/strategie/dev-web.webp",
-      alt: "Modern web development",
+      alt: "React Next.js high-performance web development",
       className: "service-image-span-two",
       height: "330px",
     },
@@ -55,14 +55,14 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Technical SEO & digital performance",
+    title: "Technical SEO international & advanced SEO audit",
     description:
-      "We deploy a results-driven technical SEO approach, combining site structure, performance, meta optimisation, structured data and analytics tracking. Goal: sustainable visibility on Google, qualified traffic and better conversion, following best practices.",
+      "Technical SEO agency UK specialized in international SEO. Advanced technical SEO audit, web performance optimization, Schema.org structured data and technical SEO strategy for international websites. Sustainable Google visibility for UK, USA, Canada and Mexico markets.",
     iconClass: "feather-shield",
     align: "text-left",
     image: {
       src: "/strategie/seo-perfo.webp",
-      alt: "SEO performance dashboard",
+      alt: "Technical SEO international and advanced audit",
     },
   },
   {

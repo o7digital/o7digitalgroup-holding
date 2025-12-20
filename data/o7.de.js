@@ -1,37 +1,37 @@
 export const o7HomeIntro = {
-  eyebrow: "Überblick O7 Digital",
-  title: "O7 Digital: Engineering, Strategie und digitale Performance",
+  eyebrow: "Externalisierte digitale Führung",
+  title: "CTO as a Service & digitale Transformation für internationale Unternehmen",
   description:
-    "O7 Digital ist eine Agentur, spezialisiert auf digitale Transformation, modernes Webdevelopment und Performance-Optimierung. Wir begleiten Unternehmen in Frankreich, Nordamerika und Lateinamerika bei der Konzeption, Umsetzung und Weiterentwicklung ihrer digitalen Lösungen – mit Strategie, Engineering und Innovation.",
+    "O7 Digital begleitet die digitale Transformation von Unternehmen in Deutschland, Österreich, Schweiz, USA und Kanada. Externalisierte CTO Dienstleistungen, Hochleistungs-Webarchitektur, technisches SEO international und Management komplexer Digitalprojekte für anspruchsvolle B2B-Organisationen.",
   bullets: [
-    "Unsere Expertise umfasst digitale Strategie, leistungsstarkes Webdevelopment, Headless CMS, KI und Automatisierung, technisches SEO und kontinuierliche Optimierung.",
-    "Wir helfen Unternehmen, schnelle, zuverlässige, sichere und ergebnisorientierte Plattformen zu bauen. O7 Digital: Technologie im Dienst Ihres Wachstums.",
+    "Expertise in strategischer IT-Beratung: CTO as a Service international, technische Architekturberatung, React Next.js Entwicklung, Headless CMS für Unternehmen und Geschäftsprozessautomatisierung.",
+    "Wir helfen Organisationen, schnelle, zuverlässige und sichere Plattformen zu bauen. O7 Digital: Technologie im Dienst Ihres internationalen Wachstums.",
   ],
 };
 
 export const o7HomeServices = [
   {
-    title: "Digitale Strategie & CTO as a Service",
+    title: "CTO as a Service Deutschland & DACH",
     description:
-      "Wir beraten Führungsteams als CTO as a Service. Technischer Audit, Architekturdefinition, Stack-Auswahl, Steuerung von Dienstleistern und Produkt-Roadmap gehören dazu. Ziel: Skalierbarkeit, Performance und technische Kohärenz sichern, ohne sofort einen internen CTO einzustellen.",
+      "Externalisierte digitale Führung für Unternehmen in Deutschland, Österreich, Schweiz, USA und Kanada. Wir agieren als CTO as a Service, um Ihre Technologieentscheidungen abzusichern: fortgeschrittenes technisches SEO Audit, technische Architekturberatung, Management komplexer Digitalprojekte, Stack-Auswahl und Produkt-Roadmap. B2B digitale Transformation ohne internen CTO.",
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
       src: "/strategie/strategie-cto.webp",
-      alt: "Workshop zur digitalen Strategie",
+      alt: "Externalisierte CTO Dienstleistungen und digitale Führung",
       height: "330px",
     },
   },
   {
-    title: "Modernes Webdevelopment & performante Anwendungen",
+    title: "React Next.js Entwicklung & Hochleistungs-Webarchitektur",
     description:
-      "Wir entwickeln moderne, schnelle und sichere Websites und Anwendungen mit Fokus auf Conversion und Performance. Wir setzen auf aktuelle Technologien (React, Next.js, Astro je nach Projekt) und strenge Best Practices in UX, Accessibility und Ladezeiten. Jede Plattform ist auf nachhaltiges Wachstum ausgelegt.",
+      "Hochleistungs-Webarchitektur für anspruchsvolle Unternehmen. Maßgeschneiderte Webentwicklung mit React, Next.js und Astro. Web-Performance-Optimierung, Headless CMS für Unternehmen und KI-Integration. Jede Plattform ist für Wachstum und internationales Scaling konzipiert.",
     iconClass: "feather-zap",
     align: "text-left",
     spanTwo: true,
     image: {
       src: "/strategie/dev-web.webp",
-      alt: "Modernes Webdevelopment",
+      alt: "React Next.js Hochleistungs-Webentwicklung",
       className: "service-image-span-two",
       height: "330px",
     },
@@ -55,14 +55,14 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "Technisches SEO & digitale Performance",
+    title: "Technisches SEO international & fortgeschrittenes SEO Audit",
     description:
-      "Wir setzen eine ergebnisorientierte technische SEO-Strategie um: Seitenstruktur, Performance, Metadaten, strukturierte Daten und Analytics-Tracking. Ziel: nachhaltige Sichtbarkeit bei Google, qualifizierter Traffic und bessere Conversion – nach Best Practices des SEO.",
+      "Technische SEO Agentur Deutschland spezialisiert auf internationales SEO. Fortgeschrittenes technisches SEO Audit, Web-Performance-Optimierung, Schema.org strukturierte Daten und technische SEO-Strategie für internationale Websites. Nachhaltige Google-Sichtbarkeit für Märkte Deutschland, Österreich, Schweiz, USA und Kanada.",
     iconClass: "feather-shield",
     align: "text-left",
     image: {
       src: "/strategie/seo-perfo.webp",
-      alt: "Dashboard für SEO-Performance",
+      alt: "Technisches SEO international und fortgeschrittenes Audit",
     },
   },
   {

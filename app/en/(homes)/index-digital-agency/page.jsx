@@ -13,9 +13,9 @@ import {
 } from "@/data/o7.en";
 
 export const metadata = {
-  title: "O7 Digital Consulting | Engineering, strategy and web development",
+  title: "CTO as a Service UK & USA | Outsourced Digital Leadership",
   description:
-    "Digital consulting agency UK & USA specializing in CTO as a Service, custom website development, DevOps consulting, cloud infrastructure, AI integration and technical SEO consulting.",
+    "Outsourced CTO services and digital transformation for companies in UK, USA, Canada and Mexico. Technical SEO international, high-performance web architecture, B2B digital consulting and strategic IT consulting.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/en/index-digital-agency',
     languages: {

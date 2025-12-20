@@ -13,9 +13,9 @@ import {
 } from "@/data/o7.es";
 
 export const metadata = {
-  title: "O7 Digital Consulting | Ingeniería, estrategia y desarrollo web",
+  title: "CTO as a Service España & México | Dirección Digital Externalizada",
   description:
-    "Agencia de consultoría digital en Madrid y México especializada en CTO as a Service, desarrollo de sitios web a medida, consultoría DevOps, cloud, integración IA y estrategia SEO profesional.",
+    "Dirección digital externalizada y CTO as a Service para empresas en España, México, USA y Canadá. SEO técnico internacional, arquitectura web alto rendimiento, transformación digital B2B y consultoría IT estratégica.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/es/index-digital-agency',
     languages: {
