@@ -9,18 +9,10 @@
 }
 
 @font-face {
-  font-family: 'lg';
-  src: url('../fonts/lg.ttf') format('truetype'),
-       url('../fonts/lg.woff') format('woff');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'slick';
   src: url('../fonts/slick.woff') format('woff'),
-       url('../fonts/slick.ttf') format('truetype');
+       url('../fonts/slick.ttf') format('truetype'),
+       url('../fonts/slick.eot') format('embedded-opentype');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
