@@ -214,3 +214,29 @@ export const o7ContactCopy = {
     error: "An error occurred, please try again.",
   },
 };
+
+export const o7PortfolioCopy = {
+  eyebrow: "Portfolio",
+  title: "Live website previews",
+  description:
+    "Explore a selection of projects with live previews of the delivered sites.",
+  metaTitle: "Portfolio | O7 Digital Consulting",
+  metaDescription:
+    "Explore O7 Digital Consulting projects with live website previews, updated dynamically.",
+  labels: {
+    viewSite: "View site",
+    loading: "Loading...",
+    previewUnavailable: "Preview unavailable",
+  },
+  categories: {
+    hospitality: "Hospitality",
+    realEstate: "Real Estate",
+    legal: "Law Firm",
+    ecommerce: "E-commerce",
+    corporate: "Corporate",
+    studio: "Creative Studio",
+    creativeDesignArchitecture: "Creative & Design / Architecture & Interior",
+    corporateDigitalTransformation: "Corporate & Digital Transformation",
+    technologySecurity: "Technology & Security Solutions",
+  },
+};

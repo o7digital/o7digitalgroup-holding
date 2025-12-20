@@ -214,3 +214,29 @@ export const o7ContactCopy = {
     error: "Es ist ein Fehler aufgetreten, bitte erneut versuchen.",
   },
 };
+
+export const o7PortfolioCopy = {
+  eyebrow: "Referenzen",
+  title: "Live-Vorschauen der Websites",
+  description:
+    "Eine Auswahl unserer Projekte mit Live-Vorschau der gelieferten Websites.",
+  metaTitle: "Referenzen | O7 Digital Consulting",
+  metaDescription:
+    "Entdecken Sie Projekte von O7 Digital Consulting mit dynamischen Live-Vorschauen der Websites.",
+  labels: {
+    viewSite: "Zur Website",
+    loading: "Laden...",
+    previewUnavailable: "Vorschau nicht verfügbar",
+  },
+  categories: {
+    hospitality: "Hotellerie",
+    realEstate: "Immobilien",
+    legal: "Anwaltskanzlei",
+    ecommerce: "E-Commerce",
+    corporate: "Unternehmen",
+    studio: "Kreativstudio",
+    creativeDesignArchitecture: "Kreativ & Design / Architektur & Interior",
+    corporateDigitalTransformation: "Unternehmen & digitale Transformation",
+    technologySecurity: "Technologie & Sicherheitslösungen",
+  },
+};

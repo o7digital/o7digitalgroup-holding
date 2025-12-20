@@ -7,6 +7,7 @@ export default function sitemap() {
     '',
     '/index-digital-agency',
     '/about',
+    '/portfolio',
     '/contact',
   ];
 

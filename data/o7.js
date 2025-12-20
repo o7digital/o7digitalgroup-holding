@@ -446,3 +446,29 @@ export const o7ContactInfo = {
   phone: "",
   location: "France / Amérique du Nord / Amérique Latine",
 };
+
+export const o7PortfolioCopy = {
+  eyebrow: "Nos réalisations",
+  title: "Nos réalisations en aperçu live",
+  description:
+    "Découvrez une sélection de projets avec aperçu live des sites livrés par O7 Digital Consulting.",
+  metaTitle: "Nos réalisations | O7 Digital Consulting",
+  metaDescription:
+    "Découvrez des projets web O7 Digital Consulting avec aperçu live des sites, sans screenshots figés.",
+  labels: {
+    viewSite: "Voir le site",
+    loading: "Chargement...",
+    previewUnavailable: "Aperçu indisponible",
+  },
+  categories: {
+    hospitality: "Hôtellerie",
+    realEstate: "Immobilier",
+    legal: "Cabinet d'avocats",
+    ecommerce: "E-commerce",
+    corporate: "Corporate",
+    studio: "Studio créatif",
+    creativeDesignArchitecture: "Création & design / Architecture & intérieur",
+    corporateDigitalTransformation: "Corporate & transformation digitale",
+    technologySecurity: "Technologie & solutions de sécurité",
+  },
+};

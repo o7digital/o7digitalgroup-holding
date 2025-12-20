@@ -2,14 +2,14 @@ import React from "react";
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
 import PortfolioSection from "@/components/o7/portfolio/PortfolioSection";
-import { o7PortfolioCopy } from "@/data/o7";
+import { o7PortfolioCopy } from "@/data/o7.en";
 import { o7PortfolioProjects } from "@/data/o7-portfolio";
 
 export const metadata = {
   title: o7PortfolioCopy.metaTitle,
   description: o7PortfolioCopy.metaDescription,
   alternates: {
-    canonical: "https://www.o7digital-consulting.com/portfolio",
+    canonical: "https://www.o7digital-consulting.com/en/portfolio",
     languages: {
       fr: "https://www.o7digital-consulting.com/portfolio",
       en: "https://www.o7digital-consulting.com/en/portfolio",
@@ -18,8 +18,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    locale: "fr_FR",
-    alternateLocale: ["en_US", "es_ES", "de_DE"],
+    locale: "en_US",
+    alternateLocale: ["fr_FR", "es_ES", "de_DE"],
   },
 };
 
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
       <PortfolioSection copy={o7PortfolioCopy} projects={o7PortfolioProjects} />
-      <Footer2 />
+      <Footer2 lang="en" />
     </>
   );
 }

@@ -37,3 +37,115 @@
 .service-wrapper .service .content {
     flex-grow: 1;
 }
+
+/* O7 portfolio previews */
+.o7-portfolio-col {
+    display: flex;
+}
+
+.o7-portfolio-card {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-small);
+    background-color: var(--color-blackest);
+}
+
+.o7-portfolio-card .inner {
+    height: 100%;
+}
+
+.o7-portfolio-card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.o7-portfolio-card .content .btn-default {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.o7-portfolio-preview {
+    position: relative;
+    margin: 0;
+    border-radius: var(--radius-small);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(
+        120deg,
+        var(--color-blackest) 0%,
+        var(--color-darker) 50%,
+        var(--color-blackest) 100%
+    );
+}
+
+.o7-portfolio-preview a {
+    display: block;
+    height: 100%;
+}
+
+.o7-portfolio-preview img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.35s ease, transform 0.4s ease;
+}
+
+.o7-portfolio-card.is-loaded .o7-portfolio-preview img {
+    opacity: 1;
+}
+
+.o7-portfolio-card:hover .o7-portfolio-preview img {
+    transform: scale(1.03);
+}
+
+.o7-portfolio-placeholder,
+.o7-portfolio-error {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    color: var(--color-body);
+    padding: 12px;
+    text-align: center;
+}
+
+.o7-portfolio-placeholder {
+    background: linear-gradient(
+        110deg,
+        var(--color-blackest) 0%,
+        var(--color-darker) 45%,
+        var(--color-blackest) 70%
+    );
+    background-size: 200% 100%;
+    animation: o7-portfolio-shimmer 1.6s linear infinite;
+}
+
+.o7-portfolio-card.is-loaded .o7-portfolio-placeholder {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.o7-portfolio-error {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+.o7-portfolio-card.has-error .o7-portfolio-error {
+    opacity: 1;
+}
+
+@keyframes o7-portfolio-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
