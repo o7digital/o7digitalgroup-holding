@@ -12,8 +12,8 @@ export const metadata = {
     default: 'O7 Digital Consulting | CTO as a Service & SEO Technique International',
     template: '%s | O7 Digital Consulting'
   },
-  description: 'CTO as a Service France et international. Direction digitale externalisée, SEO technique avancé, architecture web haute performance pour entreprises en France, USA, Canada et Mexique.',
-  keywords: ['CTO as a Service France', 'CTO as a Service international', 'direction digitale externalisée', 'conseil IT stratégique', 'transformation digitale entreprises internationales', 'SEO technique international', 'agence SEO technique France', 'consulting digital B2B international', 'architecture web haute performance', 'audit SEO technique avancé', 'accompagnement transformation digitale B2B', 'direction informatique externalisée', 'consulting IT pour groupes internationaux', 'stratégie digitale internationale', 'développement web React Next.js', 'CMS headless pour entreprises', 'optimisation de performance web', 'conseil en architecture technique'],
+  description: 'CTO as a Service France, Europe et international. Direction digitale externalisée, SEO technique international Europe, architecture web haute performance pour entreprises en France, USA, Canada, Mexique et Allemagne.',
+  keywords: ['CTO as a Service France', 'CTO as a Service Europe', 'CTO as a Service international', 'direction digitale externalisée', 'direction digitale externalisée Allemagne', 'conseil IT stratégique international', 'transformation digitale groupes internationaux', 'SEO technique international Europe', 'agence SEO technique France', 'consulting digital B2B Europe', 'architecture web haute performance Europe', 'audit SEO technique avancé', 'accompagnement transformation digitale B2B', 'direction informatique externalisée Europe', 'consulting IT pour groupes internationaux', 'stratégie digitale internationale', 'développement web React Next.js', 'CMS headless entreprise Europe', 'optimisation performance web internationale', 'conseil en architecture technique'],
   authors: [{ name: 'O7 Digital Consulting' }],
   creator: 'O7 Digital Consulting',
   publisher: 'O7 Digital Consulting',

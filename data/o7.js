@@ -24,38 +24,38 @@ export const o7HeroSlides = [
 
 export const o7HomeIntro = {
   eyebrow: "Direction digitale externalisée",
-  title: "CTO as a Service & transformation digitale pour entreprises internationales",
+  title: "CTO as a Service & transformation digitale pour groupes internationaux",
   description:
-    "O7 Digital accompagne la transformation digitale des entreprises en France, USA, Canada et Mexique. Direction digitale externalisée, architecture web haute performance, SEO technique international et pilotage de projets digitaux complexes pour groupes B2B exigeants.",
+    "O7 Digital accompagne la transformation digitale des entreprises en France, USA, Canada, Mexique et Allemagne. Direction digitale externalisée Europe, architecture web haute performance, SEO technique international et pilotage de projets digitaux complexes pour groupes B2B exigeants.",
   bullets: [
-    "Expertise consulting IT stratégique : CTO as a Service international, conseil en architecture technique, développement web React Next.js, CMS headless pour entreprises et automatisation des processus métiers.",
+    "Expertise consulting IT stratégique international : CTO as a Service Europe, conseil en architecture technique, développement web React Next.js, CMS headless entreprise et automatisation des processus métiers.",
     "Nous aidons les organisations à créer des plateformes rapides, fiables et sécurisées. O7 Digital : la technologie au service de votre croissance internationale.",
   ],
 };
 
 export const o7HomeServices = [
   {
-    title: "CTO as a Service France & International",
+    title: "CTO as a Service France & Europe",
     description:
-      "Direction digitale externalisée pour entreprises en France, Canada, USA et Mexique. Nous intervenons comme CTO as a Service pour sécuriser vos décisions technologiques : audit SEO technique avancé, conseil en architecture technique, pilotage de projets digitaux complexes, choix de stack et roadmap produit. Accompagnement transformation digitale B2B sans recruter un CTO interne.",
+      "Direction digitale externalisée pour entreprises en France, Canada, USA, Mexique et Allemagne. Nous intervenons comme CTO as a Service Europe pour sécuriser vos décisions technologiques : audit SEO technique avancé, conseil en architecture technique, pilotage de projets digitaux complexes, choix de stack et roadmap produit. Accompagnement transformation digitale groupes internationaux sans recruter un CTO interne.",
     iconClass: "feather-cpu",
     align: "text-left",
     image: {
       src: "/strategie/strategie-cto.webp",
-      alt: "Direction digitale externalisée et CTO as a Service",
+      alt: "Direction digitale externalisée et CTO as a Service Europe",
       height: "330px",
     },
   },
   {
     title: "Développement web React Next.js haute performance",
     description:
-      "Architecture web haute performance pour entreprises exigeantes. Développement web sur mesure avec React, Next.js et Astro. Optimisation de performance web, CMS headless pour entreprises et intégration intelligence artificielle. Chaque plateforme est conçue pour évoluer durablement et soutenir votre croissance internationale.",
+      "Architecture web haute performance Europe pour entreprises exigeantes. Développement web international avec React, Next.js et Astro. Optimisation performance web internationale, CMS headless entreprise Europe et intégration intelligence artificielle. Chaque plateforme est conçue pour évoluer durablement et soutenir votre croissance en France, Europe et international.",
     iconClass: "feather-zap",
     align: "text-left",
     spanTwo: true,
     image: {
       src: "/strategie/dev-web.webp",
-      alt: "Développement web React Next.js haute performance",
+      alt: "Développement web React Next.js haute performance Europe",
       className: "service-image-span-two",
       height: "330px",
     },
@@ -79,14 +79,14 @@ export const o7HomeServices = [
     },
   },
   {
-    title: "SEO technique international & audit SEO avancé",
+    title: "SEO technique international Europe & audit SEO avancé",
     description:
-      "Agence SEO technique France spécialisée en référencement international. Audit SEO technique avancé, optimisation de performance web, données structurées Schema.org et stratégie SEO technique pour sites internationaux. Visibilité durable sur Google pour marchés France, USA, Canada et Mexique.",
+      "Agence SEO technique France spécialisée en référencement international Europe. Audit SEO technique avancé, optimisation performance web internationale, données structurées Schema.org et stratégie SEO pour sites multilingues Europe. Visibilité durable sur Google pour marchés France, USA, Canada, Mexique et Allemagne.",
     iconClass: "feather-shield",
     align: "text-left",
     image: {
       src: "/strategie/seo-perfo.webp",
-      alt: "SEO technique international et audit SEO avancé",
+      alt: "SEO technique international Europe et audit SEO avancé",
     },
   },
   {

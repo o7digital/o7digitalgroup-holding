@@ -9,9 +9,9 @@ import HomeServices from "@/components/o7/home/HomeServices";
 
 export const metadata = {
   title:
-    "CTO as a Service France & International | Direction Digitale Externalisée",
+    "CTO as a Service France & Europe | Direction Digitale Externalisée",
   description:
-    "Direction digitale externalisée et CTO as a Service pour entreprises en France, Canada, USA et Mexique. SEO technique international, architecture web haute performance, transformation digitale B2B et consulting IT stratégique.",
+    "Direction digitale externalisée et CTO as a Service pour entreprises en France, Canada, USA, Mexique et Allemagne. SEO technique international Europe, architecture web haute performance, transformation digitale groupes internationaux et consulting IT stratégique.",
   alternates: {
     canonical: 'https://www.o7digital-consulting.com/index-digital-agency',
     languages: {

@@ -5,24 +5,24 @@ import { footerSections, socialLinks } from "@/data/footerLinks";
 
 const expertiseContent = {
   fr: {
-    title: "Expertise digitale France, USA, Canada & Mexique",
+    title: "Expertise digitale France, Europe & International",
     keywords: [
-      "consulting digital B2B international",
-      "développement web professionnel",
-      "solutions digitales sur mesure",
-      "transformation numérique entreprise",
-      "conseil digital stratégique",
-      "architecture digitale moderne",
-      "SEO professionnel avancé",
+      "consulting digital B2B Europe",
+      "développement web international",
+      "solutions digitales internationales",
+      "transformation numérique internationale",
+      "consulting digital stratégique",
+      "architecture digitale Europe",
+      "SEO professionnel international",
       "performance web optimisée",
-      "solutions web entreprise",
-      "expertise digitale internationale",
-      "services IT pour entreprises",
+      "solutions web entreprise Europe",
+      "expertise digitale Europe",
+      "services IT Europe",
       "optimisation SEO technique",
       "Google Workspace consulting",
       "Microsoft 365 consulting",
       "design graphique digital",
-      "motion design professionnel"
+      "accompagnement digital entreprises européennes"
     ],
     followUs: "Suivez-nous",
     legalNotice: "Mentions Légales"
