@@ -16,6 +16,12 @@ export const metadata = {
   authors: [{ name: 'O7 Digital Consulting' }],
   creator: 'O7 Digital Consulting',
   publisher: 'O7 Digital Consulting',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  manifest: '/manifest.json',
   alternates: {
     canonical: '/',
     languages: {
@@ -35,7 +41,7 @@ export const metadata = {
     description: 'O7 Digital Consulting est une agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne, design graphique, motion design, SEO et performance digitale.',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/assets/images/o7digital-logo.png',
         width: 1200,
         height: 630,
         alt: 'O7 Digital Consulting',
@@ -46,7 +52,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'O7 Digital Consulting | Agence de consulting digital',
     description: 'Agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne et SEO.',
-    images: ['/images/og-image.jpg'],
+    images: ['/assets/images/o7digital-logo.png'],
   },
   robots: {
     index: true,
@@ -60,7 +66,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'verification_token', // À remplacer par votre token Google Search Console
+    google: 'google2942c8bf8c7f17a1',
   },
 };
 

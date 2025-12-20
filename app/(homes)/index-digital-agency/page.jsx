@@ -109,6 +109,101 @@ export default function Home() {
           }
         `}
       </Script>
+      <Script id="ld-localbusiness" type="application/ld+json" strategy="afterInteractive">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "O7 Digital Consulting",
+            "image": "https://www.o7digital-consulting.com/logo.png",
+            "@id": "https://www.o7digital-consulting.com",
+            "url": "https://www.o7digital-consulting.com",
+            "telephone": "+33-XX-XX-XX-XX",
+            "priceRange": "€€€",
+            "address": [
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "Paris",
+                "addressLocality": "Paris",
+                "addressRegion": "Île-de-France",
+                "postalCode": "75000",
+                "addressCountry": "FR"
+              },
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "Montréal",
+                "addressLocality": "Montréal",
+                "addressRegion": "QC",
+                "postalCode": "H0H 0H0",
+                "addressCountry": "CA"
+              }
+            ],
+            "geo": [
+              {
+                "@type": "GeoCoordinates",
+                "latitude": 48.8566,
+                "longitude": 2.3522
+              },
+              {
+                "@type": "GeoCoordinates",
+                "latitude": 45.5017,
+                "longitude": -73.5673
+              }
+            ],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "18:00"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/o7-digital-consulting"
+            ]
+          }
+        `}
+      </Script>
+      <Script id="ld-webpage" type="application/ld+json" strategy="afterInteractive">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "O7 Digital Consulting | Agence de consulting digital",
+            "description": "Agence de conseil digital à Paris et Montréal spécialisée en CTO as a Service, développement web sur mesure, conseil DevOps, cloud, intégration IA et stratégie SEO avancée.",
+            "url": "https://www.o7digital-consulting.com/index-digital-agency",
+            "inLanguage": "fr-FR",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "O7 Digital Consulting",
+              "url": "https://www.o7digital-consulting.com"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://www.o7digital-consulting.com"
+                }
+              ]
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.o7digital-consulting.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        `}
+      </Script>
       <Hero />
       <HomeIntro />
       <HomeServices />
