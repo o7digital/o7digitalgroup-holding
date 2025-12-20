@@ -85,20 +85,30 @@ export const o7PortfolioProjects = [
   },
   {
     id: "home-design-marques",
-    title: "Custom Wood Design Website & Digital Presence",
+    title: "Home Design Marques",
     url: "https://www.homedesignmarques.com/",
     category: "creativeDesignArchitecture",
+    alt: "Custom Wood Design Website & Digital Presence",
   },
   {
     id: "integra365",
-    title: "Digital Transformation Platform for Businesses",
+    title: "Integra365",
     url: "https://www.integra365.digital/",
     category: "corporateDigitalTransformation",
+    alt: "Digital Transformation Platform for Businesses",
   },
   {
     id: "movisafe",
-    title: "Technology & Security Product Website",
+    title: "Movisafe",
     url: "https://movisafe.com/",
     category: "technologySecurity",
+    alt: "Technology & Security Product Website",
+  },
+  {
+    id: "el-murmullo",
+    title: "El Murmullo",
+    url: "https://www.el-murmullo.com/en/luxury-romantic-boutique-hotel-zihuatanejo-ixtapa-mexico.php",
+    category: "hospitality",
+    alt: "Luxury romantic boutique hotel in Zihuatanejo Ixtapa, Mexico",
   },
 ];

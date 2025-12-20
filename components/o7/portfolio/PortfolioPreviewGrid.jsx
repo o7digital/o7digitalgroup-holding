@@ -2,10 +2,12 @@
 
 import React, { useMemo, useState } from "react";
 
-const buildPreviewUrl = (url) =>
-  `https://api.microlink.io/?url=${encodeURIComponent(
-    url
-  )}&screenshot=true&meta=false`;
+const buildPreviewUrl = (url) => {
+  const safeUrl = (url || "").trim();
+  return `https://api.microlink.io/?url=${encodeURIComponent(
+    safeUrl
+  )}&screenshot=true&meta=false&embed=screenshot.url`;
+};
 
 function PortfolioCard({ project, labels, categoryLabel }) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -39,7 +41,7 @@ function PortfolioCard({ project, labels, categoryLabel }) {
             >
               <img
                 src={previewUrl}
-                alt={project.title}
+                alt={project.alt || project.title}
                 loading="lazy"
                 decoding="async"
                 onLoad={handleLoad}
