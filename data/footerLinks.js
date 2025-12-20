@@ -1,16 +1,16 @@
 export const socialLinks = [
-  { href: "https://www.facebook.com/", iconClass: "feather-facebook" },
-  { href: "https://www.linkdin.com/", iconClass: "feather-linkedin" },
+  { href: "https://www.facebook.com/o7digital", iconClass: "feather-facebook" },
+  { href: "https://www.linkedin.com/company/o7digital/", iconClass: "feather-linkedin" },
 ];
 
 export const socialLinksWithSal = [
   {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/o7digital",
     iconClass: "feather-facebook",
     salDelay: 200,
   },
   {
-    href: "https://www.linkdin.com/",
+    href: "https://www.linkedin.com/company/o7digital/",
     iconClass: "feather-linkedin",
     salDelay: 300,
   },
