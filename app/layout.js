@@ -1,6 +1,7 @@
 import "../public/assets/scss/main.scss";
 import "react-modal-video/scss/modal-video.scss";
 import "photoswipe/dist/photoswipe.css";
+import "../public/assets/css/fonts-optimized.css";
 import "./custom-styles.css";
 import Script from "next/script";
 import ClientLayout from "./ClientLayout";
@@ -74,18 +75,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
+        {/* Preconnect pour accélérer le chargement */}
+        <link rel="preconnect" href="https://consent.cookiebot.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://consent.cookiebot.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="9dbb2cde-b0c4-4148-82f7-15519c23b141"
           data-blockingmode="auto"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N5GR2L6P8T"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
