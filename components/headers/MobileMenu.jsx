@@ -12,6 +12,8 @@ import React, { useEffect, useRef } from "react";
 export default function MobileMenu() {
   const pathname = usePathname();
   const locale = pathname.split("/")[1];
+  const localePrefix =
+    pathname?.match(/^\/(en|es|de)(?=\/|$)/)?.[0] || "";
   const resolvedItems =
     locale === "en"
       ? menuItemsEn
@@ -80,6 +82,14 @@ export default function MobileMenu() {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, []);
+
+  const buildLocaleHref = (nextLocale) => {
+    const current = pathname || "";
+    const stripped = current.replace(/^\/(en|es|de)(?=\/|$)/, "");
+    if (nextLocale === "fr") return stripped || "/";
+    const base = stripped.startsWith("/") ? stripped : `/${stripped}`;
+    return `/${nextLocale}${base === "/" ? "" : base}`;
+  };
 
   const isActiveParent = (menu) => {
     var isActive = false;
@@ -220,6 +230,35 @@ export default function MobileMenu() {
             </li>
           ))}
         </ul>
+        <div className="mobile-language-switcher" aria-label="Language switcher">
+          <Link
+            href={buildLocaleHref("fr")}
+            className={localePrefix === "" ? "active" : ""}
+          >
+            FR
+          </Link>
+          <span className="separator">|</span>
+          <Link
+            href={buildLocaleHref("en")}
+            className={localePrefix === "/en" ? "active" : ""}
+          >
+            EN
+          </Link>
+          <span className="separator">|</span>
+          <Link
+            href={buildLocaleHref("es")}
+            className={localePrefix === "/es" ? "active" : ""}
+          >
+            ES
+          </Link>
+          <span className="separator">|</span>
+          <Link
+            href={buildLocaleHref("de")}
+            className={localePrefix === "/de" ? "active" : ""}
+          >
+            DE
+          </Link>
+        </div>
       </div>
     </div>
   );
