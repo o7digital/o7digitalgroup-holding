@@ -22,6 +22,128 @@
     }
 }
 
+/* ===================================
+   O7 DIGITAL GROUP - CORPORATE HOLDING STYLES
+   =================================== */
+
+/* Header compact - hauteur réduite */
+.rainbow-header.header-default {
+    padding: 15px 0;
+    min-height: 80px;
+}
+
+.header-transparent-with-topbar .header-top-bar {
+    padding: 8px 0;
+    min-height: auto;
+}
+
+.header-top-bar .header-left p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-top-bar .corporate-tagline {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Hero corporate - zone safe optimisée */
+.o7-corporate-hero {
+    height: 850px !important;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.o7-corporate-hero .inner {
+    padding-top: 60px;
+}
+
+.o7-corporate-hero .title {
+    margin-bottom: 30px;
+    font-size: 72px;
+    line-height: 1.2;
+}
+
+.o7-corporate-hero .subtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.o7-corporate-hero .list-icon {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.o7-corporate-hero .list-icon li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Overlay plus sombre pour meilleure lisibilité */
+.o7-corporate-hero[data-black-overlay="4"]::before {
+    opacity: 0.6;
+}
+
+/* Header sticky avec fond opaque */
+.rainbow-header.header-sticky.sticky {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo optimisé */
+.rainbow-header .logo img {
+    max-height: 45px;
+    width: auto;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 991px) {
+    .o7-corporate-hero {
+        height: 700px !important;
+        min-height: 700px;
+        padding-top: 80px;
+    }
+    
+    .o7-corporate-hero .title {
+        font-size: 48px;
+    }
+    
+    .o7-corporate-hero .subtitle {
+        font-size: 16px;
+    }
+    
+    .o7-corporate-hero .list-icon li {
+        font-size: 16px;
+    }
+    
+    .rainbow-header.header-default {
+        padding: 10px 0;
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .o7-corporate-hero {
+        height: 600px !important;
+        min-height: 600px;
+    }
+    
+    .o7-corporate-hero .title {
+        font-size: 36px;
+    }
+    
+    .o7-corporate-hero .inner {
+        padding-top: 40px;
+    }
+}
+
 /* Alignement des cartes de la page services */
 .service-wrapper .col-lg-4,
 .service-wrapper .col-md-6 {

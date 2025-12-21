@@ -14,10 +14,9 @@ export default function Topbar2() {
           <div className="col-lg-4 col-md-12 col-12">
             <div className="header-left">
               <p>
-                <a href="#">
-                  Get the most advanced template
-                  <i className="feather-chevron-right" />
-                </a>
+                <span className="corporate-tagline">
+                  Holding Internationale Digital
+                </span>
               </p>
             </div>
           </div>
@@ -26,12 +25,12 @@ export default function Topbar2() {
               <div className="address-content">
                 <p>
                   <i className="feather-map-pin" />
-                  <span>Alabama, USA</span>
+                  <span>Londres, UK</span>
                 </p>
                 <p>
-                  <i className="feather-phone" />
+                  <i className="feather-mail" />
                   <span>
-                    <a href="#">+06 58 49 99 56</a>
+                    <a href="mailto:contact@o7digitalgroup.com">contact@o7digitalgroup.com</a>
                   </span>
                 </p>
               </div>

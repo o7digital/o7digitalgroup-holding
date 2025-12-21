@@ -37,17 +37,6 @@ export default function Header3({ btnClass = "btn-default btn-small round" }) {
                   <Nav />
                 </ul>
               </nav>
-              {/* Start Header Btn  */}
-              <div className="header-btn">
-                <a
-                  className={btnClass}
-                  target="_blank"
-                  href="https://themeforest.net/user/rainbow-themes/portfolio"
-                >
-                  BUY NOW
-                </a>
-              </div>
-              {/* End Header Btn  */}
               {/* Start Mobile-Menu-Bar */}
               <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                 <div className="hamberger">
