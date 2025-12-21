@@ -1,7 +1,7 @@
 {
-  "name": "O7 Digital Consulting",
-  "short_name": "O7 Digital",
-  "description": "Agence de consulting digital spécialisée en stratégie digitale, CTO as a Service, développement web moderne et SEO",
+  "name": "O7 Digital Group Holding",
+  "short_name": "O7 Group",
+  "description": "Holding internationale spécialisée dans la gouvernance et la coordination stratégique d'opérations digitales",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -10,7 +10,7 @@
   "scope": "/",
   "lang": "fr-FR",
   "dir": "ltr",
-  "categories": ["business", "consulting", "technology"],
+  "categories": ["business", "holding", "corporate"],
   "icons": [
     {
       "src": "/assets/images/logo/logo.png",
