@@ -13,7 +13,7 @@ export default function sitemap() {
   ];
 
   // Langues supportées
-  const languages = ['', 'en', 'es', 'de']; // '' = français (default)
+  const languages = ['', 'en', 'es', 'de', 'it']; // '' = français (default)
 
   const urls = [];
 
@@ -32,6 +32,7 @@ export default function sitemap() {
             en: `${baseUrl}/en${route.path}`,
             es: `${baseUrl}/es${route.path}`,
             de: `${baseUrl}/de${route.path}`,
+            it: `${baseUrl}/it${route.path}`,
           },
         },
       });

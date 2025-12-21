@@ -19,11 +19,12 @@ export const metadata = {
       'en': 'https://www.o7digital-consulting.com/en/index-digital-agency',
       'es': 'https://www.o7digital-consulting.com/es/index-digital-agency',
       'de': 'https://www.o7digital-consulting.com/de/index-digital-agency',
+      'it': 'https://www.o7digital-consulting.com/it/index-digital-agency',
     },
   },
   openGraph: {
     locale: 'fr_FR',
-    alternateLocale: ['en_US', 'es_ES', 'de_DE'],
+    alternateLocale: ['en_US', 'es_ES', 'de_DE', 'it_IT'],
   },
 };
 

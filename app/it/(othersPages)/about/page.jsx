@@ -7,19 +7,19 @@ import AboutHero from "@/components/o7/about/AboutHero";
 import Expertise from "@/components/o7/about/Expertise";
 import Methodology from "@/components/o7/about/Methodology";
 import {
-  o7AboutHero as o7AboutHeroDe,
-  o7AboutDetails as o7AboutDetailsDe,
-  o7Methodology as o7MethodologyDe,
-  o7ExpertiseCopy as o7ExpertiseCopyDe,
-  o7CtaBlock as o7CtaDe,
-} from "@/data/o7.de";
+  o7AboutHero as o7AboutHeroIt,
+  o7AboutDetails as o7AboutDetailsIt,
+  o7Methodology as o7MethodologyIt,
+  o7ExpertiseCopy as o7ExpertiseCopyIt,
+  o7CtaBlock as o7CtaIt,
+} from "@/data/o7.it";
 
 export const metadata = {
-  title: "Über O7 Digital Consulting | Digitale Leitung & Engineering",
+  title: "Chi siamo O7 Digital Consulting | Leadership digitale & engineering",
   description:
-    "O7 Digital Consulting: Strategie, Engineering und Performance. Entdecken Sie unseren Ansatz, Mission, Vision und Werte.",
+    "O7 Digital Consulting: strategia, engineering e performance. Scoprite il nostro approccio, missione, visione e valori.",
   alternates: {
-    canonical: 'https://www.o7digital-consulting.com/de/about',
+    canonical: 'https://www.o7digital-consulting.com/it/about',
     languages: {
       'fr': 'https://www.o7digital-consulting.com/about',
       'en': 'https://www.o7digital-consulting.com/en/about',
@@ -29,8 +29,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    locale: 'de_DE',
-    alternateLocale: ['fr_FR', 'en_US', 'es_ES', 'it_IT'],
+    locale: 'it_IT',
+    alternateLocale: ['fr_FR', 'en_US', 'es_ES', 'de_DE'],
   },
 };
 
@@ -42,26 +42,26 @@ export default function Page() {
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <AboutHero heroData={o7AboutHeroDe} />
+      <AboutHero heroData={o7AboutHeroIt} />
       <AboutDetails
-        eyebrow="Über uns"
-        title="Über uns"
+        eyebrow="Chi siamo"
+        title="Chi siamo"
         description=""
-        details={o7AboutDetailsDe}
+        details={o7AboutDetailsIt}
       />
       <Methodology
-        eyebrow="Mission, Vision & Werte"
-        title="Mission, Vision & Werte"
-        description="Unser Anspruch: zuverlässige, performante Lösungen, die mit den Zielen unserer Kunden übereinstimmen."
-        items={o7MethodologyDe}
+        eyebrow="Missione, Visione & Valori"
+        title="Missione, Visione & Valori"
+        description="Il nostro impegno: fornire soluzioni affidabili e ad alte prestazioni allineate agli obiettivi dei nostri clienti."
+        items={o7MethodologyIt}
       />
       <Expertise
-        eyebrow="Expertise"
-        title="Im Kern des Geschäfts unserer Kunden"
-        paragraphs={o7ExpertiseCopyDe}
+        eyebrow="Competenza"
+        title="Integrati nel business dei nostri clienti"
+        paragraphs={o7ExpertiseCopyIt}
       />
-      <CtaSection anchorId="cta-about-de" cta={o7CtaDe} contactHref="/de/contact" />
-      <Footer2 lang="de" />
+      <CtaSection anchorId="cta-about-it" cta={o7CtaIt} contactHref="/it/contact" />
+      <Footer2 lang="it" />
     </>
   );
 }

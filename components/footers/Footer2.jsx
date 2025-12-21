@@ -95,13 +95,36 @@ const expertiseContent = {
     ],
     followUs: "Folgen Sie uns",
     legalNotice: "Impressum"
+  },
+  it: {
+    title: "Esperienza digitale Italia, Svizzera, Europa, USA & Canada",
+    keywords: [
+      "consulenza digitale B2B internazionale",
+      "sviluppo web professionale",
+      "soluzioni digitali personalizzate",
+      "trasformazione digitale aziende",
+      "consulenza digitale strategica",
+      "architettura digitale moderna",
+      "SEO professionale avanzato",
+      "performance web ottimizzate",
+      "soluzioni web aziende",
+      "esperienza digitale internazionale",
+      "servizi IT per aziende",
+      "ottimizzazione SEO tecnico",
+      "consulenza Google Workspace",
+      "consulenza Microsoft 365",
+      "design grafico digitale",
+      "motion design professionale"
+    ],
+    followUs: "Seguici",
+    legalNotice: "Note Legali"
   }
 };
 
 export default function Footer2({ lang = "fr" }) {
   const content = expertiseContent[lang] || expertiseContent.fr;
   const prefix =
-    lang === "en" ? "/en" : lang === "es" ? "/es" : lang === "de" ? "/de" : "";
+    lang === "en" ? "/en" : lang === "es" ? "/es" : lang === "de" ? "/de" : lang === "it" ? "/it" : "";
 
   return (
     <footer className="rainbow-footer footer-style-default no-border">
