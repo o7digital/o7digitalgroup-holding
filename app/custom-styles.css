@@ -144,6 +144,125 @@
     }
 }
 
+/* ===================================
+   SLIDER HERO O7 - TRANSITIONS IMAGES
+   =================================== */
+
+.o7-corporate-hero-slider {
+    position: relative;
+    height: 850px !important;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container des backgrounds */
+.o7-hero-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Chaque background image */
+.o7-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.o7-hero-bg.active {
+    opacity: 1;
+}
+
+/* Overlay sombre pour lisibilité */
+.o7-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Contenu au-dessus */
+.o7-corporate-hero-slider .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Indicateurs de slides */
+.o7-slide-indicators {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 3;
+}
+
+.o7-slide-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.o7-slide-dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.o7-slide-dot.active {
+    background: #fff;
+    width: 32px;
+    border-radius: 6px;
+}
+
+/* Responsive slider */
+@media (max-width: 991px) {
+    .o7-corporate-hero-slider {
+        height: 700px !important;
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 767px) {
+    .o7-corporate-hero-slider {
+        height: 600px !important;
+        min-height: 600px;
+    }
+    
+    .o7-slide-indicators {
+        bottom: 30px;
+    }
+    
+    .o7-slide-dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .o7-slide-dot.active {
+        width: 24px;
+    }
+}
+
 /* Alignement des cartes de la page services */
 .service-wrapper .col-lg-4,
 .service-wrapper .col-md-6 {
