@@ -102,6 +102,16 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-N5GR2L6P8T');
           `}
         </Script>
+        
+        {/* Botpress Chatbot */}
+        <Script 
+          src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"
+          strategy="lazyOnload"
+        />
+        <Script 
+          src="https://files.bpcontent.cloud/2025/10/01/18/20251001183649-VYQ3Z22E.js"
+          strategy="lazyOnload"
+        />
       </head>
       <body className="active-dark-mode">
         <ClientLayout>{children}</ClientLayout>
