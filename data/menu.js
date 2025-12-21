@@ -1,6 +1,8 @@
 export const menuItems = [
-  { title: "Accueil", href: "/index-digital-agency" },
-  { title: "O7Digital", href: "/about" },
-  { title: "Nos r\u00e9alisations", href: "/portfolio" },
+  { title: "Accueil", href: "/index-corporate" },
+  { title: "O7 Digital Group", href: "/o7-digital-group" },
+  { title: "Nos Solutions", href: "/nos-solutions" },
+  { title: "Nos Produits", href: "/nos-produits" },
+  { title: "Présence Internationale", href: "/presence-internationale" },
   { title: "Contact", href: "/contact" },
 ];

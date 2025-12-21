@@ -1,38 +1,38 @@
 import React from "react";
-import Footer2 from "@/components/footers/Footer2";
-import Header2 from "@/components/headers/Header2";
-import ContactContent from "@/components/o7/contact/ContactContent";
+import Footer4 from "@/components/footers/Footer4";
+import Copywrite from "@/components/footers/Copywrite";
+import Header3 from "@/components/headers/Header3";
+import Topbar2 from "@/components/headers/Topbar2";
+import ContactHoldingContent from "@/components/o7/contact/ContactHoldingContent";
 
 export const metadata = {
-  title: "Contact O7 Digital Consulting | Parlez de votre projet digital",
-  description:
-    "Contactez O7 Digital Consulting pour échanger sur votre projet digital, votre stratégie technologique ou votre transformation digitale. Réponse rapide et accompagnement personnalisé.",
+  title: "Contact | O7 Digital Group Holding",
+  description: "Contactez O7 Digital Group Holding - Holding internationale basée à Londres.",
   alternates: {
-    canonical: 'https://www.o7digital-consulting.com/contact',
+    canonical: 'https://www.o7digitalgroup.com/contact',
     languages: {
-      'fr': 'https://www.o7digital-consulting.com/contact',
-      'en': 'https://www.o7digital-consulting.com/en/contact',
-      'es': 'https://www.o7digital-consulting.com/es/contact',
-      'de': 'https://www.o7digital-consulting.com/de/contact',
-      'it': 'https://www.o7digital-consulting.com/it/contact',
+      'fr': 'https://www.o7digitalgroup.com/contact',
+      'en': 'https://www.o7digitalgroup.com/en/contact',
+      'es': 'https://www.o7digitalgroup.com/es/contacto',
+      'de': 'https://www.o7digitalgroup.com/de/kontakt',
     },
-  },
-  openGraph: {
-    locale: 'fr_FR',
-    alternateLocale: ['en_US', 'es_ES', 'de_DE', 'it_IT'],
   },
 };
 
 export default function Page() {
   return (
     <>
-      <Header2 parentClass="rainbow-header header-default header-left-align header-transparent header-sticky" />
+      <div className="header-transparent-with-topbar">
+        <Topbar2 />
+        <Header3 btnClass="btn-default btn-small " />
+      </div>
       <div>
         <div className="rainbow-gradient-circle" />
         <div className="rainbow-gradient-circle theme-pink" />
       </div>
-      <ContactContent />
-      <Footer2 />
+      <ContactHoldingContent />
+      <Footer4 />
+      <Copywrite />
     </>
   );
 }

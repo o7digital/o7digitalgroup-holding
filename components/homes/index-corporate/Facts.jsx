@@ -1,6 +1,19 @@
-import CounterComponent from "@/components/common/Counter";
-import { countersData } from "@/data/facts";
 import React from "react";
+
+const holdingFacts = [
+  {
+    title: "Présence internationale",
+    description: "4 localisations stratégiques",
+  },
+  {
+    title: "Continents",
+    description: "Europe, Amérique du Nord et Latine",
+  },
+  {
+    title: "Coordination",
+    description: "Gouvernance centralisée",
+  },
+];
 
 export default function Facts() {
   return (
@@ -15,28 +28,20 @@ export default function Facts() {
               data-sal-delay={100}
             >
               <h4 className="subtitle">
-                <span className="theme-gradient">Clients Feedback.</span>
+                <span className="theme-gradient">Le groupe en chiffres</span>
               </h4>
               <h2 className="title w-600 mb--20">
-                Global Clients Around the World.
+                Présence internationale
               </h2>
             </div>
           </div>
         </div>
         <div className="row">
-          {countersData.map((elm, i) => (
+          {holdingFacts.map((fact, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-sm-6 col-12">
               <div className="count-box counter-style-2 text-center">
-                <div>
-                  <div className="count-number">
-                    <span className="counter">
-                      {" "}
-                      <CounterComponent max={elm.number} />
-                    </span>
-                  </div>
-                </div>
-                <h5 className="title">{elm.title}</h5>
-                <p className="description">{elm.description}</p>
+                <h5 className="title">{fact.title}</h5>
+                <p className="description">{fact.description}</p>
               </div>
             </div>
           ))}

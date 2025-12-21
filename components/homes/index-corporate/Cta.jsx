@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -11,15 +12,15 @@ export default function Cta() {
                 <div className="inner">
                   <div className="content text-center">
                     <h2 className="title">
-                      Ready to start creating a standard website?
+                      Découvrez O7 Digital Group
                     </h2>
                     <h6 className="subtitle">
-                      Finest choice for your home &amp; office
+                      Holding internationale digital
                     </h6>
                     <div className="call-to-btn">
-                      <a className="btn-default btn-icon" href="#">
-                        Purchase Doob <i className="feather-arrow-right" />
-                      </a>
+                      <Link className="btn-default btn-icon" href="/contact">
+                        Nous contacter <i className="feather-arrow-right" />
+                      </Link>
                     </div>
                   </div>
                 </div>

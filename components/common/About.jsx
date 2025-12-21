@@ -1,12 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const items = [
-  "Track your teams progress with mobile app.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing.",
-  "Ipsum dolor sit amet consectetur adipisicing.",
-  "Your teams progress with mobile app.",
-];
+import { holdingIntro } from "@/data/o7-holding";
+
 export default function About() {
   return (
     <div className="rainbow-about-area rainbow-section-gap">
@@ -35,17 +31,14 @@ export default function About() {
             >
               <div className="section-title">
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Corporate About.</span>
+                  <span className="theme-gradient">{holdingIntro.eyebrow}</span>
                 </h4>
-                <h2 className="title mt--10">About Our Business.</h2>
+                <h2 className="title mt--10">{holdingIntro.title}</h2>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                  quod autem sequi reprehenderit labore consequuntur excepturi
-                  voluptatibus omnis similique qui unde eligendi tempora, ea at,
-                  laudantium nostrum minus pariatur quasi!
+                  {holdingIntro.description}
                 </p>
                 <ul className="list-icon">
-                  {items.map((item, index) => (
+                  {holdingIntro.bullets.map((item, index) => (
                     <li key={index}>
                       <span className="icon">
                         <i className="feather-check" />
@@ -55,8 +48,8 @@ export default function About() {
                   ))}
                 </ul>
                 <div className="read-more-btn mt--40">
-                  <Link className="btn-default btn-icon" href={"/about"}>
-                    More About Us <i className="icon feather-arrow-right" />
+                  <Link className="btn-default btn-icon" href={"/o7-digital-group"}>
+                    En savoir plus <i className="icon feather-arrow-right" />
                   </Link>
                 </div>
               </div>

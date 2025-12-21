@@ -1,8 +1,8 @@
 import React from "react";
 const listItems = [
-  "Track your teams progress with mobile app.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing.",
-  "Your teams progress with mobile app.",
+  "Gouvernance stratégique et coordination internationale",
+  "Structuration digitale de groupes internationaux",
+  "Solutions corporate pour opérations globales",
 ];
 
 export default function Hero() {
@@ -17,10 +17,10 @@ export default function Hero() {
             <div className="inner text-left">
               <h4 className="subtitle">
                 <span className="theme-gradient">
-                  DIGITAL CONSULTING AGENCY
+                  O7 DIGITAL GROUP HOLDING
                 </span>
               </h4>
-              <h1 className="title display-one">Join Corporate Meeting.</h1>
+              <h1 className="title display-one">Holding Internationale Digital</h1>
               <ul className="list-icon">
                 {listItems.map((item, index) => (
                   <li key={index}>
@@ -31,15 +31,6 @@ export default function Hero() {
                   </li>
                 ))}
               </ul>
-              <div className="button-group mt--40 mt_sm--20">
-                <a
-                  className="btn-default btn-icon"
-                  target="_blank"
-                  href="https://themeforest.net/user/rainbow-themes/portfolio"
-                >
-                  Purchase Now <i className="icon feather-arrow-right" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
