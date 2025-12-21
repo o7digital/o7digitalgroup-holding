@@ -20,53 +20,61 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % SLIDES.length);
-    }, 5000); // Change toutes les 5 secondes
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="slider-area slider-style-1 variation-default height-850 o7-corporate-hero-slider">
-      {/* Background Images avec transition */}
-      <div className="o7-hero-backgrounds">
+    <div className="o7-corporate-hero-slider">
+      {/* Images avec Next.js Image optimisé */}
+      <div className="o7-hero-images-container">
         {SLIDES.map((slide, index) => (
           <div
             key={index}
-            className={`o7-hero-bg ${index === currentSlide ? "active" : ""}`}
-            style={{
-              backgroundImage: `url(${slide})`,
-            }}
-          />
+            className={`o7-hero-image-wrapper ${index === currentSlide ? "active" : ""}`}
+          >
+            <Image
+              src={slide}
+              alt={`O7 Digital Group Holding - Slide ${index + 1}`}
+              fill
+              priority={index === 0}
+              quality={90}
+              sizes="100vw"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+            />
+          </div>
         ))}
       </div>
       
-      {/* Overlay sombre */}
+      {/* Overlay sombre fixe */}
       <div className="o7-hero-overlay" />
 
-      {/* Contenu */}
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="inner text-center">
-              <h4 className="subtitle mb--20">
-                <span className="theme-gradient">
-                  O7 DIGITAL GROUP HOLDING
-                </span>
-              </h4>
-              <h1 className="title display-one mb--30">Holding Internationale Digital</h1>
-              <div className="row justify-content-center">
-                <div className="col-lg-8">
-                  <ul className="list-icon">
-                    {listItems.map((item, index) => (
-                      <li key={index}>
-                        <span className="icon background-transparent">
-                          <i className="feather-check" />
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+      {/* Zone safe - Contenu texte */}
+      <div className="o7-hero-content-safe">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10 col-xl-8">
+              <div className="o7-hero-text">
+                <h4 className="subtitle">
+                  <span className="theme-gradient">
+                    O7 DIGITAL GROUP HOLDING
+                  </span>
+                </h4>
+                <h1 className="title">Holding Internationale Digital</h1>
+                <ul className="list-icon">
+                  {listItems.map((item, index) => (
+                    <li key={index}>
+                      <span className="icon">
+                        <i className="feather-check" />
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

@@ -145,20 +145,24 @@
 }
 
 /* ===================================
-   SLIDER HERO O7 - TRANSITIONS IMAGES
+   SLIDER HERO O7 - CORPORATE PREMIUM
    =================================== */
 
+/* Container principal avec hauteur contrainte */
 .o7-corporate-hero-slider {
     position: relative;
-    height: 850px !important;
-    min-height: 850px;
+    width: 100%;
+    height: 90vh;
+    max-height: 900px;
+    min-height: 600px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
 }
 
-/* Container des backgrounds */
-.o7-hero-backgrounds {
+/* Container des images */
+.o7-hero-images-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -167,45 +171,103 @@
     z-index: 0;
 }
 
-/* Chaque background image */
-.o7-hero-bg {
+/* Wrapper pour chaque image */
+.o7-hero-image-wrapper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
 }
 
-.o7-hero-bg.active {
+.o7-hero-image-wrapper.active {
     opacity: 1;
 }
 
-/* Overlay sombre pour lisibilité */
+/* Les images Next.js Image avec object-fit cover */
+.o7-hero-image-wrapper img {
+    object-fit: cover !important;
+    object-position: center top !important;
+}
+
+/* Overlay sombre constant - opacity 0.5 pour équilibre */
 .o7-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    pointer-events: none;
 }
 
-/* Contenu au-dessus */
-.o7-corporate-hero-slider .container {
+/* Zone safe pour le contenu texte */
+.o7-hero-content-safe {
     position: relative;
     z-index: 2;
+    width: 100%;
+    padding-top: 120px;
+    text-align: center;
+}
+
+/* Conteneur texte */
+.o7-hero-text {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Typography hero */
+.o7-hero-text .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.o7-hero-text .title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.o7-hero-text .list-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.o7-hero-text .list-icon li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.o7-hero-text .list-icon .icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
 }
 
 /* Indicateurs de slides */
 .o7-slide-indicators {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -218,7 +280,7 @@
     height: 12px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 0;
@@ -226,31 +288,77 @@
 
 .o7-slide-dot:hover {
     background: rgba(255, 255, 255, 0.8);
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .o7-slide-dot.active {
     background: #fff;
-    width: 32px;
+    width: 36px;
     border-radius: 6px;
+    border-color: #fff;
 }
 
-/* Responsive slider */
-@media (max-width: 991px) {
+/* Responsive - Laptop */
+@media (max-width: 1400px) {
     .o7-corporate-hero-slider {
-        height: 700px !important;
-        min-height: 700px;
+        height: 80vh;
+        max-height: 800px;
+    }
+    
+    .o7-hero-text .title {
+        font-size: 56px;
     }
 }
 
+/* Responsive - Tablet */
+@media (max-width: 991px) {
+    .o7-corporate-hero-slider {
+        height: 70vh;
+        max-height: 700px;
+    }
+    
+    .o7-hero-content-safe {
+        padding-top: 100px;
+    }
+    
+    .o7-hero-text .title {
+        font-size: 48px;
+    }
+    
+    .o7-hero-text .list-icon li {
+        font-size: 16px;
+    }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 767px) {
     .o7-corporate-hero-slider {
-        height: 600px !important;
-        min-height: 600px;
+        height: 70vh;
+        max-height: 600px;
+        min-height: 500px;
+    }
+    
+    .o7-hero-content-safe {
+        padding-top: 80px;
+    }
+    
+    .o7-hero-text .subtitle {
+        font-size: 14px;
+    }
+    
+    .o7-hero-text .title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .o7-hero-text .list-icon li {
+        font-size: 15px;
+        margin-bottom: 12px;
     }
     
     .o7-slide-indicators {
         bottom: 30px;
+        gap: 10px;
     }
     
     .o7-slide-dot {
@@ -259,7 +367,7 @@
     }
     
     .o7-slide-dot.active {
-        width: 24px;
+        width: 28px;
     }
 }
 
