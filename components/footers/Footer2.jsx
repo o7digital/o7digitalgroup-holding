@@ -5,7 +5,7 @@ import { footerSections, socialLinks } from "@/data/footerLinks";
 
 const expertiseContent = {
   fr: {
-    title: "Expertise digitale France, Europe & International",
+    title: "Expertise digitale Europe, Amérique du Nord & Latam",
     keywords: [
       "consulting digital B2B Europe",
       "développement web international",
