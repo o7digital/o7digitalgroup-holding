@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/index-corporate",
+      "permanent": false
+    },
+    {
+      "source": "/index-digital-agency",
+      "destination": "/index-corporate",
+      "permanent": true
+    }
+  ]
+}
