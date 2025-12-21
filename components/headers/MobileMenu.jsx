@@ -3,6 +3,7 @@ import { menuItems } from "@/data/menu";
 import { menuItemsEn } from "@/data/menu-en";
 import { menuItemsEs } from "@/data/menu-es";
 import { menuItemsDe } from "@/data/menu-de";
+import { menuItemsIt } from "@/data/menu-it";
 import { closeMenu } from "@/utlis/toggleMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +14,7 @@ export default function MobileMenu() {
   const pathname = usePathname();
   const locale = pathname.split("/")[1];
   const localePrefix =
-    pathname?.match(/^\/(en|es|de)(?=\/|$)/)?.[0] || "";
+    pathname?.match(/^\/(en|es|de|it)(?=\/|$)/)?.[0] || "";
   const resolvedItems =
     locale === "en"
       ? menuItemsEn
@@ -21,9 +22,11 @@ export default function MobileMenu() {
       ? menuItemsEs
       : locale === "de"
       ? menuItemsDe
+      : locale === "it"
+      ? menuItemsIt
       : menuItems;
   const prefix =
-    locale === "en" ? "/en" : locale === "es" ? "/es" : locale === "de" ? "/de" : "";
+    locale === "en" ? "/en" : locale === "es" ? "/es" : locale === "de" ? "/de" : locale === "it" ? "/it" : "";
   const popupRef = useRef(null); // For .popup-mobile-menu
   const innerRef = useRef(null); // For .inner
 
@@ -85,7 +88,7 @@ export default function MobileMenu() {
 
   const buildLocaleHref = (nextLocale) => {
     const current = pathname || "";
-    const stripped = current.replace(/^\/(en|es|de)(?=\/|$)/, "");
+    const stripped = current.replace(/^\/(en|es|de|it)(?=\/|$)/, "");
     if (nextLocale === "fr") return stripped || "/";
     const base = stripped.startsWith("/") ? stripped : `/${stripped}`;
     return `/${nextLocale}${base === "/" ? "" : base}`;
@@ -257,6 +260,13 @@ export default function MobileMenu() {
             className={localePrefix === "/de" ? "active" : ""}
           >
             DE
+          </Link>
+          <span className="separator">|</span>
+          <Link
+            href={buildLocaleHref("it")}
+            className={localePrefix === "/it" ? "active" : ""}
+          >
+            IT
           </Link>
         </div>
       </div>
