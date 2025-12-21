@@ -121,9 +121,30 @@ export default function HomeIt() {
           }
         `}
       </Script>
-      <Hero />
-      <HomeIntro introData={o7HomeIntroIt} />
-      <HomeServices servicesData={o7HomeServicesIt} />
+      <Hero
+        title={
+          <>
+            Vi accompagniamo <br />
+            nella vostra crescita e sviluppo
+          </>
+        }
+        description="Go-to-market, marketing digitale e servizi IT & Cloud (gestione IT, cybersecurity, consulenza):"
+        ctaLabel="Parlare con un esperto →"
+        ctaHref="/it/contact"
+      />
+      <HomeIntro
+        data={o7HomeIntroIt}
+        approachTitle="Il nostro approccio"
+        approachText="Sviluppiamo soluzioni moderne, veloci e scalabili, basate su tecnologie affidabili e adattate ai vostri obiettivi. Ogni progetto si basa su un'architettura pulita, sicura e orientata alle prestazioni."
+        expertiseTitle="Aree di competenza"
+        expertiseText="Strategia digitale, sviluppo web (React, Next.js, Astro), CMS headless, IA e automazione, SEO tecnico, managed services e supporto. Accompagnamento completo, dalla diagnosi alla produzione."
+      />
+      <HomeServices
+        services={o7HomeServicesIt}
+        eyebrow="Servizi chiave"
+        title="9 servizi principali"
+        description="Strategia, sviluppo, IA, SEO, managed services, design grafico, motion design e 3D per coprire le vostre esigenze digitali."
+      />
       <CtaSection anchorId="cta-home-it" cta={o7CtaIt} contactHref="/it/contact" />
       <Footer2 lang="it" />
     </>
