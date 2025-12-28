@@ -11,7 +11,7 @@ export default function Footer4() {
         style={{ paddingTop: "32px", paddingBottom: "8px" }}
       >
         <div className="container">
-          <div className="row">
+          <div className="row align-items-start">
             <div className="col-lg-3 col-md-12 col-sm-12 col-12">
               <div className="rainbow-footer-widget">
                 <div className="logo">
@@ -38,22 +38,67 @@ export default function Footer4() {
               </div>
             </div>
 
-            {footerSections.map((section, index) => (
-              <div className="col-lg col-md-6 col-sm-6 col-12" key={index}>
-                <div className="rainbow-footer-widget">
-                  <h4 className="title">{section.title}</h4>
-                  <div className="inner">
-                    <ul className="footer-link link-hover">
-                      {section.links.map((link, i) => (
-                        <li key={i}>
-                          <Link href={link.href}>{link.label}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div className="rainbow-footer-widget">
+                <h4 className="title">Services</h4>
+                <div className="inner">
+                  <ul className="footer-link link-hover">
+                    <li><Link href="/conseil">Conseil</Link></li>
+                    <li><Link href="/support">Support</Link></li>
+                    <li><Link href="/web-solutions">Web Solutions</Link></li>
+                    <li><Link href="/design-digital">Design Digital</Link></li>
+                  </ul>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div className="rainbow-footer-widget">
+                <h4 className="title">Produits</h4>
+                <div className="inner">
+                  <ul className="footer-link link-hover">
+                    <li><Link href="/produits/ibm">IBM</Link></li>
+                    <li><Link href="/produits/sectigo">Sectigo</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div className="rainbow-footer-widget">
+                <h4 className="title">Partners</h4>
+                <div className="inner">
+                  <ul className="footer-link link-hover">
+                    <li><Link href="/partners/ibm">IBM</Link></li>
+                    <li><Link href="/partners/fujitsu">Fujitsu</Link></li>
+                    <li><Link href="/partners/sectigo">Sectigo</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div className="rainbow-footer-widget">
+                <h4 className="title">Legal</h4>
+                <div className="inner">
+                  <ul className="footer-link link-hover">
+                    <li><Link href="/privacy-policy">Politique De Confidentialité</Link></li>
+                    <li><Link href="/cgu">CGU</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-1 col-md-6 col-sm-6 col-12">
+              <div className="rainbow-footer-widget">
+                <h4 className="title">Contact</h4>
+                <div className="inner">
+                  <ul className="footer-link link-hover">
+                    <li><Link href="/contact">Contact</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
