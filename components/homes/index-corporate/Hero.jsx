@@ -26,72 +26,92 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="o7-corporate-hero-slider">
-      {/* Images avec Next.js Image optimisé */}
-      <div className="o7-hero-images-container">
-        {SLIDES.map((slide, index) => (
-          <div
-            key={index}
-            className={`o7-hero-image-wrapper ${index === currentSlide ? "active" : ""}`}
-          >
-            <Image
-              src={slide}
-              alt={`O7 Digital Group Holding - Slide ${index + 1}`}
-              fill
-              priority={index === 0}
-              quality={90}
-              sizes="100vw"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center top",
-              }}
-            />
-          </div>
-        ))}
-      </div>
-      
-      {/* Overlay sombre fixe */}
-      <div className="o7-hero-overlay" />
+    <>
+      <div className="o7-corporate-hero-slider">
+        {/* Images avec Next.js Image optimisé */}
+        <div className="o7-hero-images-container">
+          {SLIDES.map((slide, index) => (
+            <div
+              key={index}
+              className={`o7-hero-image-wrapper ${index === currentSlide ? "active" : ""}`}
+            >
+              <Image
+                src={slide}
+                alt={`O7 Digital Group Holding - Slide ${index + 1}`}
+                fill
+                priority={index === 0}
+                quality={90}
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center 35%",
+                }}
+              />
+            </div>
+          ))}
+        </div>
+        
+        {/* Overlay sombre fixe */}
+        <div className="o7-hero-overlay" />
 
-      {/* Zone safe - Contenu texte */}
-      <div className="o7-hero-content-safe">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
-              <div className="o7-hero-text">
-                <h4 className="subtitle">
-                  <span className="theme-gradient">
-                    O7 DIGITAL GROUP HOLDING
-                  </span>
-                </h4>
-                <h1 className="title">Holding Internationale Digital</h1>
-                <ul className="list-icon">
-                  {listItems.map((item, index) => (
-                    <li key={index}>
-                      <span className="icon">
-                        <i className="feather-check" />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        {/* Titre uniquement dans le slider */}
+        <div className="o7-hero-content-safe">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 col-xl-8">
+                <div className="o7-hero-text">
+                  <h4 className="subtitle">
+                    <span className="theme-gradient">
+                      HOLDING INTERNATIONALE DIGITAL
+                    </span>
+                  </h4>
+                  <h1 className="title">O7 Digital Group Holding</h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Indicateurs de slides */}
+        <div className="o7-slide-indicators">
+          {SLIDES.map((_, index) => (
+            <button
+              key={index}
+              className={`o7-slide-dot ${index === currentSlide ? "active" : ""}`}
+              onClick={() => setCurrentSlide(index)}
+              aria-label={`Slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Flèche de scroll */}
+        <div 
+          className="o7-scroll-indicator"
+          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+        >
+          <i className="feather-chevron-down" />
+        </div>
       </div>
 
-      {/* Indicateurs de slides */}
-      <div className="o7-slide-indicators">
-        {SLIDES.map((_, index) => (
-          <button
-            key={index}
-            className={`o7-slide-dot ${index === currentSlide ? "active" : ""}`}
-            onClick={() => setCurrentSlide(index)}
-            aria-label={`Slide ${index + 1}`}
-          />
-        ))}
+      {/* Liste des 3 points en dessous du slider */}
+      <div className="o7-hero-features-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10 col-xl-8">
+              <ul className="o7-hero-features-list">
+                {listItems.map((item, index) => (
+                  <li key={index}>
+                    <span className="icon">
+                      <i className="feather-check" />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
