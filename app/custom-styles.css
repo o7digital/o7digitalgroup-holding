@@ -263,14 +263,14 @@
 }
 
 .o7-hero-text .button-group .btn-border {
-    border-color: rgba(255, 255, 255, 0.9);
     color: #ffffff;
-    background: transparent;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    border: none;
 }
 
 .o7-hero-text .button-group .btn-border:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #ffffff;
+    background: linear-gradient(to right, #9333ea, #db2777);
+    transform: translateY(-2px);
 }
 
 /* Section des 3 points sous le slider */
