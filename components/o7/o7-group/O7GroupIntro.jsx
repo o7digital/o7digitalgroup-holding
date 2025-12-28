@@ -11,7 +11,7 @@ export default function O7GroupIntro() {
               <Image
                 className="w-100"
                 alt="O7 Digital Group"
-                src="/assets/images/about/about-1.png"
+                src="/assets/images/o7digital-group/Gemini_Generated_Image_en0pt7en0pt7en0p.png"
                 width={543}
                 height={642}
               />
