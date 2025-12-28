@@ -1,22 +1,22 @@
 // Données pour O7 Digital Group Holding
 
 export const holdingHero = {
-  subtitle: "O7 DIGITAL GROUP HOLDING",
-  title: "Holding Internationale Digital",
+  subtitle: "O7 DIGITAL GROUP",
+  title: "International IT Managed Services & Infrastructure Group",
   items: [
-    "Gouvernance stratégique et coordination internationale",
-    "Structuration digitale de groupes internationaux",
-    "Solutions corporate pour opérations globales",
+    "Infogérance & Managed Services pour grands comptes internationaux",
+    "Infrastructure IT & Cloud – Partner IBM, Fujitsu, Google",
+    "Solutions Métiers & ERP – Expertise industrielle multi-secteurs",
   ],
 };
 
 export const holdingIntro = {
   eyebrow: "À propos du groupe",
   title: "O7 Digital Group",
-  description: "O7 Digital Group est une holding internationale spécialisée dans la gouvernance et la coordination stratégique d'opérations digitales à l'échelle mondiale. Basée à Londres, la holding assure la structuration, le pilotage et l'alignement des différentes entités du groupe présentes en Europe, Amérique du Nord et Amérique Latine.",
+  description: "O7 Digital Group est un groupe international spécialisé dans l'infogérance IT, les infrastructures cloud et les solutions métiers pour grands comptes. Basé à Londres avec une présence en Europe, Amérique du Nord et Amérique Latine, le groupe accompagne des clients de référence tels que Nestlé, PepsiCo et FEMSA dans leurs opérations IT critiques.",
   bullets: [
-    "Gouvernance stratégique : Coordination des orientations technologiques et opérationnelles des entités du groupe",
-    "Structuration internationale : Harmonisation des processus et standards à l'échelle mondiale",
+    "Infogérance & Managed Services : Gestion complète des infrastructures IT 24/7 pour entreprises multi-sites",
+    "Partenariats technologiques : IBM Partner, Fujitsu Partner, Google Partner pour solutions d'infrastructure et cloud",
   ],
 };
 
@@ -24,32 +24,89 @@ export const holdingSolutions = [
   {
     id: 1,
     image: "/assets/images/services/serviice-01.jpg",
-    title: "Structuration Digitale",
-    description: "Mise en place de gouvernance technologique et coordination de projets digitaux internationaux pour groupes multi-entités.",
+    title: "Infogérance & Managed Services",
+    description: "Gestion complète 24/7 des infrastructures IT critiques. Supervision proactive, maintenance préventive et support technique multilingue pour sites industriels et bureaux internationaux.",
     delay: 0,
   },
   {
     id: 2,
     image: "/assets/images/services/serviice-02.jpg",
-    title: "Coordination Internationale",
-    description: "Harmonisation des opérations et processus à l'échelle mondiale entre les différentes entités du groupe.",
+    title: "Infrastructure IT & Cloud",
+    description: "Conception, déploiement et optimisation d'infrastructures on-premise, cloud et hybrides. Partenaire IBM, Fujitsu et Google Cloud pour solutions d'entreprise hautement disponibles.",
     delay: 100,
   },
   {
     id: 3,
     image: "/assets/images/services/serviice-03.jpg",
-    title: "Gouvernance Technologique",
-    description: "Pilotage stratégique des orientations technologiques et standards de qualité au niveau groupe.",
+    title: "Solutions Métiers & ERP",
+    description: "Intégration et évolution de systèmes métiers critiques (ERP, MES, WMS). Expertise sectorielle industrie, distribution et services avec IBM Maximo, SAP et solutions spécialisées.",
     delay: 200,
   },
   {
     id: 4,
     image: "/assets/images/services/serviice-04.jpg",
-    title: "Solutions Corporate B2B",
-    description: "Structuration de plateformes et solutions digitales pour opérations corporate internationales.",
+    title: "IT Consulting & Transformation",
+    description: "Conseil stratégique IT, audit d'infrastructure, roadmap de modernisation et accompagnement de transformations digitales pour groupes multi-entités internationaux.",
     delay: 300,
   },
 ];
+
+// Partenaires technologiques
+export const technologyPartners = [
+  {
+    id: 1,
+    name: "IBM",
+    status: "IBM Partner",
+    logo: "/assets/images/partners/ibm-logo.png",
+    expertise: [
+      "IBM Infrastructure Solutions",
+      "IBM Cloud Services",
+      "IBM Maximo Asset Management",
+      "Managed Services & Consulting"
+    ],
+    description: "Partenaire IBM pour solutions d'infrastructure, cloud et asset management industriel.",
+  },
+  {
+    id: 2,
+    name: "Fujitsu",
+    status: "Fujitsu Partner",
+    logo: "/assets/images/partners/fujitsu-logo.png",
+    expertise: [
+      "Enterprise Infrastructure",
+      "Data Center Solutions",
+      "Industrial IT Systems",
+      "High-Performance Computing"
+    ],
+    description: "Partenaire Fujitsu pour infrastructures critiques et systèmes industriels haute performance.",
+  },
+  {
+    id: 3,
+    name: "Google Cloud",
+    status: "Google Partner",
+    logo: "/assets/images/partners/google-logo.png",
+    expertise: [
+      "Google Cloud Platform (GCP)",
+      "Google Workspace",
+      "Cloud Infrastructure & DevOps",
+      "Data Analytics & AI"
+    ],
+    description: "Partenaire Google pour solutions cloud, collaboration et intelligence artificielle.",
+  },
+];
+
+// Entités créatives du groupe
+export const creativeStudios = {
+  name: "EON Novas Studios",
+  tagline: "Creative & Digital Design Studio",
+  description: "Studio créatif du groupe O7 Digital Group spécialisé en design graphique, design digital, animation et production visuelle pour clients internationaux.",
+  services: [
+    "Identité visuelle & branding",
+    "Design digital & UX/UI",
+    "Animation & motion design",
+    "Production graphique & éditoriale"
+  ],
+  logo: "/assets/images/studios/eon-novas-logo.png",
+};
 
 export const holdingProduits = [
   {
@@ -75,34 +132,47 @@ export const holdingProduits = [
 export const holdingEntites = [
   {
     id: 1,
-    ville: "Londres",
-    pays: "Royaume-Uni",
+    ville: "London",
+    pays: "United Kingdom",
     entite: "O7 Digital Group Holding",
-    description: "Holding & gouvernance du groupe",
+    adresse: "20-22 Wenlock Road, London N1 7GU",
+    role: "Group Headquarters – Strategic Management & International Coordination",
     icon: "feather-globe",
   },
   {
     id: 2,
-    ville: "Los Angeles",
-    pays: "États-Unis",
-    entite: "O7 Digital Real Estate",
-    description: "Immobilier & structuration d'actifs",
-    icon: "feather-home",
+    ville: "Paris",
+    pays: "France",
+    entite: "O7 Digital France",
+    adresse: "128 rue de la Boétie, 75008 Paris",
+    role: "European Operations – Infrastructure & Managed Services",
+    icon: "feather-flag",
   },
   {
     id: 3,
-    ville: "Montréal",
-    pays: "Canada",
-    entite: "Onzark 365",
-    description: "Opérations Canada - Direction : Richard",
+    ville: "Los Angeles",
+    pays: "United States",
+    entite: "O7 Digital USA",
+    adresse: "Los Angeles, California",
+    role: "North American Operations – Cloud & Enterprise Solutions",
     icon: "feather-flag",
   },
   {
     id: 4,
-    ville: "Mexico",
-    pays: "Mexique",
+    ville: "Montreal",
+    pays: "Canada",
+    entite: "Onzark 365",
+    adresse: "Montreal, Quebec",
+    role: "Canadian Operations – IT Consulting & Integration",
+    icon: "feather-flag",
+  },
+  {
+    id: 5,
+    ville: "Mexico City",
+    pays: "Mexico",
     entite: "Integra 365",
-    description: "Intégration & opérations Amérique latine",
+    adresse: "Mexico City",
+    role: "Latin America Operations – ERP & Industrial IT Solutions",
     icon: "feather-map-pin",
   },
 ];

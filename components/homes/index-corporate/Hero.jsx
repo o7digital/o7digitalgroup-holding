@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const listItems = [
-  "Gouvernance stratégique et coordination internationale",
-  "Structuration digitale de groupes internationaux",
-  "Solutions corporate pour opérations globales",
+  "Infogérance & Managed Services pour grands comptes internationaux",
+  "Infrastructure IT & Cloud – Partner IBM, Fujitsu, Google",
+  "Solutions Métiers & ERP – Expertise industrielle multi-secteurs",
 ];
 
 const SLIDES = [
@@ -62,10 +62,10 @@ export default function Hero() {
                 <div className="o7-hero-text">
                   <h4 className="subtitle">
                     <span className="theme-gradient">
-                      HOLDING INTERNATIONALE DIGITAL
+                      O7 DIGITAL GROUP
                     </span>
                   </h4>
-                  <h1 className="title">O7 Digital Group Holding</h1>
+                  <h1 className="title">International IT Managed Services & Infrastructure Group</h1>
                 </div>
               </div>
             </div>
