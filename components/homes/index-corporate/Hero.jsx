@@ -72,14 +72,16 @@ export default function Hero() {
           </div>
         </div>
 
-
-          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
-        >
-          <i className="feather-chevron-down" />
-        </div>
+      {/* Flèche de scroll */}
+      <div 
+        className="o7-scroll-indicator"
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+      >
+        <i className="feather-chevron-down" />
       </div>
+    </div>
 
-      {/* Liste des 3 points en dessous du slider */}
+    {/* Liste des 3 points en dessous du slider */}
       <div className="o7-hero-features-section">
         <div className="container">
           <div className="row justify-content-center">
