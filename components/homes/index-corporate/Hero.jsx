@@ -87,5 +87,4 @@ export default function Hero() {
         <i className="feather-chevron-down" />
       </div>
     </div>
-  );
-}
+    </>
