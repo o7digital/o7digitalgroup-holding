@@ -8,7 +8,6 @@ import Hero from "@/components/homes/index-corporate/Hero";
 import Services from "@/components/homes/index-corporate/Services";
 import TechnologyPartners from "@/components/homes/index-corporate/TechnologyPartners";
 import KeyActivities from "@/components/homes/index-corporate/KeyActivities";
-import USAImplantation from "@/components/homes/index-corporate/USAImplantation";
 import React from "react";
 import Cta from "@/components/homes/index-corporate/Cta";
 
@@ -44,12 +43,6 @@ export default function page() {
         </div>
       </div>
       <Services />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <USAImplantation />
       <div className="rbt-separator-mid">
         <div className="container">
           <hr className="rbt-separator m-0" />
