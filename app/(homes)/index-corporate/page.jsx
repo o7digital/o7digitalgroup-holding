@@ -2,8 +2,6 @@ import Header3 from "@/components/headers/Header3";
 
 import Topbar2 from "@/components/headers/Topbar2";
 
-import About from "@/components/common/About";
-import Facts from "@/components/homes/index-corporate/Facts";
 import Hero from "@/components/homes/index-corporate/Hero";
 import Services from "@/components/homes/index-corporate/Services";
 import TechnologyPartners from "@/components/homes/index-corporate/TechnologyPartners";
@@ -43,18 +41,6 @@ export default function page() {
         </div>
       </div>
       <Services />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <About />
-      <div className="rbt-separator-mid">
-        <div className="container">
-          <hr className="rbt-separator m-0" />
-        </div>
-      </div>
-      <Facts />
       <Cta />
       <Footer4 />
       <Copywrite />
