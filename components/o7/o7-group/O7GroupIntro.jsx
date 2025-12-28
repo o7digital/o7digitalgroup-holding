@@ -7,14 +7,13 @@ export default function O7GroupIntro() {
       <div className="container">
         <div className="row row--30 align-items-center">
           <div className="col-lg-5">
-            <div className="thumbnail" style={{ minHeight: "700px", position: "relative" }}>
+            <div className="thumbnail">
               <Image
+                className="w-100"
                 alt="O7 Digital Group"
                 src="/assets/images/o7digital-group/Gemini_Generated_Image_en0pt7en0pt7en0p.png"
-                fill
-                style={{
-                  objectFit: "cover",
-                }}
+                width={543}
+                height={642}
               />
             </div>
           </div>
