@@ -1,25 +1,48 @@
 import React from "react";
+import Image from "next/image";
 import { holdingContact } from "@/data/o7-holding";
 
 export default function ContactHoldingContent() {
   return (
     <>
-      <div className="rainbow-breadcrumb-area breadcrumb-style-default breadcrumb-style-3">
-        <div className="breadcrumb-inner">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="breadcrumb-content-wrapper text-center">
-                  <div className="breadcrumb-title">
-                    <h1 className="title theme-gradient">Contact</h1>
-                  </div>
-                  <p className="description mt--30">
-                    Contactez O7 Digital Group Holding
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="o7-contact-hero" style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
+        <Image
+          src="/images/hammer-group-fxIcYymZHJg-unsplash.jpg"
+          alt="Nous Contacter - O7 Digital Group"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center center",
+          }}
+        />
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(0, 0, 0, 0.5)',
+          zIndex: 1
+        }} />
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          zIndex: 2,
+          textAlign: 'center',
+          width: '100%',
+          padding: '0 20px'
+        }}>
+          <h1 className="title" style={{ color: '#ffffff', fontSize: '3.5rem', fontWeight: '700', marginBottom: '20px' }}>
+            Nous Contacter
+          </h1>
+          <p className="description" style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.25rem' }}>
+            Contactez O7 Digital Group Holding
+          </p>
         </div>
       </div>
 
