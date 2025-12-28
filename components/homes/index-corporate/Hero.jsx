@@ -65,7 +65,7 @@ export default function Hero() {
                       O7 DIGITAL GROUP
                     </span>
                   </h4>
-                  <h1 className="title">International IT Managed Services & Infrastructure Group</h1>
+                  <h1 className="title">International IT Managed Services & Infrastructure</h1>
                 </div>
               </div>
             </div>

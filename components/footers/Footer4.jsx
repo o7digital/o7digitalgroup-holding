@@ -33,8 +33,7 @@ export default function Footer4() {
                   </Link>
                 </div>
                 <h3 className="text-big">
-                  O7 Digital accompagne vos projets technologiques, digitaux et
-                  opérationnels.
+                  Solutions IT & infrastructure pour groupes industriels internationaux.
                 </h3>
               </div>
             </div>
