@@ -38,26 +38,22 @@ export default function Footer4() {
               </div>
             </div>
 
-            <div className="col-lg-9">
-              <div className="row">
-                {footerSections.map((section, index) => (
-                  <div className="col-lg col-md-6 col-sm-6 col-12" key={index}>
-                    <div className="rainbow-footer-widget">
-                      <h4 className="title">{section.title}</h4>
-                      <div className="inner">
-                        <ul className="footer-link link-hover">
-                          {section.links.map((link, i) => (
-                            <li key={i}>
-                              <Link href={link.href}>{link.label}</Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
+            {footerSections.map((section, index) => (
+              <div className="col-lg col-md-6 col-sm-6 col-12" key={index}>
+                <div className="rainbow-footer-widget">
+                  <h4 className="title">{section.title}</h4>
+                  <div className="inner">
+                    <ul className="footer-link link-hover">
+                      {section.links.map((link, i) => (
+                        <li key={i}>
+                          <Link href={link.href}>{link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                ))}
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
