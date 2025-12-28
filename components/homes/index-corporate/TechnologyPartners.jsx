@@ -35,7 +35,7 @@ export default function TechnologyPartners() {
               data-sal-duration={700}
               data-sal-delay={partner.id * 100}
             >
-              <div className="service service__style--1 bg-color-blackest radius mt--25 text-center rbt-border">
+              <div className="service service__style--1 bg-color-blackest radius mt--25 rbt-border">
                 <div className="content">
                   <h4 className="title w-600">
                     <span className="theme-gradient">{partner.name}</span>
@@ -43,10 +43,10 @@ export default function TechnologyPartners() {
                   <p className="subtitle">
                     <strong>{partner.status}</strong>
                   </p>
-                  <p className="description b1 color-gray mb--0">
+                  <p className="description b1 color-gray mb--20">
                     {partner.description}
                   </p>
-                  <ul className="list-style mt--20" style={{ textAlign: 'left', display: 'inline-block' }}>
+                  <ul className="list-style">
                     {partner.expertise.map((item, idx) => (
                       <li key={idx}>
                         <i className="feather-check" /> {item}
