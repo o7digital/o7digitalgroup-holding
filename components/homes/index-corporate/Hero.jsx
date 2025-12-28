@@ -1,12 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-
-const listItems = [
-  "Infogérance & Managed Services pour grands comptes internationaux",
-  "Infrastructure IT & Cloud – Partner IBM, Fujitsu, Google",
-  "Solutions Métiers & ERP – Expertise industrielle multi-secteurs",
-];
+import Link from "next/link";
 
 const SLIDES = [
   "/assets/images/hero/holding1.png",
@@ -60,12 +55,24 @@ export default function Hero() {
             <div className="row justify-content-center">
               <div className="col-lg-10 col-xl-8">
                 <div className="o7-hero-text">
-                  <h4 className="subtitle">
-                    <span className="theme-gradient">
-                      O7 DIGITAL GROUP
-                    </span>
-                  </h4>
-                  <h1 className="title">International IT Managed Services & Infrastructure</h1>
+                  <h1 className="title">O7 Digital Group Holding</h1>
+                  <p className="subtitle-corporate">
+                    Groupe international d'infogérance, d'infrastructures IT et de solutions métiers
+                  </p>
+                  <div className="button-group mt--40">
+                    <Link 
+                      className="btn-default btn-large"
+                      href="/nos-solutions"
+                    >
+                      Nos Solutions
+                    </Link>
+                    <Link 
+                      className="btn-default btn-large btn-border"
+                      href="/presence-internationale"
+                    >
+                      Présence internationale
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,26 +87,5 @@ export default function Hero() {
         <i className="feather-chevron-down" />
       </div>
     </div>
-
-    {/* Liste des 3 points en dessous du slider */}
-      <div className="o7-hero-features-section">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
-              <ul className="o7-hero-features-list">
-                {listItems.map((item, index) => (
-                  <li key={index}>
-                    <span className="icon">
-                      <i className="feather-check" />
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
   );
 }
