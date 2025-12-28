@@ -7,7 +7,7 @@ export default function ContactHoldingContent() {
     <>
       <div className="o7-contact-hero" style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
         <Image
-          src="/images/hammer-group-fxIcYymZHJg-unsplash.jpg"
+          src="/assets/hammer-group.webp"
           alt="Nous Contacter - O7 Digital Group"
           fill
           priority
