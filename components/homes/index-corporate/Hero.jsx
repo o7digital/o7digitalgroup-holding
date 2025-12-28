@@ -72,21 +72,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Indicateurs de slides */}
-        <div className="o7-slide-indicators">
-          {SLIDES.map((_, index) => (
-            <button
-              key={index}
-              className={`o7-slide-dot ${index === currentSlide ? "active" : ""}`}
-              onClick={() => setCurrentSlide(index)}
-              aria-label={`Slide ${index + 1}`}
-            />
-          ))}
-        </div>
 
-        {/* Flèche de scroll */}
-        <div 
-          className="o7-scroll-indicator"
           onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
         >
           <i className="feather-chevron-down" />
