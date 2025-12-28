@@ -189,5 +189,5 @@ export const holdingEntites = [
 export const holdingContact = {
   nom: "O7 Digital Group Holding",
   localisation: "Londres, Royaume-Uni",
-  email: "contact@o7digitalgroup.com",
+  email: "contact@o7digital.com",
 };

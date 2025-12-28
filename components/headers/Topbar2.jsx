@@ -30,7 +30,7 @@ export default function Topbar2() {
                 <p>
                   <i className="feather-mail" />
                   <span>
-                    <a href="mailto:contact@o7digitalgroup.com">contact@o7digitalgroup.com</a>
+                    <a href="mailto:contact@o7digital.com">contact@o7digital.com</a>
                   </span>
                 </p>
               </div>
