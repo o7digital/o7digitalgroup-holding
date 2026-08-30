@@ -1,10 +1,13 @@
 ---
 import { languages, localePath } from '../i18n/translations';
-const { lang = 'en', labels } = Astro.props;
+const { lang = 'en', labels, page = 'home' } = Astro.props;
+const home = localePath(lang);
+const anchor = (id) => page === 'home' ? `#${id}` : `${home}#${id}`;
+const languageHref = (code) => page === 'privacy' ? (code === 'en' ? '/privacy/' : `/${code}/privacy/`) : localePath(code);
 const platformLinks = [['Olivia AI','#olivia'],['Olivia One Mail','#platforms'],['Olivia Control Center','#platforms'],['O7 PulseCRM','#platforms'],['O7 ERP','#platforms'],['O7 Transport OS','#platforms']];
 ---
 <header class="site-nav">
-  <a class="brand" href="#top" aria-label="O7 Digital Group Holding"><span class="brand-mark"><b>O</b><i>7</i></span><span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span></a>
-  <nav class="desktop-nav" aria-label="Primary navigation"><a href="#group">{labels.group}</a><a href="#technology">{labels.technology}</a><a href="#olivia">{labels.olivia}</a><details class="nav-dropdown"><summary>{labels.platforms}</summary><div>{platformLinks.map(([name,url])=><a href={url}>{name}</a>)}</div></details><a href="#business-units">{labels.units}</a><a href="#global-presence">{labels.global}</a></nav>
-  <div class="nav-actions"><details class="language-picker"><summary aria-label="Language">{lang.toUpperCase()}</summary><div class="language-menu">{languages.map((language)=><a href={localePath(language.code)} lang={language.code} aria-current={lang===language.code?'page':undefined}>{language.label}</a>)}</div></details><a class="nav-cta" href="#contact"><span>{labels.contact}</span><b>↗</b></a><details class="mobile-menu"><summary>{labels.menu}</summary><div>{[[labels.group,'#group'],[labels.technology,'#technology'],[labels.olivia,'#olivia'],[labels.platforms,'#platforms'],[labels.units,'#business-units'],[labels.global,'#global-presence'],[labels.contact,'#contact']].map(([name,url])=><a href={url}>{name}</a>)}</div></details></div>
+  <a class="brand" href={home} aria-label="O7 Digital Group Holding"><span class="brand-mark"><b>O</b><i>7</i></span><span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span></a>
+  <nav class="desktop-nav" aria-label="Primary navigation"><a href={anchor('group')}>{labels.group}</a><a href={anchor('technology')}>{labels.technology}</a><a href={anchor('olivia')}>{labels.olivia}</a><details class="nav-dropdown"><summary>{labels.platforms}</summary><div>{platformLinks.map(([name,url])=><a href={page==='home'?url:`${home}${url}`}>{name}</a>)}</div></details><a href={anchor('business-units')}>{labels.units}</a><a href={anchor('global-presence')}>{labels.global}</a></nav>
+  <div class="nav-actions"><details class="language-picker"><summary aria-label="Language">{lang.toUpperCase()}</summary><div class="language-menu">{languages.map((language)=><a href={languageHref(language.code)} lang={language.code} aria-current={lang===language.code?'page':undefined}>{language.label}</a>)}</div></details><a class="nav-cta" href={anchor('contact')}><span>{labels.contact}</span><b>↗</b></a><details class="mobile-menu"><summary>{labels.menu}</summary><div>{[[labels.group,anchor('group')],[labels.technology,anchor('technology')],[labels.olivia,anchor('olivia')],[labels.platforms,anchor('platforms')],[labels.units,anchor('business-units')],[labels.global,anchor('global-presence')],[labels.contact,anchor('contact')]].map(([name,url])=><a href={url}>{name}</a>)}</div></details></div>
 </header>

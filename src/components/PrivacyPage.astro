@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import { premium } from '../i18n/premium';
+const { lang, t, content } = Astro.props;
+const nav = premium[lang].nav;
+---
+<BaseLayout lang={lang} pagePath="privacy" title={`${content.title} — O7 Digital Group`} description={content.intro}>
+  <main id="top">
+    <div class="page-grid" aria-hidden="true"></div>
+    <Nav lang={lang} labels={nav} page="privacy" />
+    <header class="legal-hero section-shell">
+      <div class="eyebrow"><span></span>{content.eyebrow}</div>
+      <h1>{content.title}</h1>
+      <p>{content.intro}</p>
+      <small>{content.updated}</small>
+    </header>
+    <article class="legal-content section-shell">
+      {content.sections.map(([title, paragraphs], index) => <section>
+        <div class="section-index">{String(index + 1).padStart(2,'0')}</div>
+        <div><h2>{title}</h2>{paragraphs.map((paragraph) => <p>{paragraph}</p>)}</div>
+      </section>)}
+    </article>
+    <Footer lang={lang} t={t} nav={nav} />
+  </main>
+</BaseLayout>

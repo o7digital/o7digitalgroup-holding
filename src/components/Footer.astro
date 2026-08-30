@@ -1,0 +1,12 @@
+---
+import { localePath } from '../i18n/translations';
+const { lang, t, nav } = Astro.props;
+const home = localePath(lang);
+const privacyPath = lang === 'en' ? '/privacy/' : `/${lang}/privacy/`;
+---
+<footer class="footer section-shell">
+  <a class="brand footer-brand" href={home}><span class="brand-mark"><b>O</b><i>7</i></span><span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span></a>
+  <p>{t.footer.tagline[0]}<br/>{t.footer.tagline[1]}</p>
+  <div class="footer-links"><a href={`${home}#group`}>{nav.group}</a><a href={`${home}#technology`}>{nav.technology}</a><a href={`${home}#global-presence`}>{nav.global}</a><a href={`${home}#contact`}>{nav.contact}</a><a href={privacyPath}>{t.footer.privacy}</a></div>
+  <div class="footer-legal">© 2026 O7 Digital Group. {t.footer.rights}</div>
+</footer>
