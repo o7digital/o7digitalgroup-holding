@@ -17,7 +17,7 @@ const mapLabels = {
     <div class="page-grid" aria-hidden="true"></div><Nav lang={lang} labels={p.nav} premium />
     <section class="hero premium-hero section-shell">
       <div class="hero-copy"><div class="eyebrow" data-reveal><span></span>{p.hero.eyebrow}</div><h1 data-reveal>{p.hero.title[0]}<br/><em>{p.hero.title[1]}</em><br/>{p.hero.title[2]}</h1><p class="hero-lede" data-reveal>{p.hero.text}</p><div class="hero-actions" data-reveal><a class="btn-primary" href="#technology">{p.hero.primary} <b>↘</b></a><a class="btn-ghost" href="#global-presence">{p.hero.secondary} <b>→</b></a></div><div class="hero-meta premium-meta" data-reveal><div><small>GLOBAL NETWORK</small><strong>{p.hero.regions}</strong></div><div><small>TECHNOLOGY FOCUS</small><strong>{p.hero.domains}</strong></div></div></div>
-      <HeroVisual client:load labels={{...t.visual,europe:'CANADA · EUROPE',europeMeta:'QUÉBEC · FRANCE',americas:'UNITED STATES · MEXICO',americasMeta:'NORTH AMERICA · LATAM',global:'O7 NETWORK'}} />
+      <HeroVisual client:load labels={{ aria:p.hero.networkAria, core:p.hero.core, hubs:p.hero.hubs }} />
     </section>
     <section class="ticker" aria-label={t.tickerLabel}><div class="ticker-track">{[...p.hero.domains.split(' · '),...p.hero.domains.split(' · '),...p.hero.domains.split(' · ')].map((item)=><><span>{item}</span><i>✦</i></>)}</div></section>
 
