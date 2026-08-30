@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from './Nav.astro';
+import HeroVisual from './HeroVisual.jsx';
+import GlobalNetwork from './GlobalNetwork.jsx';
+const { lang, t } = Astro.props;
+---
+<BaseLayout lang={lang} title={t.meta.title} description={t.meta.description}>
+  <main id="top">
+    <div class="page-grid" aria-hidden="true"></div><Nav lang={lang} labels={t.nav} />
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow" data-reveal><span></span>{t.hero.eyebrow}</div>
+        <h1 data-reveal>{t.hero.title[0]}<br/><em>{t.hero.title[1]}</em><br/>{t.hero.title[2]}</h1>
+        <p class="hero-lede" data-reveal>{t.hero.lede}</p>
+        <div class="hero-actions" data-reveal><a class="btn-primary" href="#ecosystem">{t.hero.primary} <b>↘</b></a><a class="btn-ghost" href="#footprint">{t.hero.secondary} <b>→</b></a></div>
+        <div class="hero-meta" data-reveal><div><small>{t.hero.hqLabel}</small><strong>{t.hero.hq}</strong></div><div><small>{t.hero.marketsLabel}</small><strong>{t.hero.markets}</strong></div></div>
+      </div><HeroVisual client:load labels={t.visual} />
+    </section>
+    <section class="ticker" aria-label={t.tickerLabel}><div class="ticker-track">{[...t.ticker, ...t.ticker].map((item) => <><span>{item}</span><i>✦</i></>)}</div></section>
+    <section id="group" class="manifesto section-shell">
+      <div class="section-index">01 — {t.group.index}</div>
+      <div class="manifesto-copy" data-reveal><p class="kicker">{t.group.kicker}</p><h2>{t.group.title[0]}<br/>{t.group.title[1]} <em>{t.group.title[2]}</em></h2><p>{t.group.text}</p></div>
+      <div class="manifesto-side" data-reveal><div class="vertical-word">{t.group.vertical}</div><div class="quote-mark">“</div><p>{t.group.quote}</p></div>
+    </section>
+    <section id="ecosystem" class="units section-shell">
+      <div class="section-head" data-reveal><div><span class="section-index">02 — {t.ecosystem.index}</span><h2>{t.ecosystem.title[0]}<br/>{t.ecosystem.title[1]}</h2></div><p>{t.ecosystem.intro}</p></div>
+      <div class="unit-grid">{t.units.map((unit, i) => <article class="unit-card" data-reveal><div class="unit-top"><span>0{i + 1}</span><small>{unit.type}</small><b>↗</b></div><div class="unit-body"><h3>{unit.title}</h3><p>{unit.text}</p></div><div class="tag-row">{unit.tags.map((tag) => <span>{tag}</span>)}</div></article>)}</div>
+    </section>
+    <section class="portfolio section-shell"><div class="portfolio-shell" data-reveal>
+      <div class="portfolio-copy"><span class="section-index">03 — {t.technology.index}</span><h2>{t.technology.title[0]}<br/><em>{t.technology.title[1]}</em></h2><p>{t.technology.text}</p><a href="#contact">{t.technology.cta} <b>↗</b></a></div>
+      <div class="product-stack"><div class="product-card product-main"><div class="product-badge">AI CORE</div><strong>OLIVIA <span>ONE</span></strong><p>{t.technology.olivia}</p><div class="pulse-line"></div></div><div class="product-card"><small>{t.technology.crm}</small><strong>O7 PulseCRM</strong><span>{t.technology.customer}</span></div><div class="product-card"><small>{t.technology.os}</small><strong>O7 Transport OS</strong><span>{t.technology.operations}</span></div></div>
+    </div></section>
+    <section id="capabilities" class="capabilities section-shell">
+      <div class="section-head compact" data-reveal><div><span class="section-index">04 — {t.capabilities.index}</span><h2>{t.capabilities.title}</h2></div><p>{t.capabilities.intro}</p></div>
+      <div class="cap-list">{t.capabilities.items.map((item, i) => <article class="cap-row" data-reveal><span>0{i + 1}</span><h3>{item[0]}</h3><p>{item[1]}</p><b>↗</b></article>)}</div>
+    </section>
+    <section id="footprint" class="footprint section-shell">
+      <div class="footprint-copy" data-reveal><span class="section-index">05 — {t.footprint.index}</span><h2>{t.footprint.title[0]}<br/><em>{t.footprint.title[1]}</em></h2><p>{t.footprint.text}</p><div class="location-list">{t.footprint.locations.map((location, i) => <div><small>0{i + 1}</small><strong>{location[0]}</strong><span>{location[1]}</span></div>)}</div></div>
+      <GlobalNetwork client:load labels={t.map} />
+    </section>
+    <section class="partners section-shell" data-reveal><span class="section-index">06 — {t.partners.index}</span><p>{t.partners.text}</p><div class="partner-row"><strong>IBM</strong><strong>FUJITSU</strong><strong>Google Cloud</strong><strong>SECTIGO</strong></div></section>
+    <section id="contact" class="contact section-shell"><div class="contact-panel" data-reveal><div class="contact-top"><span>07 / {t.contact.next}</span><span>LONDON · PARIS · MEXICO</span></div><h2>{t.contact.title[0]}<br/>{t.contact.title[1]} <em>{t.contact.title[2]}</em></h2><div class="contact-bottom"><p>{t.contact.text}</p><a href="mailto:contact@o7digital.com">contact@o7digital.com <b>↗</b></a></div></div></section>
+    <footer class="footer section-shell"><div class="brand footer-brand"><span class="brand-mark"><b>O</b><i>7</i></span><span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span></div><p>{t.footer.tagline[0]}<br/>{t.footer.tagline[1]}</p><div class="footer-links"><a href="#group">{t.nav.group}</a><a href="#ecosystem">{t.nav.ecosystem}</a><a href="#contact">{t.nav.contact}</a></div><div class="footer-legal">© 2026 O7 Digital Group. {t.footer.rights}</div></footer>
+  </main>
+</BaseLayout>

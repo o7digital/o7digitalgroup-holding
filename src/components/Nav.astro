@@ -1,15 +1,9 @@
+---
+import { languages, localePath } from '../i18n/translations';
+const { lang = 'en', labels } = Astro.props;
+---
 <header class="site-nav">
-  <a class="brand" href="#top" aria-label="O7 Digital Group Holding home">
-    <span class="brand-mark"><b>O</b><i>7</i></span>
-    <span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span>
-  </a>
-
-  <nav class="desktop-nav" aria-label="Primary navigation">
-    <a href="#group">Group</a>
-    <a href="#ecosystem">Ecosystem</a>
-    <a href="#capabilities">Capabilities</a>
-    <a href="#footprint">Footprint</a>
-  </nav>
-
-  <a class="nav-cta" href="#contact"><span>Contact group</span><b>↗</b></a>
+  <a class="brand" href="#top" aria-label={labels.home}><span class="brand-mark"><b>O</b><i>7</i></span><span class="brand-copy"><strong>O7 DIGITAL GROUP</strong><small>HOLDING</small></span></a>
+  <nav class="desktop-nav" aria-label={labels.primary}><a href="#group">{labels.group}</a><a href="#ecosystem">{labels.ecosystem}</a><a href="#capabilities">{labels.capabilities}</a><a href="#footprint">{labels.footprint}</a></nav>
+  <div class="nav-actions"><details class="language-picker"><summary aria-label={labels.language}>{lang.toUpperCase()}</summary><div class="language-menu">{languages.map((language) => <a href={localePath(language.code)} lang={language.code} aria-current={lang === language.code ? 'page' : undefined}>{language.label}</a>)}</div></details><a class="nav-cta" href="#contact"><span>{labels.contact}</span><b>↗</b></a></div>
 </header>

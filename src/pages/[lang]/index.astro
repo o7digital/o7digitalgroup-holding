@@ -1,0 +1,9 @@
+---
+import HomePage from '../../components/HomePage.astro';
+import { languages, translations } from '../../i18n/translations';
+export function getStaticPaths() {
+  return languages.filter(({ code }) => code !== 'en').map(({ code }) => ({ params: { lang: code }, props: { lang: code, t: translations[code] } }));
+}
+const { lang, t } = Astro.props;
+---
+<HomePage lang={lang} t={t} />

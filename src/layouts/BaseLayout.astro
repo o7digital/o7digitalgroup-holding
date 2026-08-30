@@ -1,18 +1,23 @@
 ---
 import '../styles/global.css';
+import { languages, localePath } from '../i18n/translations';
 const {
+  lang = 'en',
   title = 'O7 Digital Group Holding — International Technology Group',
   description = 'O7 Digital Group Holding builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.'
 } = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#080b0b" />
     <link rel="icon" href="/favicon.svg" />
+    <link rel="canonical" href={new URL(localePath(lang), Astro.site ?? Astro.url).href} />
+    {languages.map(({ code }) => <link rel="alternate" hreflang={code} href={new URL(localePath(code), Astro.site ?? Astro.url).href} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL('/', Astro.site ?? Astro.url).href} />
     <title>{title}</title>
   </head>
   <body>

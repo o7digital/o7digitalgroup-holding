@@ -6,7 +6,7 @@ const nodes = [
 ];
 const links = [[0,1],[0,2],[0,3],[0,4],[1,5],[2,5],[2,8],[3,8],[3,6],[4,6],[4,7],[1,7]];
 
-export default function HeroVisual() {
+export default function HeroVisual({ labels }) {
   const ref = useRef(null);
   useEffect(() => {
     const el = ref.current;
@@ -51,11 +51,11 @@ export default function HeroVisual() {
             </g>
           ))}
         </svg>
-        <div className="core-label"><span>O7</span><small>GROUP CORE</small></div>
+        <div className="core-label"><span>O7</span><small>{labels.core}</small></div>
       </div>
-      <div className="signal-card signal-one"><small>EUROPE</small><strong>FR · UK</strong><span>Operational network</span></div>
-      <div className="signal-card signal-two"><small>AMERICAS</small><strong>MX · NA · LATAM</strong><span>Growth markets</span></div>
-      <div className="visual-index">07 / GLOBAL</div>
+      <div className="signal-card signal-one"><small>{labels.europe}</small><strong>FR · UK</strong><span>{labels.europeMeta}</span></div>
+      <div className="signal-card signal-two"><small>{labels.americas}</small><strong>MX · NA · LATAM</strong><span>{labels.americasMeta}</span></div>
+      <div className="visual-index">07 / {labels.global}</div>
     </div>
   );
 }
