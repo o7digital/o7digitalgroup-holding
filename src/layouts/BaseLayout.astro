@@ -1,0 +1,29 @@
+---
+import '../styles/global.css';
+const {
+  title = 'O7 Digital Group Holding — International Technology Group',
+  description = 'O7 Digital Group Holding builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.'
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#080b0b" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script is:inline>
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        }
+      }, { threshold: .12 });
+      document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

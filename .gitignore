@@ -1,10 +1,7 @@
-cat <<EOT > .gitignore
 node_modules/
-.next/
-out/
 dist/
-npm-debug.log
-yarn-error.log
-.env
+.astro/
 .DS_Store
-EOT
+.env
+.env.*
+!.env.example

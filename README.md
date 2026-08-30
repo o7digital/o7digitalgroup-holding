@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# O7 Digital Group Holding — Premium Astro + React mockup
 
-## Getting Started
+## What this is
+A complete visual direction for the Holding, deliberately separated from o7digital.com (the operating / consulting brand).
 
-First, run the development server:
+### Core positioning
+- Holding first, agency second.
+- Corporate hierarchy + product portfolio + international footprint.
+- Dark premium technology aesthetic, not a classic agency template.
+- Pure CSS/SVG visual system: fast, no stock photography dependency.
+- React used only for interactive pieces, keeping Astro output lightweight.
 
+## Structure
+- `src/pages/index.astro` — full homepage
+- `src/components/HeroVisual.jsx` — interactive network/globe hero
+- `src/components/GlobalNetwork.jsx` — interactive geographic footprint
+- `src/components/Nav.astro` — navigation
+- `src/styles/global.css` — complete art direction and responsive system
+- `preview.html` — standalone zero-install browser preview
+
+## Run locally
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Codex implementation notes
+1. Keep **O7 Digital Group Holding** visually/corporately distinct from **O7 Digital Consulting**.
+2. Do not turn the hero into a photo carousel. The network/globe is a group-level identity device.
+3. Replace the provisional O7 monogram with the official SVG logo if one exists.
+4. Keep sections and spacing generous; no dense Bootstrap-style service cards.
+5. If business units are not separate legal entities, label them `GROUP BUSINESS UNIT` / `GROUP ECOSYSTEM`, not subsidiaries.
+6. Preserve `prefers-reduced-motion` if additional animations are added.
+7. Add EN/FR/ES routing later with Astro i18n rather than duplicating pages manually.
+8. SEO metadata should target corporate/group intent, not cannibalize o7digital.com service keywords.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Suggested next pages
+- `/group` — governance, vision, structure
+- `/companies` — operating companies / business units
+- `/technology` — proprietary platforms and R&D
+- `/infrastructure` — enterprise technology and managed IT
+- `/international` — footprint and markets
+- `/contact` — corporate / partnership enquiries

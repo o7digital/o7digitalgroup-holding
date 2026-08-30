@@ -1,0 +1,30 @@
+O7 DIGITAL GROUP HOLDING — IMPLEMENTATION BRIEF
+
+Goal
+Rebuild the O7 Digital Group Holding homepage using the supplied Astro + React mockup. This is a corporate holding website, NOT a redesign of o7digital.com.
+
+Non-negotiables
+- Keep O7 Digital Consulting as the operating / service company inside the group architecture.
+- Do not copy the visual language of o7digital.com one-to-one.
+- Preserve the dark graphite + acid lime premium system and generous whitespace.
+- Keep the network/globe hero. Do not replace it with a generic stock-photo slider.
+- Preserve the hierarchy: Holding > Business units > Proprietary technology > Capabilities > International footprint.
+- Keep Olivia One, O7 PulseCRM and O7 Transport OS inside the proprietary technology ecosystem.
+- Keep React only for interactive islands; Astro should render the rest statically.
+- Optimize Core Web Vitals; avoid large animation libraries unless clearly justified.
+- Make all animations subtle and support prefers-reduced-motion.
+- Mobile must remain premium, not collapse into dense card stacks.
+
+Content / SEO guardrail
+The Holding site should target corporate, technology-group, partnerships, managed infrastructure, AI/product ecosystem and international-company intent. Do not compete directly with o7digital.com for agency-level SEO terms such as Astro website development or SEO agency.
+
+Implementation path
+1. Use src/pages/index.astro as the homepage base.
+2. Keep HeroVisual.jsx and GlobalNetwork.jsx as React islands.
+3. Replace provisional monogram with official SVG O7 logo when supplied.
+4. Wire menu and contact actions.
+5. Add Astro i18n routes for EN/FR/ES after homepage approval.
+6. Create /group, /companies, /technology, /international and /contact from the same design system.
+7. Deploy to Vercel preview before replacing the current Holding deployment.
+
+Do not modify the existing o7digital.com repository unless explicitly instructed.
