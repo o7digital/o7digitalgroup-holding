@@ -1,0 +1,42 @@
+---
+const { p } = Astro.props;
+---
+<section id="technology" class="tech-ecosystem section-shell">
+  <div class="section-head compact" data-reveal><div><span class="section-index">02 — {p.ecosystem.index}</span><h2>{p.ecosystem.title}</h2></div><p>AI + COMMUNICATIONS + CRM + ERP + OPERATIONS</p></div>
+  <div class="ecosystem-map" data-reveal>
+    <div class="eco-node eco-core"><small>{p.ecosystem.core}</small><strong>OLIVIA AI</strong></div>
+    <div class="eco-connector vertical"></div>
+    <div class="eco-row eco-intelligence"><div class="eco-node"><strong>OLIVIA ONE MAIL</strong></div><div class="eco-node"><strong>CONTROL CENTER</strong></div><div class="eco-node"><strong>{p.ecosystem.agents}</strong></div></div>
+    <div class="eco-label">{p.ecosystem.business}</div>
+    <div class="eco-row eco-business"><div class="eco-node"><strong>O7 PulseCRM</strong></div><div class="eco-node"><strong>O7 ERP</strong></div></div>
+    <div class="eco-label">{p.ecosystem.vertical}</div><div class="eco-node eco-vertical"><strong>O7 TRANSPORT OS</strong></div>
+  </div>
+</section>
+
+<section id="olivia" class="product-feature olivia-feature section-shell">
+  <div class="product-copy" data-reveal><span class="section-index">03 — {p.olivia.index}</span><h2>Olivia <em>AI</em></h2><h3>{p.olivia.claim}</h3><p>{p.olivia.p1}</p><p>{p.olivia.p2}</p><div class="chip-grid">{p.olivia.capabilities.map((item) => <span>{item}</span>)}</div></div>
+  <div class="ai-console" data-reveal><div class="console-bar"><span>OLIVIA / INTELLIGENCE CORE</span><i>● ONLINE</i></div><div class="orbital-ai"><div class="ai-orb">O</div><span class="orbit-data">CRM</span><span class="orbit-data">ERP</span><span class="orbit-data">MAIL</span><span class="orbit-data">OPS</span></div><div class="ask-panel"><small>{p.olivia.ask}</small><p>{p.olivia.question}</p><div><b>OLIVIA</b><span>{p.olivia.answer}</span></div></div></div>
+</section>
+
+<section id="platforms" class="platform-section section-shell">
+  <div class="platform-heading" data-reveal><span class="section-index">04 — {p.mail.index}</span><h2>Olivia One <em>Mail</em></h2><p>{p.mail.claim}</p><span>{p.mail.text}</span></div>
+  <div class="mail-ui product-ui" data-reveal><div class="ui-sidebar"><b>O7 / ONE MAIL</b>{[p.ui.inbox,p.ui.priority,p.ui.assigned,p.ui.sent,p.ui.archive].map((x,i)=><span class={i===0?'active':''}>{x}<small>{i===0?'12':''}</small></span>)}</div><div class="mail-list"><small>{p.mail.inbox}</small>{p.mailItems.map((x,i)=><div class={i===1?'selected':''}><i></i><span><b>{x.split(' — ')[0]}</b><small>{x.split(' — ')[1]}</small></span><time>0{9+i}:2{i}</time></div>)}</div><div class="olivia-side"><b>OLIVIA AI</b><small>{p.mail.ask}</small><p>“{p.mail.question}”</p><div>{p.mail.answer}</div></div></div>
+  <div class="feature-strip">{p.mail.features.map(x=><span>{x}</span>)}</div>
+</section>
+
+<section class="control-section section-shell">
+  <div class="platform-heading" data-reveal><span class="section-index">05 — {p.control.index}</span><h2>Olivia <em>Control Center</em></h2><p>{p.control.claim}</p><span>{p.control.text}</span></div>
+  <div class="control-ui product-ui" data-reveal><aside><b>O7 CONTROL</b>{p.controlModules.map((x,i)=><span class={i===0?'active':''}>{x}</span>)}</aside><div class="control-main"><div class="metrics"><div><small>{p.ui.activeAgents}</small><b>18</b><i>{p.ui.today}</i></div><div><small>{p.ui.pipeline}</small><b>$428K</b><i>+12.4%</i></div><div><small>{p.ui.automations}</small><b>1,284</b><i>{p.ui.systemOk}</i></div></div><div class="control-query"><small>{p.control.ask}</small><h3>“{p.control.question}”</h3><b>{p.control.answer}</b>{p.control.results.map((x,i)=><div><span>0{i+1}</span>{x}<i>↗</i></div>)}</div></div></div>
+</section>
+
+<section class="dual-platform section-shell">
+  <article class="software-card" data-reveal><span class="section-index">06 — {p.crm.index}</span><h2>O7 <em>PulseCRM</em></h2><h3>{p.crm.claim}</h3><p>{p.crm.text}</p><div class="mini-dashboard"><div class="pipeline-bars">{[72,54,88,39].map((x)=><i style={`--h:${x}%`}></i>)}</div><div class="module-cloud">{p.crmModules.map(x=><span>{x}</span>)}</div></div><div class="ai-tools">{p.crmAi.map(x=><span>{x}</span>)}</div><b class="powered">✦ {p.crm.powered}</b></article>
+  <article class="software-card" data-reveal><span class="section-index">07 — {p.erp.index}</span><h2>O7 <em>ERP</em></h2><h3>{p.erp.claim}</h3><p>{p.erp.text}</p><div class="erp-wheel"><div class="erp-core">OLIVIA</div>{p.erpModules.map((x,i)=><span style={`--i:${i}`}>{x}</span>)}</div><b class="powered">✦ {p.erp.powered}</b></article>
+</section>
+
+<section class="vertical-tech section-shell" data-reveal><div class="vertical-intro"><span class="section-index">08 — {p.vertical.index}</span><h2>{p.vertical.title}</h2></div><div class="transport-card"><div><small>VERTICAL / 01</small><h2>O7 Transport <em>OS</em></h2><h3>{p.vertical.claim}</h3><p>{p.vertical.text}</p><b class="powered">✦ {p.vertical.powered}</b></div><div class="transport-grid">{p.transportModules.map((x,i)=><span><small>0{i+1}</small>{x}</span>)}</div></div></section>
+
+<section id="business-units" class="business-units section-shell">
+  <article data-reveal><span class="section-index">09 — {p.consulting.label}</span><h2>O7 Digital <em>Consulting</em></h2><p>{p.consulting.text}</p><a href="https://www.o7digital.com/" target="_blank" rel="noopener">{p.consulting.cta} ↗</a></article>
+  <article data-reveal><span class="section-index">10 — {p.infra.label}</span><h2>{p.infra.title}</h2><h3>{p.infra.claim}</h3><p>{p.infra.text}</p><div class="chip-grid">{p.infraModules.map(x=><span>{x}</span>)}</div></article>
+</section>
