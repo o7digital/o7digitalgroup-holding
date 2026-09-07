@@ -43,6 +43,7 @@ main { position:relative; z-index:1; }
 .brand-copy small { color:var(--muted); font:500 8px/1 DM Mono,monospace; letter-spacing:.28em; }
 .desktop-nav { display:flex; align-items:center; gap:30px; }
 .desktop-nav a { color:#b7c0bd; font-size:12px; transition:.25s; }
+.desktop-nav a, .desktop-nav summary, .nav-cta, .mobile-menu summary, .mobile-menu a { text-transform:uppercase; }
 .desktop-nav a:hover { color:#fff; }
 .nav-cta { justify-self:end; display:flex; align-items:center; gap:20px; border-left:1px solid var(--line); padding-left:22px; font-size:12px; }
 .nav-cta b { color:var(--acid); font-size:16px; }
