@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">O7 Digital Group Holding</title>
+  <desc id="description">International technology group. We build, operate and scale.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d7ff63" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d7ff63" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#d7ff63" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#d7ff63" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#d7ff63" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#080b0b"/>
+  <circle cx="940" cy="315" r="280" fill="url(#glow)"/>
+  <g fill="none" stroke="#d7ff63" stroke-opacity=".24">
+    <ellipse cx="940" cy="315" rx="215" ry="100" transform="rotate(-18 940 315)"/>
+    <ellipse cx="940" cy="315" rx="100" ry="215" transform="rotate(38 940 315)"/>
+    <ellipse cx="940" cy="315" rx="250" ry="138" transform="rotate(8 940 315)"/>
+  </g>
+  <circle cx="940" cy="315" r="82" fill="#0a0e0d" stroke="#d7ff63" stroke-opacity=".7"/>
+  <text x="940" y="332" fill="#f0f4ef" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" text-anchor="middle">O7<tspan fill="#d7ff63">.</tspan></text>
+  <rect x="80" y="75" width="54" height="54" fill="none" stroke="#d7ff63"/>
+  <text x="107" y="109" fill="#d7ff63" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">O7</text>
+  <text x="154" y="98" fill="#f0f4ef" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="3">O7 DIGITAL GROUP</text>
+  <text x="154" y="119" fill="#89938f" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="5">HOLDING</text>
+  <rect x="80" y="184" width="420" height="1" fill="url(#line)"/>
+  <text x="80" y="260" fill="#f0f4ef" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-3">WE BUILD.</text>
+  <text x="80" y="332" fill="#d7ff63" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-3">WE OPERATE.</text>
+  <text x="80" y="404" fill="#f0f4ef" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-3">WE SCALE.</text>
+  <text x="80" y="506" fill="#89938f" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="3">INTERNATIONAL TECHNOLOGY GROUP</text>
+  <text x="80" y="550" fill="#d7ff63" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">AI · SOFTWARE · INFRASTRUCTURE · OPERATIONS</text>
+</svg>

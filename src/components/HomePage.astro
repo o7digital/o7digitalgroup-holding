@@ -6,6 +6,7 @@ import GlobalNetwork from './GlobalNetwork.jsx';
 import EnterpriseSections from './EnterpriseSections.astro';
 import Footer from './Footer.astro';
 import { premium } from '../i18n/premium';
+import { seoDescriptions } from '../i18n/translations';
 const { lang, t } = Astro.props;
 const p = premium[lang];
 const mapLabels = {
@@ -13,7 +14,7 @@ const mapLabels = {
   usa: p.presence.usa.slice(0,2), canada: p.presence.canada.slice(0,2), mexico: p.presence.mexico.slice(0,2), europe: p.presence.europe.slice(0,2)
 };
 ---
-<BaseLayout lang={lang} title={t.meta.title} description={p.hero.text}>
+<BaseLayout lang={lang} title={t.meta.title} description={seoDescriptions[lang]}>
   <main id="top">
     <div class="page-grid" aria-hidden="true"></div><Nav lang={lang} labels={p.nav} premium />
     <section class="hero premium-hero section-shell">

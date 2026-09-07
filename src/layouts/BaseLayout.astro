@@ -5,21 +5,94 @@ const {
   lang = 'en',
   pagePath = '',
   title = 'O7 Digital Group Holding — International Technology Group',
-  description = 'O7 Digital Group Holding builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.'
+  description = 'O7 Digital Group Holding builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.',
+  image = '/og-image.png',
+  imageAlt = title,
+  robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 } = Astro.props;
 const localizedUrl = (code) => pagePath ? `${localePath(code)}${pagePath}/` : localePath(code);
+const canonicalUrl = new URL(localizedUrl(lang), Astro.site ?? Astro.url);
+const socialImageUrl = new URL(image, Astro.site ?? Astro.url);
+const ogLocales = {
+  en: 'en_US',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  de: 'de_DE',
+  it: 'it_IT',
+  pt: 'pt_PT'
+};
+const organizationSchema = {
+  '@type': 'Organization',
+  '@id': new URL('/#organization', Astro.site ?? Astro.url).href,
+  name: 'O7 Digital Group Holding',
+  alternateName: 'O7 Digital Group',
+  url: new URL('/', Astro.site ?? Astro.url).href,
+  logo: new URL('/favicon.svg', Astro.site ?? Astro.url).href,
+  email: 'contact@o7digitalgroup.com',
+  areaServed: ['North America', 'Latin America', 'Europe']
+};
+const websiteSchema = {
+  '@type': 'WebSite',
+  '@id': new URL('/#website', Astro.site ?? Astro.url).href,
+  url: new URL('/', Astro.site ?? Astro.url).href,
+  name: 'O7 Digital Group Holding',
+  publisher: { '@id': organizationSchema['@id'] }
+};
+const webPageSchema = {
+  '@type': 'WebPage',
+  '@id': `${canonicalUrl.href}#webpage`,
+  url: canonicalUrl.href,
+  name: title,
+  description,
+  inLanguage: lang,
+  isPartOf: {
+    '@id': websiteSchema['@id']
+  },
+  about: { '@id': organizationSchema['@id'] }
+};
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [organizationSchema, websiteSchema, webPageSchema]
+};
 ---
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <meta name="theme-color" content="#080b0b" />
+    <meta name="color-scheme" content="dark" />
     <link rel="icon" href="/favicon.svg" />
-    <link rel="canonical" href={new URL(localizedUrl(lang), Astro.site ?? Astro.url).href} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
+    <link rel="canonical" href={canonicalUrl.href} />
     {languages.map(({ code }) => <link rel="alternate" hreflang={code} href={new URL(localizedUrl(code), Astro.site ?? Astro.url).href} />)}
     <link rel="alternate" hreflang="x-default" href={new URL(localizedUrl('en'), Astro.site ?? Astro.url).href} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="O7 Digital Group Holding" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl.href} />
+    <meta property="og:locale" content={ogLocales[lang]} />
+    {languages.filter(({ code }) => code !== lang).map(({ code }) => <meta property="og:locale:alternate" content={ogLocales[code]} />)}
+    <meta property="og:image" content={socialImageUrl.href} />
+    <meta property="og:image:secure_url" content={socialImageUrl.href} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl.href} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
     <title>{title}</title>
   </head>
   <body>

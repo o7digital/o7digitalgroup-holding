@@ -6,6 +6,15 @@ export const languages = [
 
 export const localePath = (code) => code === 'en' ? '/' : `/${code}/`;
 
+export const seoDescriptions = {
+  en: 'O7 Digital Group Holding builds and operates AI, enterprise software and digital infrastructure across North America, Latin America and Europe.',
+  fr: 'O7 Digital Group Holding développe et opère des solutions d’IA, des logiciels d’entreprise et des infrastructures numériques en Amérique et en Europe.',
+  es: 'O7 Digital Group Holding desarrolla y opera IA, software empresarial e infraestructura digital en Norteamérica, Latinoamérica y Europa.',
+  de: 'O7 Digital Group Holding entwickelt und betreibt KI, Unternehmenssoftware und digitale Infrastruktur in Nordamerika, Lateinamerika und Europa.',
+  it: 'O7 Digital Group Holding sviluppa e gestisce IA, software aziendale e infrastrutture digitali in Nord America, America Latina ed Europa.',
+  pt: 'A O7 Digital Group Holding desenvolve e opera IA, software empresarial e infraestrutura digital na América do Norte, América Latina e Europa.'
+};
+
 export const translations = {
   en:{meta:{title:'O7 Digital Group Holding — International Technology Group'},contact:{next:'NEXT',title:['Build what’s','next','with us.'],text:'Corporate opportunities, strategic partnerships, enterprise technology and international projects.'},footer:{tagline:['International technology group.','Build. Operate. Scale.'],privacy:'Privacy Notice',rights:'All rights reserved.'}},
   fr:{meta:{title:'O7 Digital Group Holding — Groupe technologique international'},contact:{next:'PROCHAINE ÉTAPE',title:['Construisons','la suite','ensemble.'],text:'Opportunités corporate, partenariats stratégiques, technologies d’entreprise et projets internationaux.'},footer:{tagline:['Groupe technologique international.','Créer. Opérer. Accélérer.'],privacy:'Avis de confidentialité',rights:'Tous droits réservés.'}},
