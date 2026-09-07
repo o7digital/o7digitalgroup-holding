@@ -20,7 +20,7 @@ export default defineConfig({
     })
   ],
   output: 'static',
-  site: 'https://o7digitalgroup.com',
+  site: 'https://www.o7digitalgroup.com',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr', 'es', 'de', 'it', 'pt'],
