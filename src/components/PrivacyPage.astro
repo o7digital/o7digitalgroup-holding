@@ -10,13 +10,13 @@ const nav = premium[lang].nav;
   <main id="top">
     <div class="page-grid" aria-hidden="true"></div>
     <Nav lang={lang} labels={nav} page="privacy" />
-    <header class="legal-hero section-shell">
+    <header class="legal-hero section-shell" lang={content.lang}>
       <div class="eyebrow"><span></span>{content.eyebrow}</div>
       <h1>{content.title}</h1>
       <p>{content.intro}</p>
       <small>{content.updated}</small>
     </header>
-    <article class="legal-content section-shell">
+    <article class="legal-content section-shell" lang={content.lang}>
       {content.sections.map(([title, paragraphs], index) => <section>
         <div class="section-index">{String(index + 1).padStart(2,'0')}</div>
         <div><h2>{title}</h2>{paragraphs.map((paragraph) => <p>{paragraph}</p>)}</div>

@@ -2,10 +2,10 @@
 import '../styles/global.css';
 import { languages, localePath } from '../i18n/translations';
 const {
-  lang = 'en',
+  lang = 'fr',
   pagePath = '',
-  title = 'O7 Digital Group Holding — International Technology Group',
-  description = 'O7 Digital Group Holding builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.',
+  title = 'O7 Digital Group — International Technology Group',
+  description = 'O7 Digital Group builds, operates and scales digital infrastructure, AI products and technology services across Europe and the Americas.',
   image = '/og-image.png',
   imageAlt = title,
   robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -24,18 +24,21 @@ const ogLocales = {
 const organizationSchema = {
   '@type': 'Organization',
   '@id': new URL('/#organization', Astro.site ?? Astro.url).href,
-  name: 'O7 Digital Group Holding',
+  name: 'O7 Digital Consulting SASU',
   alternateName: 'O7 Digital Group',
+  legalName: 'O7 Digital Consulting SASU',
+  taxID: '899748560',
+  address: { '@type': 'PostalAddress', streetAddress: '10 rue de Penthièvre', postalCode: '75008', addressLocality: 'Paris', addressCountry: 'FR' },
   url: new URL('/', Astro.site ?? Astro.url).href,
   logo: new URL('/favicon.svg', Astro.site ?? Astro.url).href,
-  email: 'contact@o7digitalgroup.com',
+  email: 'info@o7digital-consulting.com',
   areaServed: ['North America', 'Latin America', 'Europe']
 };
 const websiteSchema = {
   '@type': 'WebSite',
   '@id': new URL('/#website', Astro.site ?? Astro.url).href,
   url: new URL('/', Astro.site ?? Astro.url).href,
-  name: 'O7 Digital Group Holding',
+  name: 'O7 Digital Group',
   publisher: { '@id': organizationSchema['@id'] }
 };
 const webPageSchema = {
@@ -70,10 +73,10 @@ const structuredData = {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
     <link rel="canonical" href={canonicalUrl.href} />
     {languages.map(({ code }) => <link rel="alternate" hreflang={code} href={new URL(localizedUrl(code), Astro.site ?? Astro.url).href} />)}
-    <link rel="alternate" hreflang="x-default" href={new URL(localizedUrl('en'), Astro.site ?? Astro.url).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(localizedUrl('fr'), Astro.site ?? Astro.url).href} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="O7 Digital Group Holding" />
+    <meta property="og:site_name" content="O7 Digital Group" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl.href} />

@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     sitemap({
       i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'fr',
         locales: {
           en: 'en',
           fr: 'fr',
@@ -22,7 +22,7 @@ export default defineConfig({
   output: 'static',
   site: 'https://www.o7digitalgroup.com',
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     locales: ['en', 'fr', 'es', 'de', 'it', 'pt'],
     routing: { prefixDefaultLocale: false }
   }
