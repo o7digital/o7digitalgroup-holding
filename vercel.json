@@ -5,13 +5,8 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/fr",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/privacy",
-      "destination": "/privacy/",
+      "source": "/fr/:path*",
+      "destination": "/:path*",
       "permanent": true
     }
   ]
