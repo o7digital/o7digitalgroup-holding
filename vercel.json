@@ -9,5 +9,6 @@
       "destination": "/:path*",
       "permanent": true
     }
-  ]
+  ],
+  "trailingSlash": false
 }
